@@ -1,0 +1,1350 @@
+{
+	chromosomes = (
+		{
+			p = "38.5";
+			name = "1";
+			q = "229.6";
+			pBanding = (
+				{ name = "11"; stop = "0.3698"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.7367"; start = "0.3698"; },
+				{ name = "13"; stop = "1.0000"; start = "0.7367"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.0442"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1361"; start = "0.0442"; },
+				{ name = "21"; stop = "0.2245"; start = "0.1361"; },
+				{ name = "22"; stop = "0.3716"; start = "0.2245"; },
+				{ name = "31"; stop = "0.4476"; start = "0.3716"; },
+				{ name = "32"; stop = "0.5395"; start = "0.4476"; },
+				{ name = "33"; stop = "0.5753"; start = "0.5395"; },
+				{ name = "34"; stop = "0.5926"; start = "0.5753"; },
+				{ name = "35"; stop = "0.6160"; start = "0.5926"; },
+				{ name = "36"; stop = "0.6513"; start = "0.6160"; },
+				{ name = "37"; stop = "0.6637"; start = "0.6513"; },
+				{ name = "41"; stop = "0.7253"; start = "0.6637"; },
+				{ name = "42"; stop = "0.7362"; start = "0.7253"; },
+				{ name = "43"; stop = "0.8053"; start = "0.7362"; },
+				{ name = "51"; stop = "0.8405"; start = "0.8053"; },
+				{ name = "52"; stop = "0.8758"; start = "0.8405"; },
+				{ name = "53"; stop = "0.9026"; start = "0.8758"; },
+				{ name = "54"; stop = "0.9379"; start = "0.9026"; },
+				{ name = "55"; stop = "1.0000"; start = "0.9379"; }
+			);
+		},
+		{
+			p = "25.8"; /* arbitrarily set to 10% of q-arm size */
+			name = "2";
+			q = "258.2";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0615"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1339"; start = "0.0615"; },
+				{ name = "13"; stop = "0.1434"; start = "0.1339"; },
+				{ name = "14"; stop = "0.1850"; start = "0.1434"; },
+				{ name = "15"; stop = "0.1971"; start = "0.1850"; },
+				{ name = "16"; stop = "0.2465"; start = "0.1971"; },
+				{ name = "21"; stop = "0.2821"; start = "0.2465"; },
+				{ name = "22"; stop = "0.3284"; start = "0.2821"; },
+				{ name = "23"; stop = "0.3778"; start = "0.3284"; },
+				{ name = "24"; stop = "0.4549"; start = "0.3778"; },
+				{ name = "25"; stop = "0.4905"; start = "0.4549"; },
+				{ name = "26"; stop = "0.5633"; start = "0.4905"; },
+				{ name = "31"; stop = "0.6170"; start = "0.5633"; },
+				{ name = "32"; stop = "0.6633"; start = "0.6170"; },
+				{ name = "33"; stop = "0.6759"; start = "0.6633"; },
+				{ name = "34"; stop = "0.7946"; start = "0.6759"; },
+				{ name = "41"; stop = "0.8484"; start = "0.7946"; },
+				{ name = "42"; stop = "0.8795"; start = "0.8484"; },
+				{ name = "43"; stop = "0.9103"; start = "0.8795"; },
+				{ name = "44"; stop = "0.9536"; start = "0.9103"; },
+				{ name = "45"; stop = "1.0000"; start = "0.9536"; }
+			);
+		},
+		{
+			p = "16.3";
+			name = "3";
+			q = "154.7";
+			pBanding = (
+				{ name = "11"; stop = "0.3252"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.6748"; start = "0.3252"; },
+				{ name = "13"; stop = "1.0000"; start = "0.6748"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.0323"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1475"; start = "0.0323"; },
+				{ name = "21"; stop = "0.2445"; start = "0.1475"; },
+				{ name = "22"; stop = "0.2555"; start = "0.2445"; },
+				{ name = "23"; stop = "0.2859"; start = "0.2555"; },
+				{ name = "24"; stop = "0.4010"; start = "0.2859"; },
+				{ name = "31"; stop = "0.4651"; start = "0.4010"; },
+				{ name = "32"; stop = "0.4838"; start = "0.4651"; },
+				{ name = "33"; stop = "0.5162"; start = "0.4838"; },
+				{ name = "34"; stop = "0.5388"; start = "0.5162"; },
+				{ name = "35"; stop = "0.6197"; start = "0.5388"; },
+				{ name = "36"; stop = "0.7232"; start = "0.6197"; },
+				{ name = "41"; stop = "0.8338"; start = "0.7232"; },
+				{ name = "42"; stop = "0.9651"; start = "0.8338"; },
+				{ name = "43"; stop = "1.0000"; start = "0.9651"; }
+			);
+		},
+		{
+			p = "18.7"; /* arbitrarily set to 10% of q-arm size */
+			name = "4";
+			q = "187.4";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0834"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1357"; start = "0.0834"; },
+				{ name = "13"; stop = "0.1710"; start = "0.1357"; },
+				{ name = "21"; stop = "0.2468"; start = "0.1710"; },
+				{ name = "22"; stop = "0.3719"; start = "0.2468"; },
+				{ name = "23"; stop = "0.3866"; start = "0.3719"; },
+				{ name = "24"; stop = "0.4953"; start = "0.3866"; },
+				{ name = "31"; stop = "0.5499"; start = "0.4953"; },
+				{ name = "32"; stop = "0.5582"; start = "0.5499"; },
+				{ name = "33"; stop = "0.5999"; start = "0.5582"; },
+				{ name = "34"; stop = "0.7321"; start = "0.5999"; },
+				{ name = "41"; stop = "0.7844"; start = "0.7321"; },
+				{ name = "42"; stop = "0.9095"; start = "0.7844"; },
+				{ name = "43"; stop = "0.9307"; start = "0.9095"; },
+				{ name = "44"; stop = "1.0000"; start = "0.9307"; }
+			);
+		},
+		{
+			p = "17.3"; /* arbitrarily set to 10% of q-arm size */
+			name = "5";
+			q = "173.1";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0710"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1168"; start = "0.0710"; },
+				{ name = "13"; stop = "0.1995"; start = "0.1168"; },
+				{ name = "21"; stop = "0.2983"; start = "0.1995"; },
+				{ name = "22"; stop = "0.3861"; start = "0.2983"; },
+				{ name = "23"; stop = "0.4022"; start = "0.3861"; },
+				{ name = "24"; stop = "0.4939"; start = "0.4022"; },
+				{ name = "31"; stop = "0.6043"; start = "0.4939"; },
+				{ name = "32"; stop = "0.6482"; start = "0.6043"; },
+				{ name = "33"; stop = "0.7121"; start = "0.6482"; },
+				{ name = "34"; stop = "0.7424"; start = "0.7121"; },
+				{ name = "35"; stop = "0.7811"; start = "0.7424"; },
+				{ name = "36"; stop = "1.0000"; start = "0.7811"; }
+			);
+		},
+		{
+			p = "14.8"; /* arbitrarily set to 10% of q-arm size */
+			name = "6";
+			q = "147.6";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0266"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1426"; start = "0.0266"; },
+				{ name = "13"; stop = "0.1700"; start = "0.1426"; },
+				{ name = "14"; stop = "0.2481"; start = "0.1700"; },
+				{ name = "15"; stop = "0.2754"; start = "0.2481"; },
+				{ name = "16"; stop = "0.3778"; start = "0.2754"; },
+				{ name = "21"; stop = "0.4590"; start = "0.3778"; },
+				{ name = "22"; stop = "0.4886"; start = "0.4590"; },
+				{ name = "23"; stop = "0.5675"; start = "0.4886"; },
+				{ name = "24"; stop = "0.7291"; start = "0.5675"; },
+				{ name = "31"; stop = "0.8103"; start = "0.7291"; },
+				{ name = "32"; stop = "0.9454"; start = "0.8103"; },
+				{ name = "33"; stop = "1.0000"; start = "0.9454"; }
+			);
+		},
+		{
+			p = "14.3"; /* arbitrarily set to 10% of q-arm size */
+			name = "7";
+			q = "143.1";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.1068"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1266"; start = "0.1068"; },
+				{ name = "13"; stop = "0.2872"; start = "0.1266"; },
+				{ name = "21"; stop = "0.3655"; start = "0.2872"; },
+				{ name = "22"; stop = "0.5348"; start = "0.3655"; },
+				{ name = "31"; stop = "0.6416"; start = "0.5348"; },
+				{ name = "32"; stop = "0.6614"; start = "0.6416"; },
+				{ name = "33"; stop = "0.7318"; start = "0.6614"; },
+				{ name = "34"; stop = "0.9011"; start = "0.7318"; },
+				{ name = "35"; stop = "0.9517"; start = "0.9011"; },
+				{ name = "36"; stop = "1.0000"; start = "0.9517"; }
+			);
+		},
+		{
+			p = "12.9"; /* arbitrarily set to 10% of q-arm size */
+			name = "8";
+			q = "129.1";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0920"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1303"; start = "0.0920"; },
+				{ name = "13"; stop = "0.2459"; start = "0.1303"; },
+				{ name = "21"; stop = "0.3127"; start = "0.2459"; },
+				{ name = "22"; stop = "0.3795"; start = "0.3127"; },
+				{ name = "23"; stop = "0.4202"; start = "0.3795"; },
+				{ name = "24"; stop = "0.6376"; start = "0.4202"; },
+				{ name = "31"; stop = "0.8257"; start = "0.6376"; },
+				{ name = "32"; stop = "1.0000"; start = "0.8257"; }
+			);
+		},
+		{
+			p = "11.4"; /* arbitrarily set to 10% of q-arm size */
+			name = "9";
+			q = "113.6";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0640"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1504"; start = "0.0640"; },
+				{ name = "13"; stop = "0.2489"; start = "0.1504"; },
+				{ name = "21"; stop = "0.3691"; start = "0.2489"; },
+				{ name = "22"; stop = "0.4615"; start = "0.3691"; },
+				{ name = "31"; stop = "0.5471"; start = "0.4615"; },
+				{ name = "32"; stop = "0.6180"; start = "0.5471"; },
+				{ name = "33"; stop = "0.6923"; start = "0.6180"; },
+				{ name = "34"; stop = "0.7381"; start = "0.6923"; },
+				{ name = "35"; stop = "0.7934"; start = "0.7381"; },
+				{ name = "36"; stop = "0.8920"; start = "0.7934"; },
+				{ name = "37"; stop = "0.9473"; start = "0.8920"; },
+				{ name = "38"; stop = "1.0000"; start = "0.9473"; }
+			);
+		},
+		{
+			p = "11.1"; /* arbitrarily set to 10% of q-arm size */
+			name = "10";
+			q = "110.7";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0565"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.2369"; start = "0.0565"; },
+				{ name = "21"; stop = "0.3145"; start = "0.2369"; },
+				{ name = "22"; stop = "0.4292"; start = "0.3145"; },
+				{ name = "23"; stop = "0.4503"; start = "0.4292"; },
+				{ name = "24"; stop = "0.5759"; start = "0.4503"; },
+				{ name = "25"; stop = "0.6003"; start = "0.5759"; },
+				{ name = "26"; stop = "0.7504"; start = "0.6003"; },
+				{ name = "31"; stop = "0.7951"; start = "0.7504"; },
+				{ name = "32.1"; stop = "0.9368"; start = "0.7951"; },
+				{ name = "32.2"; stop = "0.9519"; start = "0.9368"; },
+				{ name = "32.3"; stop = "1.0000"; start = "0.9519"; }
+			);
+		},
+		{
+			p = "15.0";
+			name = "11";
+			q = "72.8";
+			pBanding = (
+				{ name = "11"; stop = "0.5563"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "1.0000"; start = "0.5563"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.2977"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.4588"; start = "0.2977"; },
+				{ name = "21"; stop = "0.6869"; start = "0.4588"; },
+				{ name = "22"; stop = "0.8479"; start = "0.6869"; },
+				{ name = "23"; stop = "1.0000"; start = "0.8479"; }
+			);
+		},
+		{
+			p = "12.5";
+			name = "12";
+			q = "34.1";
+			pBanding = (
+				{ name = "11"; stop = "0.5636"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "1.0000"; start = "0.5636"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.1786"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.4174"; start = "0.1786"; },
+				{ name = "13"; stop = "0.4641"; start = "0.4174"; },
+				{ name = "14"; stop = "0.5826"; start = "0.4641"; },
+				{ name = "15"; stop = "0.6244"; start = "0.5826"; },
+				{ name = "16"; stop = "1.0000"; start = "0.6244"; }
+			);
+		},
+		{
+			p = "30.2";
+			name = "13";
+			q = "81.1";
+			pBanding = (
+				{ name = "11"; stop = "0.2407"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.4237"; start = "0.2407"; },
+				{ name = "13"; stop = "1.0000"; start = "0.4237"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.1214"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1580"; start = "0.1214"; },
+				{ name = "13"; stop = "0.3148"; start = "0.1580"; },
+				{ name = "21"; stop = "0.5133"; start = "0.3148"; },
+				{ name = "22"; stop = "0.6169"; start = "0.5133"; },
+				{ name = "23"; stop = "0.6523"; start = "0.6169"; },
+				{ name = "24"; stop = "0.7522"; start = "0.6523"; },
+				{ name = "25"; stop = "0.7876"; start = "0.7522"; },
+				{ name = "26"; stop = "0.9317"; start = "0.7876"; },
+				{ name = "27"; stop = "1.0000"; start = "0.9317"; }
+			);
+		},
+		{
+			p = "49.3";
+			name = "14";
+			q = "62.9";
+			pBanding = (
+				{ name = "11"; stop = "0.3625"; start = "0.0000"; color = "centromere";},
+				{ name = "21"; stop = "0.5708"; start = "0.3625"; },
+				{ name = "22"; stop = "1.0000"; start = "0.5708"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.3083"; start = "0.0000"; color = "centromere";},
+				{ name = "21"; stop = "0.7259"; start = "0.3083"; },
+				{ name = "22"; stop = "1.0000"; start = "0.7259"; }
+			);
+		},
+		{
+			p = "54.2";
+			name = "15";
+			q = "55.5";
+			pBanding = (
+				{ name = "11"; stop = "0.1188"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.3663"; start = "0.1188"; },
+				{ name = "13"; stop = "0.4158"; start = "0.3663"; },
+				{ name = "14"; stop = "0.6832"; start = "0.4158"; },
+				{ name = "15"; stop = "0.7327"; start = "0.6832"; },
+				{ name = "16"; stop = "1.0000"; start = "0.7327"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.1103"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.3172"; start = "0.1103"; },
+				{ name = "21"; stop = "0.5861"; start = "0.3172"; },
+				{ name = "22"; stop = "0.6750"; start = "0.5861"; },
+				{ name = "23"; stop = "0.8124"; start = "0.6750"; },
+				{ name = "24"; stop = "0.9362"; start = "0.8124"; },
+				{ name = "25"; stop = "1.0000"; start = "0.9362"; }
+			);
+		},
+		{
+			p = "42.3";
+			name = "16";
+			q = "47.9";
+			pBanding = (
+				{ name = "11"; stop = "0.1736"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.3056"; start = "0.1736"; },
+				{ name = "13"; stop = "0.4083"; start = "0.3056"; },
+				{ name = "14"; stop = "0.7139"; start = "0.4083"; },
+				{ name = "15"; stop = "0.7579"; start = "0.7139"; },
+				{ name = "16"; stop = "1.0000"; start = "0.7579"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.1922"; start = "0.0000"; color = "centromere";},
+				{ name = "12.1"; stop = "0.3456"; start = "0.1922"; },
+				{ name = "12.2"; stop = "0.4060"; start = "0.3456"; },
+				{ name = "12.3"; stop = "0.5616"; start = "0.4060"; },
+				{ name = "12.4"; stop = "0.6156"; start = "0.5616"; },
+				{ name = "12.5"; stop = "1.0000"; start = "0.6156"; }
+			);
+		},
+		{
+			p = "48.7";
+			name = "17";
+			q = "48.7";
+			pBanding = (
+				{ name = "11"; stop = "0.1213"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.4809"; start = "0.1213"; },
+				{ name = "13"; stop = "0.5281"; start = "0.4809"; },
+				{ name = "14"; stop = "1.0000"; start = "0.5281"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.1191"; start = "0.0000"; color = "centromere";},
+				{ name = "12.1"; stop = "0.5034"; start = "0.1191"; },
+				{ name = "12.2"; stop = "0.5596"; start = "0.5034"; },
+				{ name = "12.3"; stop = "1.0000"; start = "0.5596"; }
+			);
+		},
+		{
+			p = "37.4";
+			name = "18";
+			q = "50.0";
+			pBanding = (
+				{ name = "11"; stop = "0.2633"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.7160"; start = "0.2633"; },
+				{ name = "13"; stop = "1.0000"; start = "0.7160"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.2743"; start = "0.0000"; color = "centromere";},
+				{ name = "12.1"; stop = "0.6062"; start = "0.2743"; },
+				{ name = "12.2"; stop = "0.6836"; start = "0.6062"; },
+				{ name = "12.3"; stop = "0.9115"; start = "0.6836"; },
+				{ name = "13"; stop = "1.0000"; start = "0.9115"; }
+			);
+		},
+		{
+			p = "22.4";
+			name = "19";
+			q = "36.9";
+			pBanding = (
+				{ name = "11"; stop = "0.4521"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.5274"; start = "0.4521"; },
+				{ name = "13"; stop = "0.8185"; start = "0.5274"; },
+				{ name = "14"; stop = "1.0000"; start = "0.8185"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.3555"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "1.0000"; start = "0.3555"; }
+			);
+		},
+		{
+			p = "26.7";
+			name = "20";
+			q = "28.6";
+			pBanding = (
+				{ name = "11"; stop = "0.4016"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "1.0000"; start = "0.4016"; }
+			);
+			qBanding = (
+				{ name = "11"; stop = "0.3970"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.6667"; start = "0.3970"; },
+				{ name = "13"; stop = "1.0000"; start = "0.6667"; }
+			);
+		},
+		{
+			p = "16.1"; /* arbitrarily set to 10% of q-arm size */
+			name = "X";
+			q = "160.8";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.0482"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "0.1340"; start = "0.0482"; },
+				{ name = "13"; stop = "0.1854"; start = "0.1340"; },
+				{ name = "14"; stop = "0.2456"; start = "0.1854"; },
+				{ name = "21"; stop = "0.3708"; start = "0.2456"; },
+				{ name = "22"; stop = "0.5056"; start = "0.3708"; },
+				{ name = "31"; stop = "0.6284"; start = "0.5056"; },
+				{ name = "32"; stop = "0.6998"; start = "0.6284"; },
+				{ name = "33"; stop = "0.7199"; start = "0.6998"; },
+				{ name = "34"; stop = "0.7624"; start = "0.7199"; },
+				{ name = "35"; stop = "0.8427"; start = "0.7624"; },
+				{ name = "36"; stop = "0.9286"; start = "0.8427"; },
+				{ name = "37"; stop = "1.0000"; start = "0.9286"; }
+			);
+		},
+		{
+			p = "7.1"; /* arbitrarily set to 10% of q-arm size */
+			name = "Y";
+			q = "71.2";
+			pBanding = (
+				{ name = "11"; stop = "1.0000"; start = "0.0000";},
+				);
+			qBanding = (
+				{ name = "11"; stop = "0.7500"; start = "0.0000"; color = "centromere";},
+				{ name = "12"; stop = "1.0000"; start = "0.7500"; }
+			);
+		}
+	);
+	placements = {
+		chrom1 = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+			drawBanding = YES;
+			drawBandNames = standard;
+			intergroupSpacing = 40;
+
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				}
+			);
+			annotations = (
+				{
+					name = bandingNames;
+					config = { config = standard; };
+				},
+				{
+					name = sideline;
+					config = {
+						defaultValue = 1;
+						valueBin = 0.005;
+						tags = ( "" );
+						inset = 5;
+						width = 15;
+						color = black;
+						drawCutoffLineAt = 0.05;
+						cutoffLineColor = grey;
+					};
+				}
+				{
+					name = etags;
+					config = { config = withSideline; };
+				}
+			);
+
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1) )
+			);
+			colors = (
+				{ r = 0.0; g = 0.0; b = 1.0; },
+				{ r = 1.0; g = 0.0; b = 0.0; }
+			);
+		};
+
+		standard = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+			drawBanding = YES;
+			drawBandNames = standard;
+			intergroupSpacing = 40;
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				},
+				{	name = itags;
+					config = {
+						/* height in percent of maximal chromosome length */
+						defaultColorHeight = 0.0005;
+					};
+				}
+			);
+			annotations = (
+				{
+					name = bandingNames;
+					config = { config = standard; };
+				},
+				{
+					name = etags;
+					config = { config = standard; };
+				}
+			);
+
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1, 2, 3), (4, 5) ),
+				( (6, 7, 8, 9, 10, 11, 12) ),
+				( (13, 14, 15), (16, 17, 18)),
+				( (19, 20), (X,Y) )
+			);
+			colors = (
+				{ r = 0.0; g = 0.0; b = 1.0; },
+				{ r = 1.0; g = 0.0; b = 0.0; }
+			);
+		};
+		simple = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+			drawBanding = YES;
+			drawBandNames = standard;
+			intergroupSpacing = 40;
+			internalAnnotations = (
+				{
+					name = banding;
+				}
+			);
+			annotations = (
+				{
+					name = etags;
+					config = { config = standard; };
+				}
+			);
+
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1, 2, 3), (4, 5) ),
+				( (6, 7, 8, 9, 10, 11, 12) ),
+				( (13, 14, 15), (16, 17, 18)),
+				( (19, 20), (X), (Y) )
+			);
+			colors = (
+				{ r = 0.0; g = 0.0; b = 1.0; },
+				{ r = 1.0; g = 0.0; b = 0.0; }
+			);
+			defaultColorHeight = 0.0005;	/* height in percent of maximal chromosome length */
+			labels = standard;
+		};
+		standardChrome = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+			drawBanding = YES;
+			drawBandNames = standard;
+			intergroupSpacing = 40;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1, 2, 3), (4, 5) ),
+				( (6, 7, 8, 9, 10, 11, 12) ),
+				( (13, 14, 15), (16, 17, 18)),
+				( (19, 20), (X), (Y) )
+			);
+			colors = (
+				{ r = 0.0; g = 0.0; b = 1.0; },
+				{ r = 1.0; g = 0.0; b = 0.0; }
+			);
+			defaultColorHeight = 0.0005;	/* height in percent of maximal chromosome length */
+			/* banding */
+			drawBanding = ( "" );	/* name the tags which are to be drawn */
+			drawBandingWithVisualEffect = chrome;
+			drawBandNames = standard;
+
+			labels = standard;
+		};
+		double = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 63;
+			subgroupSpacing = 15;
+			intergroupSpacing = 30;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			lanes = (
+				( ((1, 1_A), (2, 2_A), (3, 3_A) ), ( (4, 4_A), (5, 5_A)) ),
+				( ((6, 6_A), (7, 7_A), (8, 8_A), (9, 9_A), (10, 10_A), (11, 11_A), (12, 12_A)) ),
+				( ((13, 13_A), (14, 14_A), (15, 15_A)), ((16, 16_A), (17, 17_A), (18, 18_A))),
+				( ((19, 19_A), (20, 20_A)), ((X, X_A)), ((Y, Y_A)) )
+			);
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+ 				},
+				{
+					name = plain;
+					config = { color = grey; };
+					tags = ( "A" );
+				},
+				{	name = itags;
+					config = {
+						/* height in percent of maximal chromosome length */
+						defaultColorHeight = 0.0005;
+						colors = {
+							interpolationList = (
+								{ value = "0"; color = { g = "1"; b = "0"; r = "1"; }; },
+								{ value = "0.05"; color = { g = "1"; b = "0"; r = "0"; }; },
+								{ value = "0.06"; color = { g = "0"; b = "0"; r = "1"; }; },
+								{ value = "1"; color = { g = "0"; b = "1"; r = "0"; }; }
+							);
+							defaultValue = "0";
+							specialColor = { g = "0"; b = "1"; r = "0"; };
+						};
+					};
+					tags = ( "A" );
+				}
+			);
+		};
+		maleCaryogram = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 63;
+			subgroupSpacing = 15;
+			intergroupSpacing = 30;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			lanes = (
+				( ((1, 1_A), (2, 2_A), (3, 3_A) ), ( (4, 4_A), (5, 5_A)), ((X)) ),
+				( ((6, 6_A), (7, 7_A), (8, 8_A), (9, 9_A), (10, 10_A), (11, 11_A), (12, 12_A)) ),
+				( ((13, 13_A), (14, 14_A), (15, 15_A)), ((16, 16_A), (17, 17_A), (18, 18_A))),
+				( ((19, 19_A), (20, 20_A)), ((Y)) )
+			);
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+					tags = ( "", "A" );
+ 				}
+			);
+			annotations = (
+/*				{
+					name = bandingNames;
+					config = { config = standard; };
+				}
+*/			);
+		};
+		femaleCaryogram = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 63;
+			subgroupSpacing = 15;
+			intergroupSpacing = 30;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			lanes = (
+				( ((1, 1_A), (2, 2_A), (3, 3_A) ), ( (4, 4_A), (5, 5_A)), ((X, X_A)) ),
+				( ((6, 6_A), (7, 7_A), (8, 8_A), (9, 9_A), (10, 10_A), (11, 11_A), (12, 12_A)) ),
+				( ((13, 13_A), (14, 14_A), (15, 15_A)), ((16, 16_A), (17, 17_A), (18, 18_A))),
+				( ((19, 19_A), (20, 20_A)) )
+			);
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+					tags = ( "", "A" );
+ 				}
+			);
+		};
+		tri21 = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 63;
+			subgroupSpacing = 15;
+			intergroupSpacing = 30;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			lanes = (
+				( ((1, 1_A), (2, 2_A), (3, 3_A) ), ( (4, 4_A), (5, 5_A)), ((X, X_A)) ),
+				( ((6, 6_A), (7, 7_A), (8, 8_A), (9, 9_A), (10, 10_A), (11, 11_A), (12, 12_A)) ),
+				( ((13, 13_A), (14, 14_A), (15, 15_A)), ((16, 16_A), (17, 17_A), (18, 18_A))),
+				( ((19, 19_A), (20, 20_A)) )
+			);
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+					tags = ( "", "A", "B" );
+ 				}
+			);
+			annotations = (
+/*				{
+					name = bandingNames;
+					config = { config = standard; };
+				}
+*/			);
+		};
+		GAMES = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 80;
+			subgroupSpacing = 15;
+			intergroupSpacing = 20;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( ((1, 1_A), (2, 2_A), (3, 3_A) ), ( (4, 4_A), (5, 5_A)) ),
+				( ((6, 6_A), (7, 7_A), (8, 8_A), (9, 9_A), (10, 10_A), (11, 11_A), (12, 12_A)) ),
+				( ((13, 13_A), (14, 14_A), (15, 15_A)), ((16, 16_A), (17, 17_A), (18, 18_A))),
+				( ((19, 19_A), (20, 20_A)), ((X, X_A)), ((Y, Y_A)) )
+			);
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				},
+				{
+					name = plain;
+					config = { color = { r = 0.95; g = 0.95; b = 0.95; }; };
+					tags = ( A );
+				},
+				{	name = itags;
+					config = {
+						/* height in percent of maximal chromosome length */
+						defaultColorHeight = 0.0005;
+						colors = {
+							interpolationList = (
+								{ value = "0"; color = { g = "1"; b = "0"; r = "1"; }; },
+								{ value = "0.05"; color = { g = "1"; b = "0"; r = "0"; }; },
+								{ value = "0.06"; color = { g = "0"; b = "0"; r = "1"; }; },
+								{ value = "1"; color = { g = "0"; b = "1"; r = "0"; }; }
+							);
+							defaultValue = "0";
+							specialColor = { g = "0"; b = "1"; r = "0"; };
+						};
+					};
+					tags = ( A );
+				}
+			);
+			annotations = (
+				{
+					name = sideline;
+					config = {
+						defaultValue = 1;
+						valueBin = 0.0018;
+						inset = 3;
+						width = 40;
+						color = black;
+						drawCutoffLineAt = ( 0.05, 0.01, 0.001 );
+						sidelineWidth = .6;
+						cutoffLineColor = grey;
+						/* we assume values to range from 0 to 1 */
+						transformation = logarithmic;
+						transformationHints = { min = 0; max = 3; };
+					};
+					tags = ( A );
+				}
+				{
+					name = etags;
+					config = {
+						/* labels */
+						height = 10;
+						drawTags = NO;
+						font = { name = Helvetica; size = 9; }
+						chromosomeDistance = 57;	/* distance from label to chromosome */
+						curveLeftInset = 45; /* how much space between curve&chrom */
+						curveRightInset = 3;
+
+						labelProperties = { selectSmallerEqual = ".05"; };
+					};
+					tags = ( A );
+				},
+				{
+					name = bandingNames;
+					config = {
+						font = { name = Helvetica; size = 5; }
+						distance = 6;
+						color = {r=0; g=0; b=0;}; /* black;*/
+					};
+				}
+			);
+		};
+		GAMES_Coverage = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 40;
+			subgroupSpacing = 10;
+			intergroupSpacing = 20;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1, 2, 3), (4, 5) ),
+				( (6, 7, 8, 9, 10, 11, 12) ),
+				( (13, 14, 15), (16, 17, 18)),
+				( (19, 20), (X), (Y) )
+			);
+			internalAnnotations = (
+				{
+					name = plain;
+					config = { color = { r = 0.9; g = 0.9; b = 0.9; }; };
+				},
+				{	name = itags;
+					config = {
+						/* height in percent of maximal chromosome length */
+						defaultColorHeight = 0.0005;
+						colors = {
+							interpolationList = (
+								{ value = 0; color = { g = 0.333; b = 0.333; r = 0.333; }; },
+								{ value = 1; color = { g = 0.333; b = 0.333; r = 0.333; }; }
+							);
+							defaultValue = "0";
+							specialColor = { g = "0"; b = "1"; r = "0"; };
+						};
+					};
+					tags = ( "" );
+				}
+			);
+			annotations = (
+			);
+		};
+		GAMES2 = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 170;
+			subgroupSpacing = 15;
+			intergroupSpacing = 20;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+			globalScalingFactor = YES;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = {
+				page1 = (
+					( (1, 2, 3) ),
+					( (4, 5, 6) ),
+					( (7, 8, 9) ),
+					( (10, 11, 12) )
+				);
+				page2 = (
+					( (13, 14, 15) ),
+					( (16, 17, 18) ),
+					( (19, 20) ),
+					( (X, Y) )
+				);
+			};
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				}
+			);
+			annotations = (
+				{
+					name = sideline;
+					config = {
+						defaultValue = 1;
+						valueBin = 0.002;
+						tags = ( "" );
+						inset = 3;
+						width = 40;
+						color = black;
+						drawCutoffLineAt = ( 0.05, 0.01, 0.001 );
+						cutoffLineColor = grey;
+						/* we assume values to range from 0 to 1 */
+						transformation = logarithmic;
+						transformationHints = { min = 0; max = 3; };
+					};
+				}
+				{
+					name = etags;
+					config = { config = withSidelineWide; };
+				},
+				{
+					name = bandingNames;
+					config = { config = standard; };
+				}
+			);
+		};
+		inverse = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+
+			/* banding */
+			drawBanding = YES;
+			drawBandNames = standard;
+
+			intergroupSpacing = 40;
+			paperSize = { width = 595; height = 842; };
+			backgroundColor = black;
+			outlineColor = white;
+			outlineWidth = "0.25";
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1, 2, 3), (4, 5) ),
+				( (6, 7, 8, 9, 10, 11, 12) ),
+				( (13, 14, 15), (16, 17, 18)),
+				( (19, 20), (X), (Y) )
+			);
+
+			defaultColorHeight = 0.001;	/* height in fraction of maximal chromosome length */
+
+			labels = standard;
+		};
+		GAMES3 = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 70;
+			borderButtom = 40;
+			chromosomeWidth = 10;
+			spacing = 170;
+			subgroupSpacing = 15;
+			intergroupSpacing = 20;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = {
+				page1 = (
+					( ((1, 1_A), (2, 2_A), (3, 3_A)) ),
+					( ((4, 4_A), (5, 5_A), (6, 6_A)) ),
+					( ((7, 7_A), (8, 8_A), (9, 9_A)) ),
+					( ((10, 10_A), (11, 11_A), (12, 12_A)) )
+				);
+				page2 = (
+					( ((13, 13_A), (14, 14_A), (15, 15_A)) ),
+					( ((16, 16_A), (17, 17_A), (18, 18_A)) ),
+					( ((19, 19_A), (20, 20_A)) ),
+					( ((X, X_A), (Y, Y_A)) )
+				);
+			};
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				},
+				{
+					name = plain;
+					config = { color = { r = 0.95; g = 0.95; b = 0.95; }; };
+					tags = ( A );
+				},
+				{	name = itags;
+					config = {
+						/* height in percent of maximal chromosome length */
+						defaultColorHeight = 0.002;
+						colors = {
+							interpolationList = (
+								{ value = 0; color = { g = 0.333; b = 0.333; r = 0.333; }; },
+								{ value = 1; color = { g = 0.333; b = 0.333; r = 0.333; }; }
+							);
+							defaultValue = "0";
+							specialColor = { g = "0"; b = "1"; r = "0"; };
+						};
+					};
+					tags = ( A );
+				}
+			);
+			annotations = (
+				{
+					name = sideline;
+					config = {
+						defaultValue = 1;
+						valueBin = 0.0018;
+						inset = 3;
+						width = 40;
+						color = black;
+						drawCutoffLineAt = ( 0.05, 0.01, 0.001 );
+						sidelineWidth = .6;
+						cutoffLineColor = grey;
+						/* we assume values to range from 0 to 1 */
+						transformation = logarithmic;
+						transformationHints = { min = 0; max = 3; };
+					};
+					tags = ( A );
+				}
+				{
+					name = etags;
+					config = {
+						/* labels */
+						height = 10;
+						drawTags = NO;
+						font = { name = Helvetica; size = 9; }
+						chromosomeDistance = 57;	/* distance from label to chromosome */
+						curveLeftInset = 45; /* how much space between curve&chrom */
+						curveRightInset = 3;
+
+					};
+					tags = ( A );
+				},
+				{
+					name = bandingNames;
+					config = {
+						font = { name = Helvetica; size = 5; }
+						distance = 6;
+						color = {r=0; g=0; b=0;}; /* black;*/
+					};
+				}
+			);
+		};
+		GAMES_Color = {
+			/* chromosome placement */
+			borderLeft = 60;
+			borderTop = 80;
+			borderButtom = 30;
+			chromosomeWidth = 10;
+			spacing = 170;
+			subgroupSpacing = 15;
+			intergroupSpacing = 20;
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+
+			/* now the lanes are filled with chromosome names, which are grouped */
+			/* a final inner grouping is possible, a tag can be assigned to the chromosomes
+				to identify them later CHR_Tag (e.g. 1_A) */
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = {
+				page1 = (
+					( ((1, 1_A), (2, 2_A), (3, 3_A)) ),
+					( ((4, 4_A), (5, 5_A), (6, 6_A)) ),
+					( ((7, 7_A), (8, 8_A), (9, 9_A)) ),
+					( ((10, 10_A), (11, 11_A), (12, 12_A)) )
+				);
+				page2 = (
+					( ((13, 13_A), (14, 14_A), (15, 15_A)) ),
+					( ((16, 16_A), (17, 17_A), (18, 18_A)) ),
+					( ((19, 19_A), (20, 20_A)) ),
+					( ((X, X_A),   (Y, Y_A)) )
+				);
+			};
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				},
+				{
+					name = plain;
+					config = { color = { r = 0.95; g = 0.95; b = 0.95; }; };
+					tags = ( A );
+				},
+				{	name = itags;
+					config = {
+						/* height in percent of maximal chromosome length */
+						defaultColorHeight = 0.002;
+						colors = {
+							interpolationList = (
+								{ value = "0"; color = { g = "1"; b = "0"; r = "1"; }; },
+								{ value = "0.05"; color = { g = "1"; b = "0"; r = "0"; }; },
+								{ value = "0.06"; color = { g = "0"; b = "0"; r = "1"; }; },
+								{ value = "1"; color = { g = "0"; b = "1"; r = "0"; }; }
+							);
+							defaultValue = "0";
+							specialColor = { g = "0"; b = "1"; r = "0"; };
+						};
+					};
+					tags = ( A );
+				}
+			);
+			annotations = (
+				{
+					name = sideline;
+					config = {
+						defaultValue = 1;
+						valueBin = 0.0018;
+						inset = 3;
+						width = 40;
+						color = black;
+						drawCutoffLineAt = ( 0.05, 0.01, 0.001 );
+						sidelineWidth = .6;
+						cutoffLineColor = grey;
+						/* we assume values to range from 0 to 1 */
+						transformation = logarithmic;
+						transformationHints = { min = 0; max = 3; };
+					};
+					tags = ( A );
+				}
+				{
+					name = etags;
+					config = {
+						/* labels */
+						height = 7;
+						drawTags = NO;
+						font = { name = Helvetica; size = 6; }
+						chromosomeDistance = 62;	/* distance from label to chromosome */
+						curveLeftInset = 45; /* how much space between curve&chrom */
+						curveRightInset = 3;
+						curveWidth = .8;
+
+						labelProperties = { selectSmallerEqual = ".05"; };
+					};
+					tags = ( A );
+				},
+				{
+					name = bandingNames;
+					config = {
+						font = { name = Helvetica; size = 5; }
+						distance = 6;
+						color = {r=0; g=0; b=0;}; /* black;*/
+					};
+				}
+			);
+		};
+		inverse = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+
+			/* banding */
+			drawBanding = YES;
+			drawBandNames = standard;
+
+			intergroupSpacing = 40;
+			paperSize = { width = 595; height = 842; };
+			backgroundColor = black;
+			outlineColor = white;
+			outlineWidth = "0.25";
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (1, 2, 3), (4, 5) ),
+				( (6, 7, 8, 9, 10, 11, 12) ),
+				( (13, 14, 15), (16, 17, 18)),
+				( (19, 20), (X), (Y) )
+			);
+
+			defaultColorHeight = 0.001;	/* height in fraction of maximal chromosome length */
+
+			labels = standard;
+		};
+		chromY = {
+			borderLeft = 70;
+			borderTop = 70;
+			borderButtom = 70;
+			chromosomeWidth = 10;
+			spacing = 70;
+			drawBanding = YES;
+			drawBandNames = standard;
+			intergroupSpacing = 40;
+
+			internalAnnotations = (
+				{
+					name = banding;
+					config = { drawBandingWithVisualEffect = chrome; };
+				}
+			);
+			annotations = (
+				{
+					name = bandingNames;
+					config = { config = standard; };
+				},
+				{
+					name = sideline;
+					config = {
+						defaultValue = 1;
+						valueBin = 0.005;
+						tags = ( "" );
+						inset = 5;
+						width = 15;
+						color = black;
+						drawCutoffLineAt = 0.05;
+						cutoffLineColor = grey;
+					};
+				}
+				{
+					name = etags;
+					config = { config = withSideline; };
+				}
+			);
+
+			paperSize = { width = 595; height = 842; };
+			namesize = 14;
+			/* now the lanes are filled with chromosome names, which are grouped */
+			lanes = (
+				( (Y) )
+			);
+			colors = (
+				{ r = 0.0; g = 0.0; b = 1.0; },
+				{ r = 1.0; g = 0.0; b = 0.0; }
+			);
+		};
+
+
+	};
+	labelPlacements = {
+		standard = {
+			/* labels */
+			height = 6;
+			font = { name = Helvetica; size = 4; }
+			chromosomeDistance = 15;	/* distance from label to chromosome */
+			curveInset = 3;	/* how much space between curve&chrom, curve&label */
+
+		};
+		withSideline = {
+			/* labels */
+			height = 6;
+			font = { name = Helvetica; size = 4; }
+			chromosomeDistance = 27;	/* distance from label to chromosome */
+			curveLeftInset = 15; /* how much space between curve&chrom */
+			curveRightInset = 3;
+
+		};
+		withSidelineWide = {
+			/* labels */
+			height = 12;
+			font = { name = Helvetica; size = 10; }
+			chromosomeDistance = 57;	/* distance from label to chromosome */
+			curveLeftInset = 45; /* how much space between curve&chrom */
+			curveRightInset = 3;
+
+			labelProperties = { selectSmallerEqual = ".05"; };
+		};
+		labelTag = {
+			/* labels */
+			height = 5;
+			font = { name = Helvetica; size = 4; }
+			/* print value of the labels */
+			valueFont = { name = Helvetica; size = 3; }
+			valueHeight = 3;
+			chromosomeDistance = 10;	/* distance from label to chromosome */
+			curveInset = 2;	/* how much space between curve&chrom, curve&label */
+			tag = A;
+		};
+		curvesOnly = {
+			/* labels */
+			height = 5;
+			font = { name = Helvetica; size = 4; }
+			/* print value of the labels */
+			valueFont = { name = Helvetica; size = 3; }
+			chromosomeDistance = 10;	/* distance from label to chromosome */
+			curveInset = 2;	/* how much space between curve&chrom, curve&label */
+			tag = A;
+			doPrintLabelText = NO;
+		};
+	};
+	bandNamePlacements = {
+		standard = {
+			font = { name = Helvetica; size = 3; }
+			distance = 6;
+			/* color = { r = 0.071; g = 0.129; b = 1.0; }; */
+			color = {r=0;g=0;b=1;}; /* black;*/
+			tags = ("");
+		};
+	};
+}

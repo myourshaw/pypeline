@@ -1,0 +1,38 @@
+HOWTO for coloredChromosomes.pl
+
+If you follow these steps carefully you should succeed in producing your ideogram. If anything is unclear, please let me know (stefan.boehringer@uni-bochum.de).
+
+1.	You should extract to a directory (which you already have done).
+
+2.	cd to that directory. Otherwise you have to place the perl modules in the PERLLIB path (or extend that).
+
+3.	Now you can issue either 'perl coloredChromosomes.pl' or 'perl lociLocations.pl' (documentation is in the docu dir)
+4a. modify the humanChromosomes.cfg to fit your needs.
+
+4b. Assuming you want to see results with a standard configuration, proceed as follows.
+	Please make sure you have installed Ghostscript, Ghostview and Perl5 on your machine.
+	Issue the following command:
+	'perl coloredChromosomes.pl --o myIdeogram.ps'
+	Open myIdeogram.ps with Ghostview. It should show a plain ideogram only showing a haploid set of chromosomes.
+
+5.	Prepare an excel table with two columns reading l and v. Put names of loci into column l and put a value between 0 and 1 into column v (say a p-value). Save this file as a tab-separated text. You may use other programs (such as gnumeric on Linux) to produce such a tab-separated file. One very short example reads as follows (dash lines not included in the file):
+--------------
+l       v
+D1S1234 0.0003
+--------------
+
+6.	Use tableTools to produce a PropertyList file. Issue "perl tableTools.pl --postprocess '{ labels => PLIST }' --plist TabSeparatedTextAsFromPointSix.txt > MyLabelFile.plist".
+
+Just to give you some feeling of what propertyList files look like, here
+you can see the conversion output of the above file:
+--------------
+{ labels = ( { v = "0.0003"; l = "D1S1234"; } ); }
+--------------
+
+
+
+7.	Download the gamesLoci.plist from where you got this package from (this is a default location file mapping many microsatellite loci to their physical position).
+
+8.	Next you might issue:
+	'perl coloredChromosomes.pl --o myIdeogram.ps --labelFile MyLabelFile.plist --labelMap gamesLoci.plist --placement double'
+	Again myIdeogram.ps shows your ideogram. This produces a default annotation which should be fine in most cases. Note, however, that gamesLoci.plist may not contain the loci you are looking for. If you need different loci to be annotated produce your own location file using 'lociLocations.pl'.

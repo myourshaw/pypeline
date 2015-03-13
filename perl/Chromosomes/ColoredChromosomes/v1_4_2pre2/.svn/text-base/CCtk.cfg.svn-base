@@ -1,0 +1,94 @@
+{
+	global = {
+		windowSize = { w = 400; };
+	};
+	fields = (
+		{
+			type = FileSelect;
+			name = config;
+			label = "Config File ";
+			default = "humanChromosomes.cfg";
+			help = "This path specifies the main configuration file holding the chromosome structure and the layout on page";
+			fieldAction = YES;	/* trigger other fields to be reloaded from the new config file */
+		},
+		{
+			type = FileSelect;
+			name = mapfile;
+			label = "Map File ";
+			default = "labelMap.cfg";
+			help = "The map file specifies names for chromosomal locations. E.g. you could use gene names and specify their locations in this file. These names can then be referred to in the label file. The purpose of this file is to separate the process of giving phyisical locations and to specify results of some experiments at this locations which can then be given in the label file. You free, however, to only use a label file and summarize all information there.
+
+Here is an example of a label file...
+------ start of example file ------
+{
+	GENE1 = \"1p2.3:0.3\";
+	GENE2 = \"1p2.3:0.3\";
+	GENE3 = \"1p2.3:0.3\";
+}
+------ end of example file ------
+";
+		},
+		{
+			type = FileSelect;
+			name = labelfile;
+			label = "Label File ";
+			help = "This file holds values for chromosomal locations which are used to annotate the ideogram.";
+		},
+		{
+			type = Popup;
+			name = placement;
+			label = "Placement: ";
+			options = ();
+			help = "Within the configuration file many ways to place the chromosomes on page can be specified. All these placement specifications are listed here by name. If you want to do your own layout you have to modify the configuration file. Read the documentation within the package [online documentation is at http://www.s-boehringer.de/cc].";
+		},
+		{
+			type = FileSelect;
+			name = output;
+			label = "Output File ";
+			default = "/tmp/chromosomes.ps";
+			help = "Specify the path for the output file. Additional files with different extensions may be created [see: Generate Pdf-file option].";
+		},
+		{
+			type = Checkbox;
+			name = pdf;
+			label = "Generate Pdf-file ";
+			default = "1";
+			help = "If this option is checked a .pdf file is created alongside with the .ps file by replacing the file extension. The conversion is done by using the ps2pdf utility from ghostscript. This works only under UNIX. Please use the Convert option of Ghostview under Windows to produce pdf files..";
+		},
+		{
+			type = Checkbox;
+			name = show;
+			label = "Open output file ";
+			default = "1";
+			help = "Select this option if a viewer application is to be launched to show the result. E.g. Ghostview under Windows should be typically located at 'C:/Program Files/Ghostgum/gsview/gsview32.exe'. Under Unix this line can be empty when 'gv' is used.";
+		},
+		{
+			type = FileSelect;
+			name = viewer;
+			label = "PS viewer application";
+			default = "1";
+			help = "Select the application which is to be used to open the Postscript file (required only under Windows).";
+		}
+
+
+
+	);
+	actions = (
+		{
+			name = cancel;
+			alignment = left;
+			label = Cancel;
+		},
+		{
+			name = save;
+			alignment = left;
+			label = "Save values";
+		},
+		{
+			name = run;
+			alignment = right;
+			label = Run;
+		}
+
+	);
+}

@@ -1,0 +1,106 @@
+#
+#	LLensembl.pm
+#Fri 03 Dec 2004 11:56:00 AM CET 
+#
+
+package LLensembl;
+require 5.000;
+@ISA = qw(LLocator);
+
+$dbLocation = 'ensembldb.ensembl.org:anonymous:homo_sapiens_core_26_35';
+
+#
+#	<§> dependencies
+#
+
+use TempFileNames;
+use LLocator;
+use Set;
+
+#
+#	<§> data structures
+#
+
+#
+#	<§> standard implementation
+#
+
+sub new { my ($class, $dbLocation) = @_;
+	my $self = bless($class->SUPER::new(), $class);
+	# if no superclass is in place use the following instead
+	my $self = bless({}, $class);
+	# own initialization follows
+
+	($self->{host}, $self->{user}, $self->{dbname}) = split(/:/, $dbLocation);
+	return $self;
+}
+
+#
+#	<§> method implementation
+#
+
+sub host { my ($self) = @_; return $self->{host}; }
+sub user { my ($self) = @_; return $self->{user}; }
+sub dbname { my ($self) = @_; return $self->{dbname}; }
+
+sub searchLoci { my ($self, $loci) = @_;
+	Log(join(':', @{$loci}), 5);
+	use Bio::EnsEMBL::DBSQL::DBAdaptor;
+	my ($host, $user, $dbname) = ($self->host(), $self->user(), $self->dbname());
+	$host = 'ensembldb.ensembl.org' if (!defined($host));
+	$user = 'anonymous' if (!defined($user));
+	$dbname = 'homo_sapiens_core_29_35b' if (!defined($dbname));
+
+	my $db = Bio::EnsEMBL::DBSQL::DBAdaptor->new(
+		-host => $host, -user => $user, -dbname => $dbname # -driver => 'mysql'
+	);
+
+	my $sliceDb = $db->get_SliceAdaptor();
+	my $slices = $sliceDb->fetch_all('chromosome');
+
+	Log("Count of chromosomes fetched: ". int(@{$slices}), 4);
+	my $chromDict = {};
+	foreach $chrom (@{$slices}) {
+		my $name = $chrom->seq_region_name();
+		next if ($name =~ /N/o);
+		$chromDict->{$name} = { start => $chrom->start(), end => $chrom->end() };
+	}
+
+	sub relPos { my ($cd, $c, $p) = @_;
+		return ($p - $cd->{$c}{start}) / ($cd->{$c}{end} - $cd->{$c}{start});
+	}
+
+	my $geneDb = $db->get_GeneAdaptor();
+	my (@ambiguous, @notFound, @positionList);
+	foreach $name (@{$loci}) {
+		my $genes = $geneDb->fetch_all_by_external_name($name);
+		Log("Grepping for $name", 4);
+		#print "Count of genes fetched: ", int(@{$genes}), "\n";
+		if (int(@{$genes}) > 1) {
+			push(@ambiguous, $name);
+			next;
+		}
+		if (int(@{$genes}) == 0) {
+			push(@notFound, $name);
+			next;
+			#$genes = $sliceDb->fetch_by_name($name);
+		}
+		foreach $gene (@{$genes}) {
+#			print Dumper($gene);
+			my $c = $gene->seq_region_name();
+			my $pos = relPos($chromDict, $c, $gene->start());
+			Log(sprintf("Base: %d, chrom: %s, rel pos.%.5f\n", $gene->start(), $c, $pos), 4);
+			push(@positionList,
+				{ name => $name,
+				  p => sprintf("%.6f", $pos). 'c'. $gene->seq_region_name()
+				}
+			);
+#			print join(':', @{$gene->project('chromosome')}), "\n";
+		}
+	}
+	Log("List of ambiguous genes (please disambiguate):\n".join("\n", @ambiguous), 2);
+	Log("List of unknown genes:\n".join("\n", @notFound), 2);
+	return [@positionList];
+}
+
+1;

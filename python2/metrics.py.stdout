@@ -1,0 +1,33 @@
+			#d = dir(jt)
+			#for p in d:
+			#	if not p.startswith('_'):
+			#		try:
+			#			print '%s: %s' % (p, getattr(jt, p))
+			#		except AttributeError:
+			#			print p
+
+HOME_DIRECTORY: $drmaa_hd_ph$
+PARAMETRIC_INDEX: $drmaa_incr_ph$
+WORKING_DIRECTORY: $drmaa_wd_ph$
+args: ['/share/apps/myourshaw/samtools-current/samtools idxstats /scratch1/tmp/myourshaw/gmd/new/qseq/rg/GMD82_XT_Illumina.2011-05-11.HWI-ST430.243.6.CAGATCA/GMD82_XT_Illumina.2011-05-11.HWI-ST430.243.6.CAGATCA.novoalign.bam > /home/myourshaw/lab/git-myourshaw/python/metrics/GMD82_XT_Illumina.2011-05-11.HWI-ST430.243.6.CAGATCA.novoalign.bam.metrics.idxstats;']
+attributeNames: ['drmaa_remote_command', 'drmaa_js_state', 'drmaa_wd', 'drmaa_job_name', 'drmaa_input_path', 'drmaa_output_path', 'drmaa_error_path', 'drmaa_join_files', 'drmaa_job_category', 'drmaa_native_specification', 'drmaa_block_email', 'drmaa_start_time']
+blockEmail
+deadlineTime
+delete: <bound method JobTemplate.delete of <drmaa.JobTemplate object at 0x118892d0>>
+email
+errorPath
+hardRunDurationLimit
+hardWallclockTimeLimit
+inputPath
+jobCategory
+jobEnvironment
+jobName
+jobSubmissionState
+joinFiles: True
+nativeSpecification
+outputPath
+remoteCommand: /home/myourshaw/lab/git-myourshaw/python/runner.sh
+softRunDurationLimit
+softWallclockTimeLimit
+startTime
+transferFiles

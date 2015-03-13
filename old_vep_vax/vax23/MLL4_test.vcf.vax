@@ -1,0 +1,70 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v2.3
+## Output produced at 2012-01-10 15:01:31
+## Connected to homo_sapiens_core_65_37 on cortex.local
+## Using API version 65, DB version 65
+## Extra column keys:
+## CANONICAL    : Indicates if transcript is canonical for this gene
+## CCDS         : Indicates if transcript is a CCDS transcript
+## HGNC         : HGNC gene identifier
+## ENSP         : Ensembl protein identifer
+## HGVSc        : HGVS coding sequence name
+## HGVSp        : HGVS protein sequence name
+## SIFT         : SIFT prediction
+## PolyPhen     : PolyPhen prediction
+## Condel       : Condel SIFT/PolyPhen consensus prediction
+## MATRIX       : The source and identifier of a transcription factor binding profile (TFBP) aligned at this position
+## MATRIX_POS   : The relative position of the variation in the aligned TFBP
+## HIGH_INF_POS : A flag indicating if the variant falls in a high information position of the TFBP
+## MOTIF_SCORE_DELTA : The difference in motif score of the reference and variant sequences for the TFBP
+## GeneNames	:  (UniProt)
+## PTM	:  (UniProt)
+## RefSeq_NM	:  (UniProt)
+## ALLERGEN	:  (UniProt)
+## SUBUNIT	:  (UniProt)
+## SUBCELLULAR_LOCATION	:  (UniProt)
+## MUTAGEN	:  (UniProt)
+## MIM_phenotype	:  (UniProt)
+## Reactome	:  (UniProt)
+## RecName	:  (UniProt)
+## KW	:  (UniProt)
+## ENZYME_REGULATION	:  (UniProt)
+## PATHWAY	:  (UniProt)
+## ALTERNATIVE_PRODUCTS	:  (UniProt)
+## Phenotypes_Position	:  (UniProt)
+## SEQUENCE_CAUTION	:  (UniProt)
+## GO	:  (UniProt)
+## RefSeq_NP	:  (UniProt)
+## PE	:  (UniProt)
+## RNA_EDITING	:  (UniProt)
+## CAUTION	:  (UniProt)
+## DEVELOPMENTAL_STAGE	:  (UniProt)
+## Phenotypes_Gene	:  (UniProt)
+## DISEASE	:  (UniProt)
+## VARIANT	:  (UniProt)
+## SITES	:  (UniProt)
+## INDUCTION	:  (UniProt)
+## OTHER_OVERLAPPING_FEATURES	:  (UniProt)
+## GO_term	:  (UniProt)
+## CATALYTIC_ACTIVITY	:  (UniProt)
+## FUNCTION	:  (UniProt)
+## INTERACTION	:  (UniProt)
+## COFACTOR	:  (UniProt)
+## Pathway_Interaction	:  (UniProt)
+## WEB_RESOURCE	:  (UniProt)
+## DE	:  (UniProt)
+## POLYMORPHISM	:  (UniProt)
+## SIMILARITY	:  (UniProt)
+## MIM_gene	:  (UniProt)
+## UCSC	:  (UniProt)
+## KEGG	:  (UniProt)
+## TISSUE_SPECIFICITY	:  (UniProt)
+## DOMAIN	:  (UniProt)
+## MISCELLANEOUS	:  (UniProt)
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	Extra	OMIM_Disorder
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000011590	ENST00000392197	Transcript	5KB_downstream_variant	-	-	-	-	-	-	ENSP=ENSP00000376035;HGNC=ZBTB32;CCDS=CCDS12471.1	-
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000011590	ENST00000481182	Transcript	5KB_downstream_variant	-	-	-	-	-	-	ENSP=ENSP00000433657;HGNC=ZBTB32	-
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000105663	ENST00000341701	Transcript	inframe_codon_loss	1126-1128	1126-1128	376	K/-	AAG/-	-	ENSP=ENSP00000345761;HGVSc=ENST00000341701.1:c.1126_1128delAAG;HGVSp=ENSP00000345761.1:p.Lys376del	-
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000105663	ENST00000420124	Transcript	inframe_codon_loss	1126-1128	1126-1128	376	K/-	AAG/-	-	ENSP=ENSP00000398837;HGVSc=ENST00000420124.1:c.1126_1128delAAG;HGVSp=ENSP00000398837.1:p.Lys376del	-
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000105663	ENST00000222270	Transcript	inframe_codon_loss	1126-1128	1126-1128	376	K/-	AAG/-	-	ENSP=ENSP00000222270;HGVSc=ENST00000222270.6:c.1126_1128delAAG;HGVSp=ENSP00000222270.6:p.Lys376del;CANONICAL=YES;CCDS=CCDS46055.1	-
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000105663	ENST00000545461	Transcript	2KB_upstream_variant	-	-	-	-	-	-	-	-
+19_36211375_AAG/-	19:36211375-36211377	-	ENSG00000011590	ENST00000262630	Transcript	5KB_downstream_variant	-	-	-	-	-	-	ENSP=ENSP00000262630;CANONICAL=YES;HGNC=ZBTB32;CCDS=CCDS12471.1	-

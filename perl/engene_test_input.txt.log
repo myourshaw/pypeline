@@ -1,0 +1,97 @@
+START: 2011-05-01 10:41:04
+Default settings:
+	$add_bases_downstream_to_region_of_interest_to_get_minimum_length = 0
+	$add_bases_upstream_to_region_of_interest_to_get_minimum_length = 0
+	$bases_region_of_interest_3_prime_downstream_of_exons = 0
+	$bases_region_of_interest_3_prime_downstream_of_introns = 0
+	$bases_region_of_interest_5_prime_upstream_of_exons = 0
+	$bases_region_of_interest_5_prime_upstream_of_introns = 0
+	$bases_region_of_interest_gene_downstream_region = 0
+	$bases_region_of_interest_gene_upstream_promoter_region = 0
+	$create_genomic_intervals_file = 1
+	$create_log_file = 1
+	$create_sequence_file = 1
+	$create_summary_file = 1
+	$debug = 0
+	$exclude_region_of_interest_less_than_bases = 0
+	$filespec_genomic_intervals_file = 
+	$filespec_log_file = 
+	$filespec_sequence_file = 
+	$filespec_summary_file = 
+	$hard_mask_repeats = 0
+	$include_3_prime_utr_exons = 1
+	$include_5_prime_utr_exons = 1
+	$include_all_elements_one_record_per_gene = 0
+	$include_cds_exons = 1
+	$include_gene_downstream_region = 0
+	$include_gene_upstream_promoter_region = 0
+	$include_intergenetic_sequence_in_genomic_regions = 0
+	$include_introns = 0
+	$include_only_these_biotypes = 
+	$include_rna_like_strand = 0
+	$include_template_strand = 1
+	$input_format = 
+	$mask_repeats = 0
+	$maximum_record_length = 1000000000000000
+	$maximum_region_of_interest_per_record = 1000000000000000
+	$merge_transcripts = 1
+	$minimum_record_length = 0
+	$minimum_region_of_interest_per_record = 0
+	$padding_bases_3_prime_downstream_of_each_record = 0
+	$padding_bases_3_prime_downstream_of_each_region_of_interest = 0
+	$padding_bases_5_prime_upstream_of_each_record = 0
+	$padding_bases_5_prime_upstream_of_each_region_of_interest = 0
+	$separate_records_for_exons_introns = 1
+	$separate_records_for_promoter_upstream_downstream_regions = 1
+	$separate_records_for_utr_cds = 0
+	$sequence_file_format = fasta
+	$show_variations = 0
+	$single_fasta_identifier = 0
+	$slice_format = chr%s:%u-%u[%s]
+	$stop = 0
+	$use_ensembl_human = 1
+	$use_ensembl_vega = 1
+sequence file: /Users/myourshaw/lab/dev-myourshaw/trunk/perl/engene_test_input.txt.seq
+genomic intervals file: /Users/myourshaw/lab/dev-myourshaw/trunk/perl/engene_test_input_txt_intervals.txt
+detailed log file: /Users/myourshaw/lab/dev-myourshaw/trunk/perl/engene_test_input.txt.log
+summary log file: /Users/myourshaw/lab/dev-myourshaw/trunk/perl/engene_test_input.txt.summary
+input file: /Users/myourshaw/lab/dev-myourshaw/trunk/perl/engene_test_input.txt
+EXOSC3
+EXOSC3e1 |chr9:37801350-37801434[-]|85b|EXOSC3|ENSG00000107371|roi:37801350-37801434|85b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+CGGGCGCCCGCCCTCCGAGGGGCCGCGCTT...GAAGACGGCGCCGTGGGTGCGGGTGCTGAG
+EXOSC3e2 |chr9:37800664-37800706[-]|43b|EXOSC3|ENSG00000107371|roi:37800664-37800706|43b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+GAGACACCGCCGGGTTTGGGGCGCCGCAGT...GTTTGGGGCGCCGCAGTCCCGGGAACGGAG
+EXOSC3e3 |chr9:37784718-37785061[-]|344b|EXOSC3|ENSG00000107371|roi:37784718-37785061|344b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+GGTGTTTGGTGGAGCCCGCGATGGCCGAAC...GTTTACTGGGTGGACTCTCAGCAGAAGCGG
+EXOSC3e4 |chr9:37784381-37784710[-]|330b|EXOSC3|ENSG00000107371|roi:37784381-37784710|330b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+GGGACTCCGGAGGGGTGGTGCGGCAGTGAG...GTCATAGGGAGTTAATTTCTCCTAGAACAG
+EXOSC3e5 |chr9:37783869-37784060[-]|192b|EXOSC3|ENSG00000107371|roi:37783869-37784060|192b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+TATGTTCCAGTAAAAGGAGACCATGTGATT...GCCTTTGGTTTCAAAGAAACAAACATCCAT
+EXOSC3e6 |chr9:37781801-37782134[-]|334b|EXOSC3|ENSG00000107371|roi:37781801-37782134|334b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+GTTGGAGATCTCATCTATGGCCAGTTTGTG...AATTTAATCCTATCTTCTTGGAAACATATC
+EXOSC3e7 |chr9:37779949-37780877[-]|929b|EXOSC3|ENSG00000107371|roi:37779949-37780877|929b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+GCTATTAGCTCCAGATTGTGAAATCATACA...ACTATGAGGATTTCTGAATCCAAATCTGGC
+EXOSC3e8 |chr9:37766975-37767502[-]|528b|EXOSC3|ENSG00000107371|roi:37766975-37767502|528b|pad-0+0|e|protein_coding|exosome component 3 [Source:HGNC Symbol;Acc:17944]
+GGTCTGGCTGTGTTACCCAGGCTGGAGTGC...CTTCAAATAGCCTAATAGTAAGCTCCCCTC
+lengths of regions of interest (count):
+43 (1),85 (1),192 (1),330 (1),334 (1),344 (1),528 (1),929 (1),
+gene	stableID	basesROI	basesROI+padded
+EXOSC3	ENSG00000107371	2785	2785
+gene biotypes:
+ 1 protein_coding
+statistics:
+      2785 ROI + padding bases
+      2785 ROI bases
+       929 ROI maximum bases
+        43 ROI minimum bases
+         8 analyzed transcripts
+         1 input file
+         1 input gene (name) record
+         1 input gene record
+         1 input line
+         1 input total record
+         1 output gene
+         8 output genomic region records
+         8 output sequence records
+job duration 00:11:05
+DONE: 2011-05-01 10:52:09

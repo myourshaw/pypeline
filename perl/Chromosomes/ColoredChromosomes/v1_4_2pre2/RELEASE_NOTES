@@ -1,0 +1,26 @@
+Version 1.1.1
+--------------
+Fixed bugs
+* Drawing of chromosome names on a single page layout
+
+New features
+* introduced flag (--boundingBox) to explicitly specify a bounding box
+
+Version 1.1
+------------
+I want to thank Stephen Sawcer and Neil Walker for their help by reporting bugs on Windows. The pitfalls are now mentioned in the HOWTO file.
+
+Fixed bugs
+* --o Option now works properly
+* call to an obsolete command removed, which used to issue an error message
+* improved the documentation in the HOWTO file
+
+New features
+* The new sidline module allows you to draw graphs alongside chromosomes
+* Multipage support added. The ideogram can now be split amongst several pages
+* Added tableTools.pl to allow for file conversion from excel files.
+
+
+Version 1.0
+------------
+This is the first release.

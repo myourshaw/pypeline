@@ -1,0 +1,31 @@
+#!wing
+#!version=5.0
+##################################################################
+# Wing IDE project file                                          #
+##################################################################
+[project attributes]
+proj.file-list = [loc('python2/convert_contigs_sort.py'),
+                  loc('python2/create_interval_list.py'),
+                  loc('python2/join_columns.py'),
+                  loc('python2/picard.py'),
+                  loc('python2/pypeline.cfg'),
+                  loc('python2/refgene2db.py'),
+                  loc('python2/vax.cfg'),
+                  loc('python2/vax_CADD_downloader.py'),
+                  loc('python2/vax_dbNSFP_downloader.py'),
+                  loc('python2/vax_dbsnp_installer.py'),
+                  loc('python2/vax_dbsnp_vcfs2db.py'),
+                  loc('python2/vax_download_kegg_data.pl'),
+                  loc('python2/vax_ensembl_database_installer.py'),
+                  loc('python2/vax_ensembl_genomic_regions.pl'),
+                  loc('python2/vax_ensembl_intervals_installer.py'),
+                  loc('python2/vax_ensembl_version.pl'),
+                  loc('python2/vax_ensembl_xref2db.pl'),
+                  loc('python2/vax_ensembl_xref_installer.py'),
+                  loc('python2/vax_gt_extract.py'),
+                  loc('python2/vax_installer.py'),
+                  loc('python2/vax_metabolome_xml2db.py'),
+                  loc('python2/vax_MGI_mouse_phenotype_files.py'),
+                  loc('python2/vax_nhlbi_vcfs2db.py'),
+                  loc('python2/vax_uniprot2db.pl')]
+proj.file-type = 'shared'

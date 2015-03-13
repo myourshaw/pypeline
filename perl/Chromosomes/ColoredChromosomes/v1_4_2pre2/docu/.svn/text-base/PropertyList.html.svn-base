@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PropertyList.pm - A module for processing PropertyList files and data types</title>
+<link rev="made" href="mailto:feedback@suse.de" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#definition_of_a_propertylist">Definition of a PropertyList</a></li>
+		<li><a href="#string_representations_of_propertylists">String representations of PropertyLists</a></li>
+		<li><a href="#use_of_the_functions">Use of the functions</a></li>
+	</ul>
+
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>PropertyList.pm - A module for processing PropertyList files and data types</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ $property = propertyFromString($string);
+ $string = stringFromProperty($property, $options);</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>
+</p>
+<h2><a name="definition_of_a_propertylist">Definition of a PropertyList</a></h2>
+<p>A PropertyList is a Perl object being either a dictionary (hash), array (list) or string. A dictionary or array may contain any of the other data types (where the keys for dictionaries are strings).</p>
+<p>
+</p>
+<h2><a name="string_representations_of_propertylists">String representations of PropertyLists</a></h2>
+<p>A string representation of a dictionary is enclosed in braces and represents entries of the dictionary as ``key = value;''. <em>key</em> is a string and <em>value</em> is the string representation of any of the allowed PropertyList data types.</p>
+<p>Example for a dictionary:</p>
+<pre>
+ {
+        key = value;
+        dictionary = { key2 = anotherDictionary; };
+ }</pre>
+<p>The string representations of arrays are enclosed in parantheses and seperated by commas.</p>
+<p>Example of an array:</p>
+<pre>
+ ( string1, { dict = first; }, ( list, in , list), end )</pre>
+<p>A string is represented as a literal if it only contains characters from the following character class [_\/\-a-zA-Z0-9.]. Otherwise a string is enclosed into inverted commas. Inverted commas inside a string are escaped by a backslash.</p>
+<p>Examples of strings:</p>
+<pre>
+ simpleString
+ /a/path/which/needs/no/quoting
+ &quot;a more complex O'string&quot;
+ &quot;\&quot;inverted commas\&quot; within a string&quot;</pre>
+<p>Example of a more complex PropertyList:</p>
+<pre>
+ {
+        aList = ( { flag = 1; }, { flag = 2; } );
+        programOption1 = &quot;do not print any insensible output&quot;;
+        &quot;a key can be complex&quot; = ( what, should, we, do,
+                ( and, a, list, again) );
+ }</pre>
+<p>Whitespace is used for option separation. C-comments starting in '/*' and ending in '*/' are permitted in positions where whitespace is allowed.</p>
+<p>
+</p>
+<h2><a name="use_of_the_functions">Use of the functions</a></h2>
+<p>The functions provided by this module are simply to switch between the two representations as either native Perl data types or strings. <em>propertyFromString</em> will emit a <em>die</em> when encountering a syntax error. <em>stringFromProperty</em> take a hash <em>options</em> which can be used to modify the formatting of the string representation. Without options any entry in either a dictionary or a list is placed on a separate line. You can set the value of <em>screenWidth</em> within the array. In this case all entries of a dictionary or array are accumulated until they exceed the specified width. Should this happen, all entries are again split to one line each. This options helps to produce a compact on screen display of PropertyLists since this option works recursively, producing a single line only if the whole dictionary fits within.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/charheight {
+  gsave
+    newpath 0 0 moveto
+    false charpath
+    flattenpath pathbbox
+    exch pop 3 -1 roll pop
+  grestore
+} def
+/stringheight {
+  /lly 0.0 def
+  /ury 0.0 def
+  {
+    ( ) dup 0 4 -1 roll put
+    charheight
+    dup ury gt {
+      /ury exch def
+    } {
+      pop
+    } ifelse
+    dup lly lt {
+      /lly exch def
+    } {
+      pop
+    } ifelse
+  } forall
+  ury lly sub
+} def
+
+/descender {
+  /lly 0.0 def
+  /ury 0.0 def
+  {
+    ( ) dup 0 4 -1 roll put
+    charheight pop
+    dup lly lt {
+      /lly exch def
+    } {
+      pop
+    } ifelse
+  } forall
+  lly
+} def
+
+/centeredshow {	% unfinished
+	dup stringwidth pop 2 div 4.25 inch exch sub
+	5.5 inch 2 index charheight exch pop 2 div sub moveto show
+} def

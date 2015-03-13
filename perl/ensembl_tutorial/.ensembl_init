@@ -1,0 +1,44 @@
+#!/usr/bin/perl -w
+use strict;
+
+#put this in ~/.ensembl_init
+#or name ensembl_registry.conf and export ENSEMBL_REGISTRY="/path/to/ensembl_registry.conf"
+
+#load at the beginning of the script using the command:
+#Bio::EnsEMBL::Registry->load_all();
+
+use Bio::EnsEMBL::Utils::ConfigRegistry;
+use Bio::EnsEMBL::DBSQL::DBAdaptor;
+use Bio::EnsEMBL::Compara::DBSQL::DBAdaptor;
+use Bio::EnsEMBL::Variation::DBSQL::VariationFeatureAdaptor;
+
+new Bio::EnsEMBL::DBSQL::DBAdaptor(
+  -host    => 'myourshaw-dev.genome.ucla.edu',
+  -user    => 'ensembl',
+	-pass    => 'ensembl',
+  -port    => '3306',
+);
+
+new Bio::EnsEMBL::Compara::DBSQL::DBAdaptor(
+  -host    => 'myourshaw-dev.genome.ucla.edu',
+  -user    => 'ensembl',
+	-pass    => 'ensembl',
+  -port    => '3306',
+);
+
+new Bio::EnsEMBL::Compara::DBSQL::DBAdaptor(
+  -host    => 'myourshaw-dev.genome.ucla.edu',
+  -user    => 'ensembl',
+	-pass    => 'ensembl',
+  -port    => '3306',
+);
+
+new Bio::EnsEMBL::Variation::DBSQL::VariationFeatureAdaptor(
+  -host    => 'myourshaw-dev.genome.ucla.edu',
+  -user    => 'ensembl',
+	-pass    => 'ensembl',
+  -port    => '3306',
+);
+
+#return value
+1;

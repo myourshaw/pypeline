@@ -1,0 +1,153 @@
+#!/usr/local/bin/perl
+
+use Getopt::Long;
+use PropertyList;
+use TempFileNames;
+use Set;
+
+#main $#ARGV @ARGV %ENV
+	$source = 'ensembl';# default source
+	initLog(5);		# set Log verbosity
+
+	$result = GetOptions('help' => \$help, 'h' => \$help, 'locusColumn=s' => \$locusColumn,
+		'path=s' => \$dbLocation, 'locilistPath=s' => \$listpath, 'anonymous' => \$anonymous,
+		'calculateGaps' => \$calculateGaps, 'aliases=s' => \$aliasPath,
+		'source=s' => \$source, 'retrieveLoci=s' => \$lociList
+	);
+
+	if ($help || !$result)
+	{
+		printf("USAGE: %s [--anonymous] [--locusColumn columnName] [--path databasePath] "
+			."[--locilistPath path] [--retrieveLoci loci list]\n",
+			($0 =~ m{/?([^/]*)$}o));
+		print(
+			"\t--locusColumn specifies the name of the locus column of the\n"
+			."\t  locilist argument\n".
+			"\t--retrieveLoci specifies loci to be retrieved on the command line\n"
+			."\t  Loci are whitespace seperated (e.g. 'HD HLA-DRB1')\n".
+			"\t--anonymous indicates whether the locilist arguments has column names\n".
+			"\t  in the first row\n".
+			"\t--calculateGaps calculate gap distribution from the given loci list\n".
+			"\t--source specify which database is to be used [now only ldb]\n".
+			"\t--aliases loci aliases\n"
+			."\n\t Defaults:\n"
+			."\t--source ensembl\n"
+			."\t--path ensembldb.ensembl.org:anonymous:homo_sapiens_core_29_35b\n"
+			."\n\t Example call:\n"
+			."\t./lociLocations.pl --retrieveLoci BRCA2 (retrieves from ENSEMBL)\n"
+			."\t READ THE NOTES ON ENSEMBL IN THE DOCUMENTATION\n"
+		);
+		exit(!$result);
+	}
+
+#	$config = propertyFromString(readFile("$configPath/template.cfg"));
+	my $factorlist = undef;
+	$factorlist = ['locus'] if ($anonymous);
+
+	if (defined($lociList)) {
+		$loci = [split(/\s/, $lociList)];
+	} else {
+		if (defined($listpath))
+		{
+			$table = readHeadedTable($listpath, undef, $factorlist);
+		} else {
+			$table = readHeadedTableHandle(\*STDIN, undef, $factorlist);
+		}
+		$locusColumn = $table->{factors}->[0] if (!defined($locusColumn));
+		$loci = [map { $_->{$locusColumn} } @{$table->{data}}];
+	}
+
+	$aliases = propertyFromString(readFile($aliasPath)) if (defined($aliasPath));
+
+	my $moduleName = "LL$source";
+	eval "use $moduleName";
+	$database = $moduleName->new($dbLocation, $aliases);
+	Log("Reading from $source.", 2);
+
+	if ($calculateGaps)
+	{
+		$allGaps = $database->calculateGaps($lociHash);
+		eval "use Statistics::Histogram";
+		$histogram = Statistics::Histogram->newWithData([map { $_->{gap} } @{$allGaps}]);
+		$histogram->histgromWithSlitLength(.3);
+		$histogram->printHistogram();
+	} else {
+		$positionList = $database->searchLoci($loci);
+		map { $positionHash->{$_->{name}} = $_,
+			$_->{name} = $_->{pos} = $_->{phyPos} = $_->{c} = undef; }
+			@{$positionList};
+		$orphans = [grep { $lociHash->{$_} == 0 } keys(%{$lociHash})];
+		print stringFromProperty($positionHash), "\n";
+		Log("Orphans:", 1);
+		Log(stringFromProperty($orphans), 1);
+	}
+exit(0);
+
+#  pod2man --center "Genetics Lib" lociLocations.pl > man1/lociLocations.pl.1 ; man -M . lociLocations.pl
+
+=head1 NAME
+
+lociLocations.pl - A program to retrieve chromosomal locations by name
+
+=head1 SYNOPSIS
+
+lociLocations.pl [B<--help>] [B<--locusColumn>=I<columnName>] [B<--path>=I<path of database>] [B<--locilistPath>=I<locilistPath>] [B<--retrieveLoci>=I<loci names>] [B<--anonymous>] [B<--calculateGaps>] [B<--aliases>=I<aliasesPath>] [B<--source>=I<name>]
+
+=head1 DESCRIPTION
+
+This program takes a list of markers and retrieves the physical and cytogenetic locations from a database. If called with the option B<--calculateGaps> it calculates a histogram of gaps for a given marker set. This allows to check for the saturation of the genome by the given marker set. The loci to be retrieved either from STDIN or from a file specified by the B<--locilist> option. This input is expected to be a tab separated file (see options B<--locus>, B<--anonymous>).
+
+Program output is printed to STDOUT and is in PropertyList format. A dictionary is produced holding as keys the loci names. The values are dictionaries again containing physical (key I<p>) and cytongenetic (key I<band>) information. You can redirect to a file and may directly use it with the B<--labelMap> option of I<coloredChromosomes.pl>.
+
+
+=head1 OPTIONS
+
+=over 4
+
+=item B<--aliases>=I<aliasesPath>
+
+If marker names from STDIN or the B<--locilist> option differ from these used in the database you may specify a file which holds information to map between the name spaces. This file is in I<PropertyList> format and holds a single dictionary. Keys are names from the input and values are names in the database.
+
+=item B<--anonymous>
+
+This option can be used if names of loci are present in a plain file holding one marker name in each line. Then the first line is not read to specify column names but is interpreted as marker name directly. 
+
+=item B<--calculateGaps>
+
+Instead of producing output with names of loci this option prints a histogram of gaps between the specified loci.
+
+=item B<-h>, B<--help>
+
+Print a help text.
+
+=item B<--locilistPath>=I<locilistPath>
+
+Points to a file holding the names of the loci to be retrieved. If that option is omitted STDIN is read instead (see options B<--locusColumn>, B<--anonymous>).
+
+=item B<--locusColumn>=I<columnName>
+
+The loci list is extracted from a tab separated file. If more than one column is present, specify the right column by name using this option. Column names are read from the first line of the file.
+
+=item B<--retrievLoci>=I<loci names>
+
+With this option loci names can be passed as an argument. For example: I<--retrieveLoci "HLA-DRB1 HD">
+
+=item B<--path>=I<path of database>
+
+This option indicates which database to use. This information is forwarded to the retrieving module (see option B<--source>) and interpreted accordingly.
+
+=item B<--source>=I<source name>
+
+This option specifies which source is used for information retrieval. Currently only the I<ldb> database is supported. You can copy the files of this database from I<ftp://cedar.genetics.soton.ac.uk/pub>. Download the whole directory to local disk and specify your local directory with the B<--path> option.
+
+=head1 ENSEMBL
+
+The default source for retrieval is ENSEMBL as of package version 1.4.2. You need to install the ENSEMBL API as described in http://www.ensembl.org/Docs/linked_docs/ensembl_tutorial.pdf
+. The source argument of lociLocation is intepreted as follows: --source host:user:db and defaults to 'ensembldb.ensembl.org:anonymous:homo_sapiens_core_29_35b'. Since database versions change frequently and old versions become unavailable you should use the most recent numbers from http://www.ensembl.org/Homo_sapiens. If, for example the web page reads 'Current Release 29.35b' than the database name should be 'homo_sapiens_core_29_35b'. This is clearly a shortcoming in the ENSEMBL database structure where a reference to the current version is lacking. Another problem is that only gene symbols are allowed right now. There is no mechanism to retrieve microsatellite markers. If either of these things do bother you please send an email to helpdesk@ensembl.org (as did I). Hopefully this gives momentum to required code changes at EMBL.
+
+=head1 SEE ALSO
+
+
+coloredChromosomes.pl(1) PropertyList(3)
+
+=back

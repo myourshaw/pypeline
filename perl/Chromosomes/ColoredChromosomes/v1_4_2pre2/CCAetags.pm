@@ -1,0 +1,208 @@
+#
+#	CCAetags.pm
+#Wed Nov 14 10:34:28 CET 2001
+#
+
+package CCAetags;
+require 5.000;
+@ISA = qw(CCAnnotation);
+
+#
+#	<§> dependencies
+#
+
+use CCAnnotation;
+use CCcolors;
+use TempFileNames;
+use Set;
+
+#
+#	<§> data structures
+#
+
+#
+#	<§> standard implementation
+#
+
+sub newWithStreamChromosomeConfig { my ($class, @args) = @_;
+	my $self = bless($class->SUPER::newWithStreamChromosomeConfig(@args), $class);
+	# if no superclass is in place use the following instead
+	# my $self = bless({}, $class);
+
+	# own initialization follows
+	$self->{mylabels} = $self->{labels}{byChromosome}{$self->{position}{chromosomeName}};
+
+	$self->{tconfig} = defined($self->{annotation}{config})
+		? $self->{global}{labelPlacements}{$self->{annotation}{config}}
+		: $self->{annotation};
+
+	return $self;
+}
+
+#
+#	<§> method implementation
+#
+
+sub movementCost {
+	my ($i, $array, $sign, $labelHeight, $amount, $doMove) = @_;
+	my ($bound, $cost);
+
+	return 0 if (!$amount);
+	$labelHeight *= $sign;	# give the height the right direction
+	for ($cost = 0, $bound = $sign<0? -1: @{$array} ; $i != $bound; $i += $sign)
+	{	my $thisPos = $array->[$i]{labelPos};
+		$array->[$i]{labelPos} += $amount if ($doMove);
+		$cost += $amount;
+		last if ($i + $sign == $bound
+				|| (($thisPos + $amount + $labelHeight)*$sign
+				<= ($array->[$i + $sign]->{labelPos})*$sign));
+		$amount = ($thisPos + $amount + $labelHeight) - $array->[$i + $sign]->{labelPos};
+	}
+	return $cost;
+}
+
+$labelTolerance = 0.1;
+
+sub selectFunction { my ($self) = @_;
+	# sort by applying the function $sf and draw in that order
+	my $selDef = $self->{annotation}{labelProperties}{select};
+	return eval 'sub { my $v = $_[0]; '.$selDef.' }' if (defined($selDef));
+
+	my $selectSmEq = firstDef(
+			$self->{annotation}{labelProperties}{selectSmallerEqual},
+			$self->{labels}{labelProperties}{selectSmallerEqual}
+		);
+	return sub { $_[0] <= $selectSmEq } if (defined($selectSmEq));
+	my $selectGeEq = firstDef(
+			$self->{annotation}{labelProperties}{selectGreaterEqual},
+			$self->{labels}{labelProperties}{selectGreaterEqual}
+		);
+	return sub { $_[0] >= $selectGeEq } if (defined($selectGeEq));
+	return sub { 1 };
+}
+
+sub num {((@_ ? $_[0] : $_) =~ /^(\d+\.?\d*)/ => 0)[0]}
+
+sub placeLables { my ($self) = @_;
+	my $select = $self->selectFunction();
+	my @selectedLabels = grep { $select->($_->{v}) } @{$self->{mylabels}};
+	my $labelPositions = [sort { num($a->{p}) <=> num($b->{p}) }
+		map { { p => $self->absolutePositionFromSpec($_->{p}),
+			l => $_ } } @selectedLabels ];
+	my ($i, $label, $lastLabel);
+
+	my $labelHeight;
+
+	if ( defined($self->{tconfig}{height}) ) {
+		if ( defined($self->{tconfig}{valueHeight}) ) {
+			$labelHeight = $self->{tconfig}{height} + $self->{tconfig}{valueHeight};
+		} else {
+			$labelHeight = $self->{tconfig}{height};
+		}
+	}
+	else {
+		if ( defined($self->{tconfig}{valueHeight}) ) {
+			$labelHeight = $self->{tconfig}{valueHeight};
+		} else {
+			$labelHeight = 0;
+		}
+	}
+
+	for ($i = 0; $i < @{$labelPositions}; $i++)
+	{
+		$labelPositions->[$i]{labelPos} = $labelPositions->[$i]{p};
+	}
+	for ($i = 1, $lastLabel = $labelPositions->[0]; $i < @{$labelPositions};
+		$i++, $lastLabel = $label)
+	{	$label = $labelPositions->[$i];
+		# check for label overlap
+		if ($label->{labelPos} - $self->{tconfig}{height} < $lastLabel->{labelPos})
+		{
+			Log("overlap detected [$i]",5);
+			my $overlap = ($label->{labelPos} - $lastLabel->{labelPos} - $labelHeight);
+			my $down = movementCost($i - 1,
+				$labelPositions, -1, $labelHeight, $overlap, 0);
+			my $up = movementCost($i, $labelPositions, 1, $labelHeight, -$overlap, 0);
+			my ($upAmount, $downAmount) = (0, 0);
+			if (abs($up + $down) < $labelTolerance)
+			{	$downAmount = - ($upAmount = - $overlap / 2.0 );
+			} elsif ($up < - $down)
+			{	$upAmount = - $overlap;
+			} else { $downAmount = $overlap; }
+			Log("Up:$upAmount down:$downAmount [overlap:$overlap]",5);
+			# now actually move the beast
+			movementCost($i - 1, $labelPositions, -1, $labelHeight, $downAmount, 1);
+			movementCost($i, $labelPositions, 1, $labelHeight, $upAmount, 1);
+		}
+	}
+	return $labelPositions;
+}
+
+$curveParam = 0.2;
+
+sub	drawLabels { my ($self, $labels) = @_;
+	my ($x, $y, $w, $size) = ($self->{c}{x}, $self->{c}{yBottom},
+		$self->{c}{w}, $self->{c}{size});
+#	my ($x, $y, $p, $q, $w) = ($self->{c}{x}, $self->{c}{y},
+#		$self->{c}{p}, $self->{c}{q}, $self->{c}{w});
+	my $lconfig = $config->{labels};
+	my $doPrintValues = defined($self->{tconfig}{valueHeight});
+
+	$self->{ps}->gsave();
+	$self->{ps}->setfont($self->{tconfig}{font}, { name => 'Helvetica', size => 6 });
+	$self->{ps}->setlinewidth($self->{annotation}{curveWidth})
+		if (defined($self->{annotation}{curveWidth}));
+
+	if (defined($config->{backgroundColor}) && $config->{backgroundColor} eq 'black')
+	{
+		$self->{ps}->setrgbcolor($Colors->rgbColor('white'));
+	}
+
+	my ($leftInset, $rightInset) = (
+		firstDef($self->{tconfig}{curveLeftInset}, $self->{tconfig}{curveInset}, 3),
+		firstDef($self->{tconfig}{curveRightInset}, $self->{tconfig}{curveInset}, 3)
+	);
+	my $valueHeight = $self->{tconfig}{valueHeight};
+	if (!defined($valueHeight)) {
+		Log("Warning: valueHeight not defined in etags annotation.", 3);
+		$valueHeight = 0;
+	}
+
+	foreach $label (@{$labels})
+	{	my $tx = $x + $w/2 + $self->{tconfig}{chromosomeDistance};
+		my ($cx1, $cx2) = ($x + $w/2 + $leftInset, $tx - $rightInset);
+		Log(sprintf("Label:$label->{l}{l} %.2f", $tx - $label->{labelPos}), 3);
+		if (uc($self->{tconfig}{doPrintLabelText}) ne 'NO')
+		{
+			my $text = $label->{l}{l}.(lc($self->{tconfig}{drawTags}) ne 'no'
+				? ' '.$label->{l}{tag}
+				: '');
+
+			$self->{ps}->ycenteredShow($text,
+				$tx, $label->{labelPos} + $y + $valueHeight/2);
+			if ($doPrintValues)
+			{
+				$self->{ps}->setfont($self->{tconfig}{valueFont},
+					{ name => 'Helvetica', size => 4 });
+				$self->{ps}->ycenteredShow($label->{l}{v}, $tx,
+					$label->{labelPos} + $y - $self->{tconfig}{valueHeight}/2);
+				$self->{ps}->setfont($self->{tconfig}{font},
+					{ name => 'Helvetica', size => 6 });
+			}
+		}
+		$self->{ps}->curve($cx1, $label->{p} + $y,
+			$curveParam * $cx1 + (1 - $curveParam) * $cx2, $label->{p}  + $y,
+			(1 - $curveParam) * $cx1 + $curveParam * $cx2, $label->{labelPos} + $y,
+			$cx2, $label->{labelPos} + $y
+		);
+		$self->{ps}->stroke();
+	}
+	$self->{ps}->grestore();
+}
+
+sub draw { my ($self) = @_;
+	my $labelPositions = $self->placeLables();
+	$self->drawLabels($labelPositions);
+}
+
+1;

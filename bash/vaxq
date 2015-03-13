@@ -1,0 +1,51 @@
+#!/bin/bash
+
+#download_mgi_data.sh
+#download mouse phenotypes from MGI
+
+#2 47607081 A G
+
+USAGE="usage: $0 [chrom pos ref alt] | [/path/to/file.vcf] [/path/to/output/vax]";
+if [[ $1 == "?" || $1 == "-h" || $1 == "--help" || $1 == "help" || (( $# < 1 )) ]]; then echo ${USAGE}; exit; fi
+
+#get path and parent directory of this script
+#http://hintsforums.macworld.com/archive/index.php/t-73839.html
+# if the call came via symlink, then use its target instead:
+arg=$0; [[ -L $0 ]] && arg=$(stat -L -c'%n' "$0");
+script_path=$(2>/dev/null cd "${arg%/*}" >&2; echo "`pwd -P`/${arg##*/}");
+script_dir=$(dirname "$script_path");
+
+HERE=${script_dir};
+wd=`pwd`;
+vep="perl /share/apps/myourshaw/vax/vep.pl --config /share/apps/myourshaw/vax/vep.ini";
+#input vcf
+if [ -e ${1} ]; then
+    if (( $# > 1 )); then
+        mkdir -p "$(dirname ${2})";
+        cmd="${vep} --input_file ${1} --output_file ${2}";
+    else
+        #create output in same directory as input
+        cmd="${vep} --input_file ${1} --output_file ${1}.vax";
+    fi
+#chrom pos ref alt input
+elif (( $# >= 4 )); then
+    #input file
+    if (( $# >= 5 )); then
+        #create input vcf in output directory
+        mkdir -p "$(dirname $2)";
+        vcf="$(dirname $5)/${1}_${2}_${3}_${4}.vcf";
+        cmd="${vep} --input_file ${vcf} --output_file ${2}";
+    else
+        #create input vcf in current directory
+        vcf="${wd}/${1}_${2}_${3}_${4}.vcf";
+        cmd="${vep} --input_file ${vcf} --output_file ${vcf}.vax";
+    fi
+    cat > ${vcf} << EOF
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+$1	$2	.	$3	$4	.	.	.
+EOF
+else
+    echo ${USAGE}; exit;
+fi
+echo ${cmd};
+${cmd};

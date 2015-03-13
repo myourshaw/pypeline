@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>CCAnnotation.pm - A class from which all annotations used with coloredChromosomes.pl are to be derived</title>
+<link rev="made" href="mailto:feedback@suse.de" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>CCAnnotation.pm - A class from which all annotations used with coloredChromosomes.pl are to be derived</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ Subclass by:
+ @ISA = qw(CCAnnotation);
+ use CCAnnotation;</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This class is an abstract superclass from which all classes implementing annotations for <em>coloredChromosomes.pl</em> are derived. Each subclass has to implement the method <em>draw</em> which is to draw a single chromosome. Each instance of CCAnnotation (or a subclass) can assume that an instance variable called 'ps' is initialized. This is a Postscript object which supports many postscript operators (see <strong>Postscript</strong>). When <em>draw</em> is called the instance may safely assume the shape of the current chromosome to be the chromosomal shape, which is clipped to if the annotation is internal.</p>
+<p>The following methods can be used to determine positions along the chromosome:</p>
+<ul>
+<li></li>
+<code>positionFromSpec($spec)</code> - return the a relative positions (0 to 1) of the position <em>$spec</em> along the chromosome
+<p></p>
+<li></li>
+absolutePositionFromSpec - return the vertical position in points of the specified position
+<p></p>
+<li></li>
+<code>absoluteSizeOfBand($bandName)</code> - return the size of a band from the current chromosome in points
+<p></p>
+<li></li>
+<code>midBandPosition($bandName)</code> - return the vertical middle position of the band from the current chromosome named <em>$bandName</em> in points.
+<p></p></ul>
+<p>The format of specifications for chromosomal locations is detailed in the man page of <strong>coloredChromosomes.pl</strong>. The implemented annotation classes can be referred on as examples on how to explore the use of these methods.</p>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>coloredChromosomes.pl(1) <code>Postscript(3)</code></p>
+
+</body>
+
+</html>

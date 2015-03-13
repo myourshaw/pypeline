@@ -1,0 +1,78 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v2.3
+## Output produced at 2012-01-17 09:28:50
+## Connected to homo_sapiens_core_65_37 on cortex.local
+## Using API version 65, DB version 65
+## Extra column keys:
+## CANONICAL    : Indicates if transcript is canonical for this gene
+## CCDS         : Indicates if transcript is a CCDS transcript
+## HGNC         : HGNC gene identifier
+## ENSP         : Ensembl protein identifer
+## HGVSc        : HGVS coding sequence name
+## HGVSp        : HGVS protein sequence name
+## SIFT         : SIFT prediction
+## PolyPhen     : PolyPhen prediction
+## Condel       : Condel SIFT/PolyPhen consensus prediction
+## MATRIX       : The source and identifier of a transcription factor binding profile (TFBP) aligned at this position
+## MATRIX_POS   : The relative position of the variation in the aligned TFBP
+## HIGH_INF_POS : A flag indicating if the variant falls in a high information position of the TFBP
+## MOTIF_SCORE_DELTA : The difference in motif score of the reference and variant sequences for the TFBP
+## MMS70	: MMS70 genotype (VCF)
+## CHROM	: Chromosome (VCF)
+## MMS71	: MMS71 genotype (VCF)
+## GMD159	: GMD159 genotype (VCF)
+## GMD125	: GMD125 genotype (VCF)
+## GMD1A	: GMD1A genotype (VCF)
+## MMS73	: MMS73 genotype (VCF)
+## GMD82	: GMD82 genotype (VCF)
+## GMD165	: GMD165 genotype (VCF)
+## GMD108	: GMD108 genotype (VCF)
+## GMD5A1	: GMD5A1 genotype (VCF)
+## FORMAT	: Format of genotype columns (VCF)
+## GMD160A	: GMD160A genotype (VCF)
+## INFO	: Info (VCF)
+## GMD162	: GMD162 genotype (VCF)
+## GMD154A	: GMD154A genotype (VCF)
+## POS	: Position (VCF)
+## ID	: ID (VCF)
+## GMD72	: GMD72 genotype (VCF)
+## GMD3A	: GMD3A genotype (VCF)
+## GMD141	: GMD141 genotype (VCF)
+## GMD160	: GMD160 genotype (VCF)
+## GMD5A2	: GMD5A2 genotype (VCF)
+## FILTER	: Filter (VCF)
+## GMD159A	: GMD159A genotype (VCF)
+## REF	: Reference allele (VCF)
+## GMD145	: GMD145 genotype (VCF)
+## GMD138	: GMD138 genotype (VCF)
+## MMS69	: MMS69 genotype (VCF)
+## QUAL	: Quality score (VCF)
+## GMD161	: GMD161 genotype (VCF)
+## GMD133	: GMD133 genotype (VCF)
+## GMD128	: GMD128 genotype (VCF)
+## GMD148	: GMD148 genotype (VCF)
+## GMD158	: GMD158 genotype (VCF)
+## GMD158A	: GMD158A genotype (VCF)
+## GMD4A	: GMD4A genotype (VCF)
+## GMD151A	: GMD151A genotype (VCF)
+## ALT	: Alternate allele (VCF)
+## GMD151	: GMD151 genotype (VCF)
+## GMD149	: GMD149 genotype (VCF)
+## hom_ref_sample_count	: number of homozygous reference samples in combined datasets  (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## het_sample_count	: number of heterozygous samples in combined datasets (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## alt_allele_frequency	: alternate allele frequency (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## alt_allele_count	: number of alternate alleles in called genotypes (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## ref_allele_frequency	: reference allele frequency (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## in_nhlbi	: variant is in Exome Variant Server,  NHLBI Exome Sequencing Project (ESP), Seattle, WA (URL: http://evs.gs.washington.edu/EVS/) ESP5400 December 10, 2011 (NHLBI)
+## in_niehs	: variant is in NIEHS Environmental Genome Project, Seattle, WA (URL: http://evs.gs.washington.edu/niehsExome/) version 0.0.6 September 30, 2011 (NIEHS)
+## G5A	: >5% minor allele frequency in each and all populations (dbSNP135)
+## hom_alt_sample_count	: number of homozygous alternate samples in combined datasets (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## SCS	: Variant Clinical Significance, 0 - unknown, 1 - untested, 2 - non-pathogenic, 3 - probable-non-pathogenic, 4 - probable-pathogenic, 5 - pathogenic, 6 - drug-response, 7 - histocompatibility, 255 - other (dbSNP135)
+## G5	: >5% minor allele frequency in 1+ populations (dbSNP135)
+## sample_count	: number of samples in combined datasets (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## allele_count	: number of alleles in called genotypes (dbSNP135,1000Genomes,NHLBI,NIEHS)
+## CLN	: Variant is Clinical(LSDB,OMIM,TPA,Diagnostic) (dbSNP135)
+## in_1kg	: variant is in 1000 Genomes Phase 1 Integrated Variant Call Set updated 2011-12-09 (1000Genomes)
+## in_dbsnp135	: variant is in dbSNP 135 (dbSNP135)
+## ref_allele_count	: number of reference alleles in called genotypes (dbSNP135,1000Genomes,NHLBI,NIEHS)
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	GMD108	GMD125	GMD128	GMD133	GMD138	GMD141	GMD145	GMD148	GMD149	GMD151	GMD151A	GMD154A	GMD158	GMD158A	GMD159	GMD159A	GMD160	GMD160A	GMD161	GMD162	GMD165	GMD1A	GMD3A	GMD4A	GMD5A1	GMD5A2	GMD72	GMD82	MMS69	MMS70	MMS71	MMS73	Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	Extra	CLN	G5	G5A	SCS	in_dbsnp135	in_1kg	in_nhlbi	in_niehs	allele_count	ref_allele_count	alt_allele_count	ref_allele_frequency	alt_allele_frequency	sample_count	het_sample_count	hom_ref_sample_count	hom_alt_sample_count
+																																									rs144283627	16:46534637					intergenic_variant																								

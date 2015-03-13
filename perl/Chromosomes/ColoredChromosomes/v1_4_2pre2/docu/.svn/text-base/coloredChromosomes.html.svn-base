@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>coloredChromosomes.pl - A program to automize complex ideogram drawing</title>
+<link rev="made" href="mailto:feedback@suse.de" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#the_main_specification_file__msf_">The main specification file (MSF)</a></li>
+		<li><a href="#msf__chromosomes">MSF: <em>chromosomes</em></a></li>
+		<li><a href="#msf__placements">MSF: <em>placements</em></a></li>
+		<li><a href="#msf__placements_lanes">MSF: <em>placements:lanes</em></a></li>
+		<li><a href="#msf__placements_distances">MSF: <em>placements:distances</em></a></li>
+		<li><a href="#msf__placements_colors">MSF: <em>placements:colors</em></a></li>
+		<li><a href="#annotations">Annotations</a></li>
+		<li><a href="#annotations__banding">Annotations: banding</a></li>
+		<li><a href="#annotations__bandingnames">Annotations: bandingNames</a></li>
+		<li><a href="#annotations__plain">Annotations: plain</a></li>
+		<li><a href="#annotations__itags">Annotations: itags</a></li>
+		<li><a href="#annotations__etags">Annotations: etags</a></li>
+		<li><a href="#annotations__sideline">Annotations: sideline</a></li>
+		<li><a href="#representing_chromosomal_locations">Representing chromosomal locations</a></li>
+		<li><a href="#advanced_topics__subgrouping">Advanced topics: subgrouping</a></li>
+	</ul>
+
+	<li><a href="#internals">INTERNALS</a></li>
+	<ul>
+
+		<li><a href="#how_the_space_is_allotted">How the space is allotted</a></li>
+		<li><a href="#how_to_extend_this_software_package">How to extend this software package</a></li>
+	</ul>
+
+	<li><a href="#files">FILES</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>coloredChromosomes.pl - A program to automize complex ideogram drawing</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>coloredChromosomes.pl [<strong>--help</strong>] [<strong>--chromosomeSpec</strong>=<em>path</em>] [<strong>--placement</strong>=<em>placement name</em>] [<strong>--labelFile</strong>=<em>labelFile</em>] [<strong>--labelMap</strong>=<em>path</em>] [<strong>--labelPlacement</strong>=<em>placement name</em>] [<strong>--o</strong>=<em>output path</em>]</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p><strong>coloredChromosomes.pl</strong> is a program designed to draw chromosomal ideograms. It reads a specification file as given by <strong>--chromosomeSpec</strong> which describes a chromosomal layout and banding pattern for some organism. The option <strong>--placement</strong> chooses a placement pattern for the chromosomes on the paper out of a set of patterns present in the configuration file. The contents of the configuration file is described below. <strong>--labelFile</strong> denotes the path of an additional file which holds annotation information to draw within or alongside the chromomal shapes. For one such <em>labelFile</em> the option <strong>--labelPlacement</strong> specifies a section in the main configuration file which gives further options to control annotation. If annotations are complex <strong>--labelMap</strong> enables a further level of indirection by representing chromosomal locations by name which can be referred upon in the <em>labelMap</em>.</p>
+<p>
+</p>
+<h2><a name="the_main_specification_file__msf_">The main specification file (MSF)</a></h2>
+<p>In this section the format of the specification file is explained. It is recommended to modify the supplied specification file rather than building one from scratch. Also you may find it helpful to change various different parameters to understand their effect, if in doubt. The main specification file is in PropertyList format (see <em>PropertyList</em>). A global, unnamed dictionary contains the list <em>chromosomes</em> and the dictionaries <em>placements</em>, <em>labelPlacements</em>, <em>bandNamePlacements</em>.</p>
+<p>
+</p>
+<h2><a name="msf__chromosomes">MSF: <em>chromosomes</em></a></h2>
+<p>The entry <em>chromosomes</em> in the <strong>MSF</strong> is a list, each entry of which describes a single chromosome. Each entry is a dictionary containing the keys <em>name</em>, <em>p</em>, <em>q</em>, <em>pBanding</em> and <em>qBanding</em>. The value of <em>name</em> is a string which is used to refer to this chromosome. Also this string is printed under chromosome in the final program output. <em>p</em> is a number which specifies the length of the p-arm of this chromosomes in arbitrary units. <em>q</em> is the length of the q-arm. The units are arbitrary, but have to be consistent over all chromosomes such that relative sizes are properly drawn. <em>pBanding</em> and <em>qBanding</em> refer to lists each, which describe the banding patterns of the respective chromosomal arms. Each list entry is a dictionary containing the keys <em>name</em>, <em>start</em>, <em>stop</em> and <em>color</em>. The following example describes a single chromosome:</p>
+<pre>
+ {
+        name = &quot;1&quot;;
+        p = &quot;375.3212&quot;;
+        q = &quot;389.9321&quot;;
+        pBanding = (
+                { name = &quot;11&quot;; color = centromere;
+                        stop = &quot;0.0122&quot;; start = &quot;0.0000&quot;; },
+                { name = &quot;12&quot;; stop = &quot;0.0365&quot;;
+                        start = &quot;0.0122&quot;; color = black; }
+        );
+        qBanding = (
+                { name = &quot;11&quot;; color = centromere;
+                        stop = &quot;0.0211&quot;; start = &quot;0.0000&quot;; }
+        );
+ }</pre>
+<p>Each entry in either <em>pBanding</em> or <em>qBanding</em> is a dictionary and describes a single band. The keys are <em>name</em>, <em>color</em>, <em>start</em> and <em>stop</em>. Again, <em>name</em> is used both for reference of the band and as a name listed in the figure produced. <em>color</em> may be either a name of a color which is then defined elsewhere or a dictionary containing the keys <em>r</em>, <em>g</em> and <em>b</em> specifying color in RGB-space (values range from 0 to 1). There are predefined colors with names <em>black</em>, <em>white</em>, <em>grey</em> and <em>centromere</em>. The color <em>centromere</em> is special in that it doesn't refer to a plain color, but to a pattern, which can be used to hightlight the centromeric region.
+Banding data for human chromosomes is supplied with the standard configuration file.</p>
+<p>
+</p>
+<h2><a name="msf__placements">MSF: <em>placements</em></a></h2>
+<p>Another section in the <strong>MSF</strong> describes the actual placement of chromosomes on a page. In the main dictionary the entry <em>placements</em> refers to a dictionary which contains the names of arbitrary many placements (as keys) which refer to dictionaries containing the actual placement specification. This way one can collect many useful placement schemes in one configuration file and refer to them by the <em>--placement</em> option. If no placement is specified by the <em>--placement</em>-option the placement with name <em>standard</em> is chosen.</p>
+<p>
+</p>
+<h2><a name="msf__placements_lanes">MSF: <em>placements:lanes</em></a></h2>
+<p>The layout for chromosomes is specified, by grouping chromosomes together and designating a lane to diplay groups of chromosomes. The key used to specify the layout is <em>lanes</em>.
+Example:</p>
+<pre>
+        lanes = (
+                ( (1, 2, 3), (4, 5) ),
+                ( (6, 7, 8, 9, 10, 11, 12) ),
+                ( (13, 14, 15), (16, 17, 18) ),
+                ( (19, 20, 21, 22), (X), (Y) )
+        );</pre>
+<p><em>lanes</em> is a list, for which each entry is a list itself, specifying a lane of chromosome. The above example will display chromosomes 1,2,3,4 and 5 in the first lane, chromosomes 6 to 12 in lane 2 and so on. The fact that each lane is a list of lists means that within each lane chromosomes are grouped. In the example chromosomes 1,2 and 3 are grouped together in lane 1 much as chromosomes 4 and 5 are (a further complication of subgrouping is explained below: Advanced topics).</p>
+<p>
+</p>
+<h2><a name="msf__placements_distances">MSF: <em>placements:distances</em></a></h2>
+<p>The actual sizes of chromosomes is determined by their relative sizes together with absolute sizes specifying borders and other elements. The following table lists keys of a placement which specify absolute sizes. All measurements are in points (1/72th of an inch).</p>
+<pre>
+   Table 1: Absolute sizes to determine chromosome placements</pre>
+<pre>
+   Key                Default  Explanation of value
+                      value
+ ---------------------------------------------------------------------
+   borderLeft         70       Left border of the printed page
+   borderTop          70       Top border of the printed page
+   borderButtom       70       Bottom border of the printed page
+   chromosomeWidth    10       Width of a chromosome
+   spacing            70       Space between chromosomes
+   intergroupSpacing  40       Additional space between groups of
+                               chromosomes
+   paperSize          dict     A dictionary containing the keys
+                               width and height of the whole page
+                               e.g. paperSize = { width = 595;
+                               height = 842; }; for a DIN A4 page
+   outlineWidth       0        The width of the chromosome outline.
+                               For postscript output a size of 0 means
+                               that the line is drawn as small as the
+                               output device permits (&quot;1 pixel&quot;).
+   namesize           14       The font size of chromosome names</pre>
+<p>Figure 1 illustrates most sizes graphically. Provided that only 3 chromosomes are displayed altogether within a sinlge lane and that chromosome 1 and 2 are grouped the following identities hold: [a]: borderTop, [b]: borderLeft, [c]: spacing, [d]: intergroupSpacing, [e]: borderBottom, [f]: chromosomeWidth. Note, that the right border is determined by the sizes [b], [c], [d] and [f] and therefore doesn't need to be specified.</p>
+<pre>
+              ^
+              |                                    |[f]|
+             [a]                                   \   /
+              |                                     | |
+             \/
+             .-.           .-.                      .-.
+&lt;-   [b]  -&gt; | | &lt;- [c] -&gt; | | &lt;- [c] -&gt;  &lt;- [d] -&gt; | | 
+             | |           | |                      | |
+             | |           | |                      | |
+             `-'           `-'                      `-'
+             .-.           .-.                      .-.
+             | |           | |                      | |
+             | |           | |                      | |
+             | |           | |                      | |
+             `-'           `-'                      `-'</pre>
+<pre>
+              1             2                        3
+              ^
+              |
+             [e]
+              |
+             \/</pre>
+<pre>
+  Figure 1: Graphical illustration of size specifications</pre>
+<p>
+</p>
+<h2><a name="msf__placements_colors">MSF: <em>placements:colors</em></a></h2>
+<p>Additionally to sizes, also colors may be specified. <em>backgroundColor</em> and <em>outlineColor</em> specify the relevant colors. Chromosome names are drawn with the color <em>outlineColor</em>.</p>
+<p>
+</p>
+<h2><a name="annotations">Annotations</a></h2>
+<p>In the context of this software package all graphical elements besides chromosomal shapes and names are called annotations. Annotations are furtherly subdivided into internal and external annotations. The difference is that internal annotations are confined to the chromosomal shape, whereas external annotations are free to draw anywhere on the page. This behaviour is garuanteed by the Postscript clip operator. Any annotation is performed by a specific Perl class. For comprehensiveness the readily supplied annotation classes are discussed here, rather than in the respective class documentation.
+For each placement configuration there are two lists with keys <em>internalAnnotations</em> and <em>annotations</em> to denote which kinds of annotation should be applied. Each list contains dictionaries which contain the keys <em>name</em> and <em>config</em>. <em>name</em> specifies the type of annotation and <em>config</em> provides additional information forwarded to the annotation module. Possible annotations are enumerated below.</p>
+<p>
+</p>
+<h2><a name="annotations__banding">Annotations: banding</a></h2>
+<p>The <em>banding</em> annotation is an internal annotation which draws a banding pattern within the chromosome shape as provided by the chromosome definitions (see <strong>MSF:</strong> <em>chromosomes</em>). The <em>config</em> dictionary may contain the key <em>drawBandingWithVisualEffect</em> when the value may be <em>chrome</em>. This option imitates some chrome effect.</p>
+<p>
+</p>
+<h2><a name="annotations__bandingnames">Annotations: bandingNames</a></h2>
+<p>This type of annotation draws band names to the left hand side of chromosomes. The config dictionary must contain the key <em>config</em> where the value is a name which refers toanother dictionary. A key with this name must exist in the dictionary <em>bandNamePlacements</em> which in turn is located in the main dictionary. This way a specification of how to place banding names can be shared amongst several chromosomal placement schemes.
+The annotation dictionary therefore could read:</p>
+<pre>
+ {
+        name = bandingNames;
+        config = { config = standard; };
+ }</pre>
+<p>The config dictionary referred to by name must contain the following keys: <em>font</em>, <em>distatnce</em>, <em>color</em>, <em>tags</em>. Font refers to a dictionary containing font name and size (e.g. 'font = { name = Helvetica; size = 4; }'). <em>distance</em> denotes the space between chromosome and the band name (distance [a] in Fig. 2). <em>color</em> specifies which color is used to draw the lines and names. Again it may be a name or a dictionary specifying RGB values of the color. Finally <em>tags</em> specifies to which chromosomes band names should be attached (this is only relevant when using subgroups; s. below). For most cases the value 'tags = (``'');' should suffice. The size [c] (Fig.2) is the length of the line connecting band name and middle of the band if an overlap has to be avoided. This distance can be specified by the optional <em>labelInset</em> key and is chosen as 3 times the font size as a default value.</p>
+<pre>
+                          .-.
+                          | |
+            band1 &lt;-[a]-&gt; | |
+   band2 ---------        | | 
+         |&lt;-[c]-&gt;|        `-'
+                          .-.
+                          | |
+                          | |
+                          | |
+                          `-'</pre>
+<pre>
+ Figure 2: Distances involved in placing band names.</pre>
+<p>
+</p>
+<h2><a name="annotations__plain">Annotations: plain</a></h2>
+<p>A very simple kind of internal annotation is the <em>plain</em> annotation. In the config dict it expects a key <em>color</em> which denotes a color to fill the interior of the chromosome (for the key tags, see ``Advanced Topics'' below). For example:</p>
+<pre>
+ {
+        name = plain;
+        config = { color = grey; };
+        tags = ( &quot;&quot; );
+ }</pre>
+<p>
+</p>
+<h2><a name="annotations__itags">Annotations: itags</a></h2>
+<p>To highlight distinct chromosomal positions the internal annotation <em>itag</em> may be used. The config dictionary contains the key <em>defaultColorHeight</em> which denotes the vertical size of rectangular marks printed inside the chromosomal shape. This size is relative to the largest chromosomal height on the page. Since chromosomes are scaled according to the available space the relative size of marks will keep constant no matter to what size chromosomes are streched to.</p>
+<pre>
+ {      name = itags;
+        config = {
+                /* height in percent of maximal chromosome length */
+                defaultColorHeight = 0.0005;
+        };
+        tags = ( &quot;&quot; );
+ }</pre>
+<p>The information where to place marks and what color to give them is stored in a different file. This file is specified via the <strong>--labelFile</strong> option. This file is in PropertyList format and has the following format. A main dictionary contains a list referred to by <em>labels</em>, and the dictionaries call <em>colors</em> and <em>labelProperties</em>. The following example illustrates the file format:</p>
+<pre>
+ {
+        labels = (
+                { v = &quot;1.000000&quot;; tag = &quot;H&quot;;
+                  l = &quot;D10S582&quot;; p = &quot;10p21.3:0.5&quot;; },
+                { v = &quot;1.000000&quot;;
+                  l = &quot;D17S953&quot;; p = &quot;10p21.3:0.6&quot;; }
+        );
+        colors = {
+                interpolationList = (
+                        { value = &quot;0&quot;; color =
+                          { g = &quot;1&quot;; b = &quot;0&quot;; r = &quot;1&quot;; }; },
+                        { value = &quot;0.05&quot;; color =
+                          { g = &quot;1&quot;; b = &quot;0&quot;; r = &quot;0&quot;; }; },
+                        { value = &quot;0.06&quot;; color =
+                          { g = &quot;0&quot;; b = &quot;0&quot;; r = &quot;1&quot;; }; },
+                        { value = &quot;1&quot;; color =
+                          { g = &quot;0&quot;; b = &quot;1&quot;; r = &quot;0&quot;; }; }
+                );
+                defaultValue = &quot;0&quot;;
+                specialColor = { g = &quot;0&quot;; b = &quot;1&quot;; r = &quot;0&quot;; };
+        };
+        labelProperties = { selectSmallerEqual = &quot;.05&quot;; };
+ }</pre>
+<p>Each label is a dictionary with the keys <em>v</em>, <em>p</em>, <em>l</em> and <em>tag</em>. <em>v</em> is a value between 0 and 1 and represents a quantitative information about a locus the position of which is specified by <em>p</em>. <em>p</em> may be either a chromosomal position in standard nomenclature or a numerical value (for a detailed explanation see <strong>Representing chromosomal locations</strong>). <em>l</em> and <em>tag</em> are textual annotations not used for internal tagging. The <em>color</em> section of the label file describes how values are mapped to colors. One entry in this dictionary is an <em>interpolationList</em>. Each entry in that list is a dictionary with a key <em>value</em> and a key <em>color</em>. If the value of a label matches one of the list the respective color is chosen. If it is not in the list the color is linerly interpolated between the entries with values matching most closely. The <em>defaultValue</em> designates the value in case of missing value for an label entry. <em>specialColor</em> is chosen if the label value is bigger than 1. <em>labelProperties</em> are only used for the <em>etag</em> annotation.</p>
+<p>
+</p>
+<h2><a name="annotations__etags">Annotations: etags</a></h2>
+<p>The external annotation <em>etags</em> use the same information as <em>itags</em> to draw textual information at specified positions besides chromosomes. A specification for <em>etags</em> annotations may look as follows:</p>
+<pre>
+ {
+        name = etags;
+        config = { config = standard; };
+        tags = ( &quot;&quot; );
+ }</pre>
+<p>The value of <em>config</em> within the <em>config</em> dictionary specifies an entry within the global dictionary with key <em>labelPlacements</em> (compare description of <strong>bandingNames</strong> annotations). An exmaple is shown:</p>
+<pre>
+ standard = {
+        height = 6;
+        chromosomeDistance = 15;
+        curveInset = 3;
+        font = { name = Helvetica; size = 4; }
+        doPrintLabelText = YES;
+ };</pre>
+<p>Figure 3 illustrates the distances involved in drawing the labels. [a] corresponds to <em>curveInset</em>, [b] to height and [c] to <em>chromosomeDistance</em>. The <em>height</em> parameter allows to define a rectangular region centered around the lable to be free of other label texts. If two rectangular regions associated with different labels overlap the position of the labels is changed to eliminate the overlap. This is done by a locally optimizing algorithm which minimizes the amount of movement. A bezier curve is drawn which connects chromosomal position and label text. You can suppress label printing (just showing the bezier curves) by setting <em>doPrintLabelText</em> to <em>NO</em>.</p>
+<pre>
+  .-.                                    ____
+  | |                                   /  ^
+  | |                                __/   |
+  | | &lt;-[a]-&gt; --------- &lt;-[a]-&gt; label__   [b]
+  `-' &lt;-         [c]         -&gt;        \   |
+  .-.                                   \_\/__
+  | |                                    
+  | |
+  | |
+  `-'</pre>
+<pre>
+ Figure 3: Distances involved in placing labels.</pre>
+<p>
+</p>
+<h2><a name="annotations__sideline">Annotations: sideline</a></h2>
+<p>This annotation is to represent some numerical value ranging across chromosomal locations.</p>
+<p>
+</p>
+<h2><a name="representing_chromosomal_locations">Representing chromosomal locations</a></h2>
+<p>The annotations <em>itags</em> and <em>etags</em> need to specify chromosomal locations. There are several options to give these positions. In the label file each label entry may contains the key <em>p</em> which can have either of two formats. First it is possible to use ``ChromosomeArmBandname:fraction'' where <em>Chromosome</em> must be contained in the <em>chromosomes</em> dictionary, <em>Arm</em> must be either 'p' or 'q', <em>Bandname</em> must be contained in the band name dictionary of the chromosome. Finally <em>fraction</em> indicates where within a band the position is to be localized. <em>fraction</em> ranges from 0 to 1 with 0 indicating the centromeric start of the band and 1 denoting the most telomeric position within a band.
+Alternatively the positions <em>p</em> may be specified by a single fraction ranging over the whole chromosome. The format is as follows <em>fraction</em> immidiately followd by 'c' follow by a chromosome name (e.g. '0.2172c11'). A fraction of 1 indicates the most telomeric position on the 'p' arm and a fraction of 0 points to the telomeric position of the 'q' arm.
+A further level of indirection is possible. The option <strong>--mapFile</strong> specifies a file containing positions only. A global dictionary contains labels as keys which point to a directory which must contain the key <em>p</em> which specifies a position by either of the formats explicated above. An example is shown:</p>
+<pre>
+ {
+        D11S4111 = { p = &quot;0.811944c11&quot;; band = &quot;11q23.1&quot;; };
+        D11S4112 = { p = &quot;0.999278c11&quot;; band = &quot;11q25&quot;; };
+        D12S1070 = { p = &quot;0.725909c12&quot;; band = &quot;12q23.1&quot;; };
+ }</pre>
+<p>If no position is given in the label file as supplied to the <em>itags</em> and <em>etags</em> annotations the program tries to look up the label name in the map file dictionary. This way you may generate a label file from some experimental data and keep that file separate from the positioning information.</p>
+<p>
+</p>
+<h2><a name="advanced_topics__subgrouping">Advanced topics: subgrouping</a></h2>
+<p>With the capabilities presented so far only simple ideograms are possible. For example it is difficult to produce diploid ideograms. To accomplish arrangements like this it is possible to establish a variant of the chromosomal placements (<strong>MSF: <em>placements</em></strong>). The following examples illustrates the concept of subgrouping:</p>
+<pre>
+ lanes = (
+        ( ((1, 1_A), (2, 2_A), (3, 3_A) ), ( (4, 4_A), (5, 5_A)) ),
+        ( ((6, 6_A), (7, 7_A), (8, 8_A), (9, 9_A), (10, 10_A),
+           (11, 11_A), (12, 12_A)) ),
+        ( ((13, 13_A), (14, 14_A), (15, 15_A)), ((16, 16_A),
+           (17, 17_A), (18, 18_A))),
+        ( ((19, 19_A), (20, 20_A), (21, 21_A), (22, 22_A)),
+          ((X, X_A)), ((Y, Y_A)) )
+ );</pre>
+<p>In contrast with simple grouping, subgrouping uses lists within groups of chromomes. A new distance in the <em>placement</em> dictionary called <em>intergroupSpacing</em> specifies the distance between chromosomes in subgroups. Also you have the possibiliy to attach an alphanumerical tag with an underscore to a chromosome name. This is to later refer to specific chromosomes should several chromosomes with the same name should exist or a specific set of chromosomes need to be distinguished from the others (this feature is also possible when no subgrouping is used). In the list of annotations each dictionary contains an entry called <em>tags</em> which is a list of strings. These strings designate tags of chromosomes to which the annotation in question should be applied. The string ``'' is used to specify plain chromsome names. In the above example the string ``A'' would apply to all second chromosomes within each subgroup.</p>
+<p>
+</p>
+<hr />
+<h1><a name="internals">INTERNALS</a></h1>
+<p>
+</p>
+<h2><a name="how_the_space_is_allotted">How the space is allotted</a></h2>
+<p>Horizontal space is dispersed by the absolute sizes decribed in the paragraph <strong>MSF: placements:distances</strong>. This gives you fine control over the horizontal arrangement of chromosomes.
+The vertical space, however, is allotted relative to chromosomal sizes in order to use all available space on the page. First all absolute vertical sizes are collected and subtracted from the available vertical space. Next the maximal chromosomal sizes of each lane are calculated. The size of the lanes is then calculated by being proportional to the relative sizes and filling the available space.</p>
+<p>
+</p>
+<h2><a name="how_to_extend_this_software_package">How to extend this software package</a></h2>
+<p>If you want to write new annotion classes you have to subclass the class CCAnnotation. The available methods are documented there. You should also have a look at he other annotation classes as example reference. Especially the <em>plain</em> annotation is as simple as an annotation can be.</p>
+<p>
+</p>
+<hr />
+<h1><a name="files">FILES</a></h1>
+<p>If not specified by the <strong>--chromosomeSpec</strong> option, the specification file is sought for in the following positions:</p>
+<ul>
+<li></li>
+<em>./humanChromosomes.cfg</em>
+<p></p>
+<li></li>
+<em>${HOME}/Dokumente/Genetics/configs/humanChromosomes.cfg</em>
+<p></p>
+<li></li>
+<em>${HOME}/Documents/Genetics/configs/humanChromosomes.cfg</em>
+<p></p>
+<li></li>
+<em>${CCCONFIGPATH}/humanChromosomes.cfg</em>
+<p></p></ul>
+
+</body>
+
+</html>

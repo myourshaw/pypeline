@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>lociLocations.pl - A program to retrieve chromosomal locations by name</title>
+<link rev="made" href="mailto:feedback@suse.de" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#ensembl">ENSEMBL</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>lociLocations.pl - A program to retrieve chromosomal locations by name</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>lociLocations.pl [<strong>--help</strong>] [<strong>--locusColumn</strong>=<em>columnName</em>] [<strong>--path</strong>=<em>path of database</em>] [<strong>--locilistPath</strong>=<em>locilistPath</em>] [<strong>--retrieveLoci</strong>=<em>loci names</em>] [<strong>--anonymous</strong>] [<strong>--calculateGaps</strong>] [<strong>--aliases</strong>=<em>aliasesPath</em>] [<strong>--source</strong>=<em>name</em>]</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This program takes a list of markers and retrieves the physical and cytogenetic locations from a database. If called with the option <strong>--calculateGaps</strong> it calculates a histogram of gaps for a given marker set. This allows to check for the saturation of the genome by the given marker set. The loci to be retrieved either from STDIN or from a file specified by the <strong>--locilist</strong> option. This input is expected to be a tab separated file (see options <strong>--locus</strong>, <strong>--anonymous</strong>).</p>
+<p>Program output is printed to STDOUT and is in PropertyList format. A dictionary is produced holding as keys the loci names. The values are dictionaries again containing physical (key <em>p</em>) and cytongenetic (key <em>band</em>) information. You can redirect to a file and may directly use it with the <strong>--labelMap</strong> option of <em>coloredChromosomes.pl</em>.</p>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<dl>
+<dt><strong><a name="item__2d_2daliases_3daliasespath"><strong>--aliases</strong>=<em>aliasesPath</em></a></strong><br />
+</dt>
+<dd>
+If marker names from STDIN or the <strong>--locilist</strong> option differ from these used in the database you may specify a file which holds information to map between the name spaces. This file is in <em>PropertyList</em> format and holds a single dictionary. Keys are names from the input and values are names in the database.
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2danonymous"><strong>--anonymous</strong></a></strong><br />
+</dt>
+<dd>
+This option can be used if names of loci are present in a plain file holding one marker name in each line. Then the first line is not read to specify column names but is interpreted as marker name directly.
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2dcalculategaps"><strong>--calculateGaps</strong></a></strong><br />
+</dt>
+<dd>
+Instead of producing output with names of loci this option prints a histogram of gaps between the specified loci.
+</dd>
+<p></p>
+<dt><strong><a name="item__2dh_2c__2d_2dhelp"><strong>-h</strong>, <strong>--help</strong></a></strong><br />
+</dt>
+<dd>
+Print a help text.
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2dlocilistpath_3dlocilistpath"><strong>--locilistPath</strong>=<em>locilistPath</em></a></strong><br />
+</dt>
+<dd>
+Points to a file holding the names of the loci to be retrieved. If that option is omitted STDIN is read instead (see options <strong>--locusColumn</strong>, <strong>--anonymous</strong>).
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2dlocuscolumn_3dcolumnname"><strong>--locusColumn</strong>=<em>columnName</em></a></strong><br />
+</dt>
+<dd>
+The loci list is extracted from a tab separated file. If more than one column is present, specify the right column by name using this option. Column names are read from the first line of the file.
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2dretrievloci_3dloci_names"><strong>--retrievLoci</strong>=<em>loci names</em></a></strong><br />
+</dt>
+<dd>
+With this option loci names can be passed as an argument. For example: <em>--retrieveLoci ``HLA-DRB1 HD''</em>
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2dpath_3dpath_of_database"><strong>--path</strong>=<em>path of database</em></a></strong><br />
+</dt>
+<dd>
+This option indicates which database to use. This information is forwarded to the retrieving module (see option <strong>--source</strong>) and interpreted accordingly.
+</dd>
+<p></p>
+<dt><strong><a name="item__2d_2dsource_3dsource_name"><strong>--source</strong>=<em>source name</em></a></strong><br />
+</dt>
+<dd>
+This option specifies which source is used for information retrieval. Currently only the <em>ldb</em> database is supported. You can copy the files of this database from <em><a href="ftp://cedar.genetics.soton.ac.uk/pub">ftp://cedar.genetics.soton.ac.uk/pub</a></em>. Download the whole directory to local disk and specify your local directory with the <strong>--path</strong> option.
+</dd>
+<p></p></dl>
+<p>
+</p>
+<hr />
+<h1><a name="ensembl">ENSEMBL</a></h1>
+<p>The default source for retrieval is ENSEMBL as of package version 1.4.2. You need to install the ENSEMBL API as described in <a href="http://www.ensembl.org/Docs/linked_docs/ensembl_tutorial.pdf">http://www.ensembl.org/Docs/linked_docs/ensembl_tutorial.pdf</a>
+. The source argument of lociLocation is intepreted as follows: --source host:user:db and defaults to 'ensembldb.ensembl.org:anonymous:homo_sapiens_core_29_35b'. Since database versions change frequently and old versions become unavailable you should use the most recent numbers from <a href="http://www.ensembl.org/Homo_sapiens.">http://www.ensembl.org/Homo_sapiens.</a> If, for example the web page reads 'Current Release 29.35b' than the database name should be 'homo_sapiens_core_29_35b'. This is clearly a shortcoming in the ENSEMBL database structure where a reference to the current version is lacking. Another problem is that only gene symbols are allowed right now. There is no mechanism to retrieve microsatellite markers. If either of these things do bother you please send an email to <a href="mailto:helpdesk@ensembl.org">helpdesk@ensembl.org</a> (as did I). Hopefully this gives momentum to required code changes at EMBL.</p>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p>coloredChromosomes.pl(1) <code>PropertyList(3)</code></p>
+
+</body>
+
+</html>

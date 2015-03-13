@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="scala" name="Scala">
+      <configuration>
+        <option name="compilerLibraryLevel" value="Project" />
+        <option name="compilerLibraryName" value="scala-compiler" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/qscript/org/myourshaw/sting/queue/qscripts/archive" />
+      <excludeFolder url="file://$MODULE_DIR$/qscript/org/myourshaw/sting/queue/qscripts/examples" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-library" level="project" />
+    <orderEntry type="module-library">
+      <library name="gatk-protected/public/gatk-framework/src/main/java">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file:///share/apps/myourshaw/gatk-protected/public/gatk-framework/src/main/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gatk-protected/public/queue-framework/src/main/scala">
+        <CLASSES>
+          <root url="file:///share/apps/myourshaw/gatk-protected/public/queue-framework/src/main/scala" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="gatk-protected/public/queue-framework/target/generated-sources/gatk-extensions">
+        <CLASSES>
+          <root url="file:///share/apps/myourshaw/gatk-protected/public/queue-framework/target/generated-sources/gatk-extensions" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="gatk-package" level="project" />
+    <orderEntry type="library" name="queue-package" level="project" />
+  </component>
+</module>
+

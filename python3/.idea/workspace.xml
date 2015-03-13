@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1904f1bd-ab42-42be-b163-7bfa3b3c612b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../python2/vcf2vax_new.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../20_17437045_C_T.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../20_17437045_C_T.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../20_17437045_C_T.vcf.vax_summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/HumanMitoCartaAll.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/HumanMitoCartaAll.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/INSTALL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/MGI_mouse_phenotype_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/MousePhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/Plugins/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/csv2tab.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_dbnsfp_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_ensembl_databases.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_fathmm_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_hpa_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_kegg_data.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_mgi_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_omim_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_refseq_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/download_uniprot_data.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/examples/Mito_example.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/examples/ProteinSeq_example.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/my.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/mysql_table.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/omim2db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/refgene2db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/test/t.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/test/t.vcf.cluster.allPlugins.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/test/t.vcf.cluster.allPlugins.vax.STDOUT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/test/t.vcf.cluster.allPlugins.vax_summary.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_DIR_BiB_20140121/uniprot2db.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_Plugins_dev/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VAX_Plugins_dev/etc/ppm-Plugins-area.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.3/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.4/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.5/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.6/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.7/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Grantham.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_2.8/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/FATHMM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Grantham.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/UpDownDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/dbNSFP.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_71/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/FATHMM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/GO.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Grantham.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/UpDownDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/dbNSFP.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_72/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/FATHMM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/GO.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Grantham.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/MousePhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/UpDownDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/dbNSFP.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/fathmm/config.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/fathmm/fathmm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_73/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Alignment.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/AlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Blosum62.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/CCDSFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Carol.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Condel.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Consequences.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Conservation.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/DAS.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/DiseasesPhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Downstream.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Draw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/EthnicAlleleFrequencies.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/ExtraCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/FATHMM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/GO.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/GeneIDs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/GenotypeFile.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/GenotypeStats.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/GetIDtemp.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Grantham.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/HGMD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/HPA.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/KEGG.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/LD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/LOVD.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/MousePhenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/NonSynonymousFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/OMES.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/OMIM.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Phenotypes.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/Protein.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/ProteinSeqs.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/RankFilter.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/SameCodon.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/TSSDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/UniProt.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/UpDownDistance.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/VAX.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/VCFCols.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/VEPbrowse.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/config/Condel/config/condel_SP.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/config/Condel/methdist/polyphen.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/config/Condel/methdist/sift.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/config/Condel/methdist/test_condel_SP.data" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/dbNSFP.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/fathmm/config.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/fathmm/fathmm.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_briefings_73/vw.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-02-23/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-05-11/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-06-18/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-08-21/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-11-10/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-11-13/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-11-14/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../VEP_plugins_git_2013-11-15/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__asm_asm_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__asm_asm_analysis_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__asm_asm_commons_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__asm_asm_tree_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__asm_asm_util_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__asm_asm_xml_3_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__colt_colt_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_beust_jcommander_1_27.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_google_caliper_caliper_0_5_rc1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_google_code_cofoja_cofoja_1_0_r139.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_google_code_gson_gson_2_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_google_code_java_allocation_instrumenter_java_allocation_instrumenter_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_google_guava_guava_11_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__com_jamesmurty_utils_java_xmlbuilder_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_codec_commons_codec_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_io_commons_io_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__concurrent_concurrent_1_3_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__gov_nist_math_jama_1_0_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__it_unimi_dsi_fastutil_6_5_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__javassist_javassist_3_12_1_GA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__javax_mail_mail_1_4_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__junit_junit_4_10.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_8_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__net_java_dev_jna_jna_3_2_7.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__net_sf_jgrapht_jgrapht_0_8_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__net_sf_picard_1_109_1722.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__net_sf_sam_1_109_1722.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__net_sf_snpeff_snpeff_2_0_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_apache_ant_ant_1_8_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_apache_commons_commons_email_1_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_apache_commons_commons_jexl_2_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_apache_commons_commons_math_2_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_beanshell_bsh_2_0b4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_broad_tribble_1_109_1722.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_broadinstitute_variant_1_109_1722.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_freemarker_freemarker_2_3_18.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_reflections_reflections_0_9_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_scala_lang_scala_compiler_bundle_2_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_simpleframework_simple_xml_2_0_4.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_testng_testng_6_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_3_rc3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__org_yaml_snakeyaml_1_6.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__stax_stax_1_2_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__us_levk_drmaa_common_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__us_levk_drmaa_gridengine_6_2u5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../gatk_2014-05-02/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../github-repositories/vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../org.myourshaw.sting.queue.qscripts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../perl/core.4353" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../perl/get_genomic_regions.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../perl/kegg_pathways.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/MGI_mouse_phenotype_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/dbsnp_installer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/dbsnp_vcfs2db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/ensembl_intervals_installer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/ensembl_xref2db.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/ensembl_xref_installer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/metabolome_xml2db.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/refGene2interval_list.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/tmpeMEDn1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/uniprot2db.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/vax_MGI_mouse_phenotype_files.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../python2/vax_nhlbi_temp.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/BQSRGatherer_test.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/archive/VAX.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/archive/bams2vcf.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/archive/myUnifiedGenotyper.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/bams2vcf.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/bams2vcf_DNA.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/bams2vcf_gatk2.0.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/ExampleCountLoci.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/ExampleCountReads.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/ExampleCustomWalker.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/ExampleUnifiedGenotyper.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/ExomeUnifiedGenotyper.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/HelloWorld.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../scala/qscript/org/myourshaw/sting/queue/qscripts/examples/IndelRealignmentBaseRecal.scala" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor-current" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/KEGG.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/README.variant_effect_predictor.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/dbsnp_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/dbsnp_test.vcf.ngs_snp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/dbsnp_test.vcf.ngs_snp.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/dbsnp_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/dbsnp_test.vcf.vep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/efetch_gene.wsdl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/ensembl_xref.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/ensembl_xref2db.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/epost.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/eutils_example.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/kegg_example.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/kegg_pathways.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/kegg_pathways.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/uniprot2db.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/va1.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/va2.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/variant_effect_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/variant_effect_predictor.pl.orig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/variant_effect_predictor.pl.orig.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/variant_effect_predictor.pl.patch_1439" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.1/wsdbfetch_soaplite.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.2/variant_effect_predictor_2.2.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.3/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.3/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.3/variant_effect_predictor_2.3.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.4/variant_effect_predictor.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.4/variant_effect_predictor/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.4/variant_effect_predictor/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.4/variant_effect_predictor/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.5/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.5/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.5/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.5/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.6/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.6/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.6/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.6/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.6/variant_effect_predictor.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/gtf2vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/variant_effect_output.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.7/variant_effect_predictor.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.8/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.8/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.8/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.8/gtf2vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.8/variant_effect_predictor-2.8.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_2.8/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/gtf2vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/CVS/Entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/CVS/Repository" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/CVS/Root" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/CVS/Tag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/CVS/Template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/gtf2vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_71/variant_effect_predictor/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/CVS/Entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/CVS/Repository" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/CVS/Root" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/CVS/Tag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/CVS/Template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/filter_vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/gtf2vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_72/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/CVS/Entries" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/CVS/Repository" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/CVS/Root" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/CVS/Tag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/CVS/Template" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/INSTALL.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/convert_cache.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/example.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/filter_vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/gtf2vep.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../variant_effect_predictor_73/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax21/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax21/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax21/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax21/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax21/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/variant_effect_predictor_2.2.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax22/vax22.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/MLL4_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/MLL4_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/README.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/VEP.pm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/VEP_plugins" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd28mms_header.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd28mms_header.vcf.idx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd_test.vcf.validate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd_test.vcf.vax.gt.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd_test.vcf.vax.gt.txt.validate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/gmd_test.vcf.vax.validate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/hgmd_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/hgmd_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/indel1_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/indel_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/indel_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/intergenic_variant_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/intergenic_variant_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/othologs.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/phenotype_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/phenotype_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/phenotype_test.vcf.vax.gt.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/regex.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/snp1_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/snp1_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/snp_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/snp_test.vcf.vax" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/test_data.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/tmpRhoXQr.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/tmp_ZhuQrC/rm_gmd_test.vcf.pe1038179" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/tmp_ZhuQrC/rm_gmd_test.vcf.po1038179" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/uniprot_test.vcf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/variant_annotation_test.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/variant_effect_predictor_2.3.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax23/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/vax24.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax24/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax25/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax26/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax27/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax28/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_71/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_72/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/OMES_score.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/blosum62.mat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/ebi_fetch.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/ncbi_search.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/variant_effect_predictor.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/vax.pl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/vep.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_73/vep_lite.ini" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vax_test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../vep" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../python2/vcf2gtx.py" afterPath="$PROJECT_DIR$/../python2/vcf2gtx_old.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/drug_bank_xml2db.py" afterPath="$PROJECT_DIR$/../python2/drug_bank_xml2db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/exac_annot.py" afterPath="$PROJECT_DIR$/../python2/exac_annot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/exac_vcf2db.py" afterPath="$PROJECT_DIR$/../python2/exac_vcf2db.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/linkdatagen_hom_merge.py" afterPath="$PROJECT_DIR$/../python2/linkdatagen_hom_merge.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/mysqldb.py" afterPath="$PROJECT_DIR$/../python2/mysqldb.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/pypeline.cfg" afterPath="$PROJECT_DIR$/../python2/pypeline.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/vcf2gtx.py" afterPath="$PROJECT_DIR$/../python2/vcf2gtx.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/vcf2vax.py" afterPath="$PROJECT_DIR$/../python2/vcf2vax.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../python2/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../python2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../python2/.idea/workspace.xml" />
+    </list>
+    <ignored path="python3.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python3$db_test.coverage" NAME="db_test Coverage Results" MODIFIED="1419121732311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="python3" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="db_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.050111357" vertical-offset="0" max-vertical-offset="898">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/db_test.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1416" />
+    <option name="y" value="799" />
+    <option name="width" value="1613" />
+    <option name="height" value="1060" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.db_test">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db_test" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/apps/Python-3/bin/python3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python3" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/db_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.db_test" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1904f1bd-ab42-42be-b163-7bfa3b3c612b" name="Default" comment="" />
+      <created>1419108883000</created>
+      <option name="number" value="Default" />
+      <updated>1419108883000</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1416" y="799" width="1613" height="1060" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2549269" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/db_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_pluginbase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6411" max-vertical-offset="6945">
+          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_pluginbase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5961" max-vertical-offset="6945">
+          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28052804" vertical-offset="0" max-vertical-offset="909">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.050111357" vertical-offset="0" max-vertical-offset="898">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

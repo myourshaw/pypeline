@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Postscript.pm - A class to build of postscript files using a procedural perl interface</title>
+<link rev="made" href="mailto:feedback@suse.de" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#initialization">Initialization</a></li>
+		<li><a href="#postscript_code_producing_methods">Postscript code producing methods</a></li>
+	</ul>
+
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>Postscript.pm - A class to build of postscript files using a procedural perl interface</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ use Postscript;</pre>
+<pre>
+ $ps = Postscript-&gt;newWithProperties($properties);</pre>
+<pre>
+ $ps-&gt;lineto(100, 140); # for example
+ ...
+ $ps-&gt;close();</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Instantiate a Postscript object. <em>$properties</em> is a hash which which for which the key <em>file</em> indicates a path where to write the final Postscript file. Then issue arbitrary Postscript commands. Finally invoke the close method which writes a valid Postscript file including header and footer. Some more complex methods (like centered text) automatically add Postscript ``functions'' to the file which are included at most once. The following list documents the relevant implemented methods which for most the time correspond with a Postscript operator. Therefore more competent explenation of these methods can be saught for in various Postscript documentations.</p>
+<p>
+</p>
+<h2><a name="initialization">Initialization</a></h2>
+<p><code>newWithProperties($properties)</code> - initializes a new Postscript object. '$properties' is a dictionary (hash) that contains initialization options. 'path' denotes the destination path of the output file (defaults to '/tmp/postscript.ps'). If the extension is '.pdf', a pdf file is created. 'properties' specifies further properties in a dictionary used to modify the PS header. 'createPDF' is a boolean forcing a final conversion to pdf file format (this results in, both, a 'ps' and a 'pdf' file). 'backgroundDocument' specifies a pdf Document the pages of which are drawn on each sequential page being created before any further drawing is executed.</p>
+<p>
+</p>
+<h2><a name="postscript_code_producing_methods">Postscript code producing methods</a></h2>
+<ul>
+<li></li>
+arc($x, $y, $r, $strt, $stop) - issue the postscript operator 'arc' with the arguments on stack
+<p></p>
+<li></li>
+arcfill($x, $y, $r, $strt, $stop) - first issue the <code>arc()</code> method, then the <code>fill()</code> method
+<p></p>
+<li></li>
+arcn($x, $y, $r, $strt, $stop) - issue the postscript operator 'arcn' (which draws the other way round than 'arc')
+<p></p>
+<li></li>
+moveto($x, $y) - issue the postscript operator 'moveto'
+<p></p>
+<li></li>
+rlineto($x, $y) - issue the postscript operator 'rlineto'
+<p></p>
+<li></li>
+lineto($x, $y) - issue the postscript operator 'lineto'
+<p></p>
+<li></li>
+line($x, $y, $x1, $y1) - issue the postscript operator 'line'
+<p></p>
+<li></li>
+strokeline($x, $y, $x1, $y1) - issue the postscript operator 'line', then 'stroke'
+<p></p>
+<li></li>
+<code>setgray($gray)</code> - issue the postscript operator 'setgray'
+<p></p>
+<li></li>
+<code>setlinewidth($width)</code> - issue the postscript operator 'setlinewidth'
+<p></p>
+<li></li>
+rect($x, $y, $w, $h) - issue the postscript operators 'moveto', 'lineto', 'closepath' as to produce a rectangle with lower left corner ($x, $y) and width <em>$w</em>, height <em>$h</em>.
+<p></p>
+<li></li>
+rectstroke($x, $y, $w, $h) - issue rect(), then <code>stroke()</code>
+<p></p>
+<li></li>
+rectfill($x, $y, $w, $h) - issue rect(), then <code>fill()</code>
+<p></p>
+<li></li>
+<code>stroke()</code> - issue the postscript operator 'stroke'
+<p></p>
+<li></li>
+<code>fill()</code> - issue the postscript operator 'fill'
+<p></p>
+<li></li>
+<code>gsave()</code> - issue the postscript operator 'gsave'
+<p></p>
+<li></li>
+<code>grestore()</code> - issue the postscript operator 'grestore'
+<p></p>
+<li></li>
+<code>clip()</code> - issue the postscript operator 'clip'
+<p></p>
+<li></li>
+<code>newpath()</code> - issue the postscript operator 'newpath'
+<p></p>
+<li></li>
+<code>closepath()</code> - issue the postscript operator 'closepath'
+<p></p>
+<li></li>
+<code>show($text)</code> - issue the postscript operator 'show'
+<p></p>
+<li></li>
+centeredShow($text, $x, $y) - show the text <em>$text</em> centered by first calculating text width and then moving accordingly
+<p></p>
+<li></li>
+ycenteredShow($text, $x, $y) - a corresponding method to ceneteredShow which, this time centers vertically by calculating the height of the text
+<p></p>
+<li></li>
+showRyC($text, $x, $y) - show the text right aligned and centered vertically
+<p></p>
+<li></li>
+showRotated($text, $x, $y, $angle) - show the text rotated by the angle <em>$angle</em>. The graphic context is saved before and restored after the operation
+<p></p>
+<li></li>
+setfont($fontname, $size) - issue the postscript operators 'findfont' and 'setfont'.
+<p></p>
+<li></li>
+<code>setrgbcolor($c)</code> - issue the postscript operator 'setrgbcolor' when <em>$c</em> is a hash containing the keys <em>r</em>, <em>g</em> and <em>b</em>
+<p></p>
+<li></li>
+<code>rotate($a)</code> - issue the postscript operator 'rotate'
+<p></p>
+<li></li>
+scale($sx, $sy) - issue the postscript operator 'scale'
+<p></p>
+<li></li>
+translate($x, $y) - issue the postscript operator 'translate'
+<p></p>
+<li></li>
+colorRect($c, $x, $y, $w, $h) - issue the methods <strong>newPath()</strong>, <strong>setrgbcolor()</strong>, <strong>rect()</strong> and <strong>fill()</strong>
+<p></p>
+<li></li>
+setBlendedColorFromColorsAndFraction($c1, $c2, $f) - issue <strong>setrgbcolor()</strong> with a color lying <em>$f</em>-way between <em>$c1</em> and <em>$c2</em>.
+<p></p>
+<li></li>
+hblendedRect($c1, $c2, $x, $y, $w, $h, $stepSize) - draw a rectangle starting with color <em>$c1</em> lefthand and ending in color <em>$c2</em> righthand. <em>$stepSize</em> indicates how many points each interpolated rectangle is wide.
+<p></p>
+<li></li>
+vblendedRect($c1, $c2, $x, $y, $w, $h, $stepSize) - draw a rectangle starting with color <em>$c1</em> upside and ending in color <em>$c2</em> downside. <em>$stepSize</em> indicates how many points each interpolated rectangle is high.
+<p></p>
+<li></li>
+hshiningRect($c1, $c2, $f, $x, $y, $w, $h, $stepSize) - by the use of the method <strong>hblendedRect()</strong> <strong>hshiningRect</strong> first blends from color <em>$c1</em> to color <em>$c2</em> and then back to color <em>$c1</em>. Where within the specified rect the color <em>$c2</em> is drawn is determind by <em>$f</em> giving a fraction relative to rectangle width
+<p></p>
+<li></li>
+curve($x1, $y1, $x2, $y2, $x3, $y3, $x4, $y4) - issue the postscript operators 'moveto' (with arguments <em>$x1</em> and <em>$x2</em>) and 'curveto' (with the rest of the arguments)
+<p></p>
+<li></li>
+bubble($x, $y, $w, $h, $r) - draw a rect with rounded corners the radius of which is <em>$r</em>
+<p></p>
+<li></li>
+tilePicturesInRect($pathes, $rect, $c) - arrange the picuters referred to by <em>$pathes</em> in <em>$rect</em>. <em>$c</em> configures the process. <em>$c-</em>{picRatio}&gt; determines the relative aspect of the rects the pictures are drawn in (for portrait pictures 0.75 is a reasonable choice). <em>$c-</em>{doShowNames}&gt; determines wether file names are to be printed. <em>$c-</em>{font}&gt; configures the font to be used therewith. <em>$c-</em>{color}&gt; controls the text color.
+<p></p></ul>
+
+</body>
+
+</html>

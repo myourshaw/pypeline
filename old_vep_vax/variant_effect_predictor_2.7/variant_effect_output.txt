@@ -1,0 +1,684 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v2.7
+## Output produced at 2012-12-05 11:49:29
+## Connected to homo_sapiens_core_69_37 on ensembldb.ensembl.org
+## Using API version 69, DB version 69
+## Extra column keys:
+## CELL_TYPE : List of cell types and classifications for regulatory feature
+## DISTANCE : Shortest distance from variant to transcript
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	Extra
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000369823	Transcript	missense_variant	356	311	104	N/S	aAc/aGc	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000260246	ENST00000562538	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3993
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000490171	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=138
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000309851	Transcript	missense_variant	308	254	85	N/S	aAc/aGc	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000369819	Transcript	missense_variant	270	254	85	N/S	aAc/aGc	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000483399	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000213366	ENST00000369831	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000241720	ENST00000429410	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000213366	ENST00000460717	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000490021	Transcript	5_prime_UTR_variant	238	-	-	-	-	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000349334	Transcript	missense_variant	288	254	85	N/S	aAc/aGc	-	
+2KB_upstream_variant	1:110231746	G	ENSG00000134184	ENST00000476065	Transcript	missense_variant	336	152	51	N/S	aAc/aGc	-	
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000368827	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=305
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000368823	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2233
+stop_lost	1:151743735	C	ENSG00000232937	ENST00000420382	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4870
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000458431	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2239
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000315067	Transcript	3_prime_UTR_variant	780	-	-	-	-	-	
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000400999	Transcript	stop_lost	816	201	67	*/C	tgA/tgC	-	
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000368822	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2235
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000479764	Transcript	stop_lost	3717	201	67	*/C	tgA/tgC	-	
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000440583	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2840
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000525790	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000368824	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2225
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000582415	Transcript	3_prime_UTR_variant	248	-	-	-	-	-	
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000453029	Transcript	3_prime_UTR_variant	667	-	-	-	-	-	
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000526413	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2840
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000321531	Transcript	3_prime_UTR_variant	780	-	-	-	-	-	
+stop_lost	1:151743735	C	ENSG00000182134	ENST00000368825	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2220
+stop_lost	1:151743735	C	ENSG00000143450	ENST00000577465	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3080
+stop_lost	1:151743735	C	ENSG00000249602	ENST00000512280	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1758
+initiator_codon_change	1:160147311	T	ENSG00000132681	ENST00000470705	Transcript	initiator_codon_variant	111	1	1	M/L	Atg/Ttg	-	
+initiator_codon_change	1:160147311	T	ENSG00000132681	ENST00000418334	Transcript	splice_region_variant,non_coding_exon_variant,nc_transcript_variant	949	-	-	-	-	-	
+initiator_codon_change	1:160147311	T	ENSG00000132681	ENST00000469023	Transcript	splice_region_variant,non_coding_exon_variant,nc_transcript_variant	3141	-	-	-	-	-	
+initiator_codon_change	1:160147311	T	ENSG00000132681	ENST00000477338	Transcript	splice_region_variant,3_prime_UTR_variant,NMD_transcript_variant	3025	-	-	-	-	-	
+initiator_codon_change	1:160147311	T	ENSG00000132681	ENST00000466526	Transcript	non_coding_exon_variant,nc_transcript_variant	116	-	-	-	-	-	
+initiator_codon_change	1:160147311	T	ENSG00000132681	ENST00000368081	Transcript	missense_variant,splice_region_variant	3064	2593	865	M/L	Atg/Ttg	-	
+2KB_upstream_variant	2:15378822-15378823	AATT	ENSG00000151779	ENST00000441750	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+2KB_upstream_variant	2:15378822-15378823	AATT	ENSG00000151779	ENST00000281513	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+2KB_upstream_variant	2:15378822-15378823	AATT	ENSG00000151779	ENST00000442506	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+2KB_upstream_variant	2:15378822-15378823	AATT	ENSG00000151779	ENST00000417461	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=12
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000405867	Transcript	inframe_insertion	76-77	3-4	1-2	-/T	-/ACT	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000425035	Transcript	inframe_insertion	172-173	3-4	1-2	-/T	-/ACT	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000448743	Transcript	inframe_insertion	111-112	3-4	1-2	-/T	-/ACT	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000412805	Transcript	inframe_insertion	323-324	3-4	1-2	-/T	-/ACT	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000537713	Transcript	inframe_insertion	53-54	3-4	1-2	-/T	-/ACT	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000545822	Transcript	5_prime_UTR_variant,feature_elongation	40-41	-	-	-	-	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000317799	Transcript	inframe_insertion	107-108	3-4	1-2	-/T	-/ACT	-	
+5_prime_UTR_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000479347	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	82-83	-	-	-	-	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000405867	Transcript	inframe_insertion	76-77	3-4	1-2	-/T	-/ACT	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000425035	Transcript	inframe_insertion	172-173	3-4	1-2	-/T	-/ACT	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000448743	Transcript	inframe_insertion	111-112	3-4	1-2	-/T	-/ACT	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000412805	Transcript	inframe_insertion	323-324	3-4	1-2	-/T	-/ACT	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000537713	Transcript	inframe_insertion	53-54	3-4	1-2	-/T	-/ACT	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000545822	Transcript	5_prime_UTR_variant,feature_elongation	40-41	-	-	-	-	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000317799	Transcript	inframe_insertion	107-108	3-4	1-2	-/T	-/ACT	-	
+nc_transcript_variant	2:26477125-26477126	ACT	ENSG00000138029	ENST00000479347	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	82-83	-	-	-	-	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000413554	Transcript	missense_variant	293	277	93	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000171887	Transcript	missense_variant	526	73	25	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000446903	Transcript	missense_variant	571	448	150	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000419504	Transcript	missense_variant	235	73	25	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000449814	Transcript	incomplete_terminal_codon_variant,coding_sequence_variant	582	73	25	X	G/A	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000310858	Transcript	missense_variant	338	166	56	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000423413	Transcript	missense_variant	450	268	90	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000430930	Transcript	missense_variant	235	73	25	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000439083	Transcript	missense_variant	427	73	25	V/I	Gtc/Atc	-	
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000492338	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=95
+incomplete_terminal_codon_variant	2:218762616	T	ENSG00000079308	ENST00000413280	Transcript	missense_variant	432	73	25	V/I	Gtc/Atc	-	
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000444408	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=86
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000396654	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000415298	Transcript	intron_variant,NMD_transcript_variant,feature_elongation	-	-	-	-	-	-	
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000334271	Transcript	intron_variant,NMD_transcript_variant,feature_elongation	-	-	-	-	-	-	
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000409375	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=128
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000443700	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000446015	Transcript	stop_gained,inframe_insertion	494-495	460-461	154	R/R*	aga/aGATga	-	
+stop_gained	2:224629898-224629899	ATC	ENSG00000152056	ENST00000396653	Transcript	3_prime_UTR_variant,feature_elongation	485-486	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000459915	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000454902	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000291478	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000393496	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000354186	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000428018	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+regulatory_region_variant	3:124369640-124369641	A	ENSG00000160145	ENST00000360013	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000477086	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000466475	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000346145	Transcript	intron_variant	-	-	-	-	-	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000478156	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000470451	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000479406	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000349607	Transcript	intron_variant	-	-	-	-	-	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000477756	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000475231	Transcript	missense_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000462323	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000463781	Transcript	missense_variant	1002	542	181	T/K	aCa/aAa	-	
+TF_binding_site_variant	3:195517909	T	ENSG00000145113	ENST00000480843	Transcript	missense_variant,NMD_transcript_variant	614	542	181	T/K	aCa/aAa	-	
+splice_donor_variant	4:5975385	T	ENSG00000181215	ENST00000324058	Transcript	splice_donor_variant	-	-	-	-	-	-	
+splice_donor_variant	4:5975385	T	ENSG00000181215	ENST00000531445	Transcript	splice_donor_variant	-	-	-	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000513084	Transcript	frameshift_variant,splice_region_variant,feature_elongation	1651-1652	1501-1502	501	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000379904	Transcript	frameshift_variant,splice_region_variant,feature_elongation	1510-1511	1366-1367	456	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000508077	Transcript	incomplete_terminal_codon_variant,coding_sequence_variant,feature_elongation	488-489	490-491	164	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000510373	Transcript	frameshift_variant,splice_region_variant,feature_elongation	1728-1729	1501-1502	501	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000515387	Transcript	splice_region_variant,non_coding_exon_variant,nc_transcript_variant,feature_elongation	232-233	-	-	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000513368	Transcript	splice_region_variant,non_coding_exon_variant,nc_transcript_variant,feature_elongation	290-291	-	-	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000247121	ENST00000501338	Transcript	intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000437043	Transcript	frameshift_variant,splice_region_variant,feature_elongation	2212-2213	1501-1502	501	-	-	-	
+incomplete_terminal_codon_variant	5:96232565-96232566	CC	ENSG00000164308	ENST00000515095	Transcript	splice_region_variant,non_coding_exon_variant,nc_transcript_variant,feature_elongation	412-413	-	-	-	-	-	
+intron_variant	5:141059244	T	ENSG00000120318	ENST00000508305	Transcript	intron_variant	-	-	-	-	-	-	
+intron_variant	5:141059244	T	ENSG00000120318	ENST00000239440	Transcript	intron_variant	-	-	-	-	-	-	
+intron_variant	5:141059244	T	ENSG00000120318	ENST00000504448	Transcript	intron_variant	-	-	-	-	-	-	
+intron_variant	5:141059244	T	ENSG00000120318	ENST00000522690	Transcript	intron_variant	-	-	-	-	-	-	
+non_synonymous_codon	6:8428137-8428138	AGT	ENSG00000124786	ENST00000379660	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+non_synonymous_codon	6:8428137-8428138	AGT	ENSG00000124786	ENST00000426876	Transcript	missense_variant,feature_elongation	783-784	649-650	217	L/HL	cta/cACTta	-	
+non_synonymous_codon	6:8428137-8428138	AGT	ENSG00000124786	ENST00000339306	Transcript	intron_variant,feature_elongation	-	-	-	-	-	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000485513	Transcript	non_coding_exon_variant,nc_transcript_variant	466	-	-	-	-	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000486194	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=53
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000484704	Transcript	non_coding_exon_variant,nc_transcript_variant	249	-	-	-	-	-	
+synonymous_codon	6:29692182	T	ENSG00000239257	ENST00000428990	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2264
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000444621	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1129
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000434407	Transcript	synonymous_variant	567	567	189	L	ctC/ctT	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000482257	Transcript	non_coding_exon_variant,nc_transcript_variant	485	-	-	-	-	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000376861	Transcript	synonymous_variant	951	567	189	L	ctC/ctT	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000462777	Transcript	non_coding_exon_variant,nc_transcript_variant	769	-	-	-	-	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000259951	Transcript	synonymous_variant	623	567	189	L	ctC/ctT	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000429294	Transcript	synonymous_variant	203	204	68	L	ctC/ctT	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000440587	Transcript	synonymous_variant	572	213	71	L	ctC/ctT	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000465459	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=649
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000475996	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1049
+synonymous_codon	6:29692182	T	ENSG00000214922	ENST00000399247	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2196
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000334668	Transcript	synonymous_variant	691	567	189	L	ctC/ctT	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000489502	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+synonymous_codon	6:29692182	T	ENSG00000204642	ENST00000414333	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=174
+synonymous_codon	6:29692182	T	ENSG00000225864	ENST00000427340	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=434
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000492754	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1192
+3_prime_UTR_variant	6:36936640	A	ENSG00000164530	ENST00000373674	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4027
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000418541	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=48
+3_prime_UTR_variant	6:36936640	A	ENSG00000164530	ENST00000491324	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4197
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000373627	Transcript	3_prime_UTR_variant	1334	-	-	-	-	-	
+3_prime_UTR_variant	6:36936640	A	ENSG00000164530	ENST00000536757	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4033
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000490662	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000538808	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=862
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000471737	Transcript	non_coding_exon_variant,nc_transcript_variant	525	-	-	-	-	-	
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000373616	Transcript	3_prime_UTR_variant	1283	-	-	-	-	-	
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000460219	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=602
+3_prime_UTR_variant	6:36936640	A	ENSG00000137409	ENST00000373550	Transcript	missense_variant	947	947	316	P/L	cCg/cTg	-	
+stop_gained	6:51483962	A	ENSG00000228689	ENST00000589278	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+stop_gained	6:51483962	A	ENSG00000170927	ENST00000371117	Transcript	stop_gained	12418	12142	4048	Q/*	Caa/Taa	-	
+stop_gained	6:51483962	A	ENSG00000228689	ENST00000454361	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+stop_gained	6:51483962	A	ENSG00000228689	ENST00000587000	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=2671
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000370710	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1010
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000508603	Transcript	synonymous_variant	205	120	40	K	aaG/aaA	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000370706	Transcript	intron_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000370702	Transcript	intron_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000509251	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1941
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000509071	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000477046	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1479
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000502749	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000357489	Transcript	intron_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000504603	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000510989	Transcript	non_coding_exon_variant,nc_transcript_variant	389	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000370708	Transcript	synonymous_variant	382	204	68	K	aaG/aaA	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000510483	Transcript	intron_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000370711	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000515290	Transcript	intron_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000491832	Transcript	intron_variant	-	-	-	-	-	-	
+NMD_transcript_variant	6:56965418	A	ENSG00000112200	ENST00000444273	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+regulatory_region_variant	6:90661242	T	ENSG00000226455	ENST00000413986	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+regulatory_region_variant	6:90661242	T	ENSG00000226455	ENST00000445838	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+regulatory_region_variant	6:90661242	T	ENSG00000112182	ENST00000257749	Transcript	missense_variant	1291	583	195	A/T	Gcc/Acc	-	
+regulatory_region_variant	6:90661242	T	ENSG00000112182	ENST00000343122	Transcript	missense_variant	1115	583	195	A/T	Gcc/Acc	-	
+regulatory_region_variant	6:90661242	T	ENSG00000112182	ENST00000537989	Transcript	missense_variant	1286	583	195	A/T	Gcc/Acc	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000421580	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1174
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000456758	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000429178	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=177
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000425407	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000401592	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000439679	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1107
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000471349	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_truncation	273	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000469755	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1120
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000493681	Transcript	intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000467483	Transcript	intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000483996	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4013
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000457378	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000435699	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000440380	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4207
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000413171	Transcript	intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000452783	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000424128	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4207
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000403868	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000457598	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1158
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000405266	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000450881	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000419312	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=148
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000450538	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=187
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000340926	Transcript	intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000427969	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=625
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000477950	Transcript	intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+500B_downstream_variant	7:882830	-	ENSG00000164828	ENST00000389574	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000465745	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	3671-3672	-	-	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000341666	Transcript	frameshift_variant,feature_elongation	2706-2707	2683-2684	895	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000361778	Transcript	frameshift_variant,feature_elongation	1455-1456	1432-1433	478	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000474436	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	4708-4709	-	-	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000298004	Transcript	frameshift_variant,feature_elongation	1597-1598	1432-1433	478	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000378617	Transcript	frameshift_variant,feature_elongation	3078-3079	2683-2684	895	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000491687	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	33-34	-	-	-	-	-	
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000472208	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3575
+5KB_downstream_variant	9:35090633-35090634	A	ENSG00000165282	ENST00000492770	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4507
+TF_binding_site_variant	9:43844265	-	ENSG00000154529	ENST00000479351	Transcript	intron_variant,NMD_transcript_variant,feature_truncation	-	-	-	-	-	-	
+TF_binding_site_variant	9:43844265	-	ENSG00000154529	ENST00000341990	Transcript	frameshift_variant,feature_truncation	1831	1599	533	-	-	-	
+TF_binding_site_variant	9:43844265	-	ENSG00000237207	ENST00000417687	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=4238
+TF_binding_site_variant	9:43844265	-	ENSG00000154529	ENST00000377561	Transcript	frameshift_variant,feature_truncation	1745	1746	582	-	-	-	
+TF_binding_site_variant	9:43844265	-	ENSG00000154529	ENST00000377564	Transcript	frameshift_variant,feature_truncation	1992	1599	533	-	-	-	
+2KB_upstream_variant	9:99086471	G	ENSG00000130958	ENST00000253270	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:99086471	G	ENSG00000130958	ENST00000375259	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:99086471	G	ENSG00000130958	ENST00000490599	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=20
+2KB_upstream_variant	9:113170920	C	ENSG00000165124	ENST00000401783	Transcript	synonymous_variant	7297	6960	2320	P	ccT/ccG	-	
+2KB_upstream_variant	9:113170920	C	ENSG00000165124	ENST00000374469	Transcript	synonymous_variant	7155	6891	2297	P	ccT/ccG	-	
+2KB_upstream_variant	9:113170920	C	ENSG00000165124	ENST00000297826	Transcript	synonymous_variant	1153	738	246	P	ccT/ccG	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000373730	Transcript	missense_variant	425	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000470366	Transcript	missense_variant,NMD_transcript_variant	102	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000546115	Transcript	missense_variant	425	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000373723	Transcript	missense_variant	425	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000373728	Transcript	missense_variant	114	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000394315	Transcript	missense_variant	89	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000344641	Transcript	missense_variant	372	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000373729	Transcript	splice_acceptor_variant	-	-	-	-	-	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000489572	Transcript	missense_variant,NMD_transcript_variant	105	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000441707	Transcript	missense_variant	460	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000467864	Transcript	missense_variant,NMD_transcript_variant	145	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000297908	Transcript	missense_variant	425	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000373727	Transcript	missense_variant	198	61	21	A/S	Gcc/Tcc	-	
+splice_acceptor_variant	9:125033231	T	ENSG00000148187	ENST00000373724	Transcript	splice_acceptor_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:130829254	T	ENSG00000171169	ENST00000373078	Transcript	missense_variant	347	127	43	A/T	Gcc/Acc	-	
+2KB_upstream_variant	9:130829254	T	ENSG00000171169	ENST00000470245	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3233
+2KB_upstream_variant	9:130829254	T	ENSG00000148339	ENST00000373068	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1226
+2KB_upstream_variant	9:130829254	T	ENSG00000171169	ENST00000488519	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=691
+2KB_upstream_variant	9:130829254	T	ENSG00000148339	ENST00000373069	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1318
+2KB_upstream_variant	9:130829254	T	ENSG00000171169	ENST00000496649	Transcript	non_coding_exon_variant,nc_transcript_variant	192	-	-	-	-	-	
+2KB_upstream_variant	9:130829254	T	ENSG00000171169	ENST00000466139	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000445183	Transcript	3_prime_UTR_variant,NMD_transcript_variant	1324	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000492279	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=880
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000471943	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000495975	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=40
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000474639	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000277475	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000406926	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000439290	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000494608	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4424
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000414342	Transcript	synonymous_variant,NMD_transcript_variant	276	276	92	P	ccC/ccT	-	
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000483458	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1205
+2KB_upstream_variant	9:131830333	T	ENSG00000148343	ENST00000358369	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000464520	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1506
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000479446	Transcript	synonymous_variant,NMD_transcript_variant	4154	4155	1385	A	gcC/gcT	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000371605	Transcript	synonymous_variant	6250	6102	2034	A	gcC/gcT	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000464157	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1901
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000490486	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1111
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000459850	Transcript	3_prime_UTR_variant,NMD_transcript_variant	6315	-	-	-	-	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000341511	Transcript	synonymous_variant	6155	6105	2035	A	gcC/gcT	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000477420	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1424
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000448336	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1219
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000431584	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=788
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000265662	Transcript	synonymous_variant	6253	6105	2035	A	gcC/gcT	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000488535	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1636
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000437791	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=305
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000487109	Transcript	3_prime_UTR_variant,NMD_transcript_variant	6273	-	-	-	-	-	
+2KB_upstream_variant	9:139905141	A	ENSG00000107331	ENST00000463603	Transcript	non_coding_exon_variant,nc_transcript_variant	93	-	-	-	-	-	
+splice_donor_variant	11:46342082	-	ENSG00000157613	ENST00000288400	Transcript	splice_donor_variant,feature_truncation	-	-	-	-	-	-	
+splice_donor_variant	11:46342082	-	ENSG00000157613	ENST00000530244	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+splice_donor_variant	11:46342082	-	ENSG00000157613	ENST00000534616	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=232
+splice_donor_variant	11:46342082	-	ENSG00000157613	ENST00000529193	Transcript	splice_region_variant,intron_variant,feature_truncation	-	-	-	-	-	-	
+splice_region_variant	11:46342082	-	ENSG00000157613	ENST00000288400	Transcript	splice_donor_variant,feature_truncation	-	-	-	-	-	-	
+splice_region_variant	11:46342082	-	ENSG00000157613	ENST00000530244	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_truncation	-	-	-	-	-	-	
+splice_region_variant	11:46342082	-	ENSG00000157613	ENST00000534616	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=232
+splice_region_variant	11:46342082	-	ENSG00000157613	ENST00000529193	Transcript	splice_region_variant,intron_variant,feature_truncation	-	-	-	-	-	-	
+splice_acceptor_variant	11:46342259-46342260	G	ENSG00000157613	ENST00000288400	Transcript	splice_acceptor_variant,feature_elongation	-	-	-	-	-	-	
+splice_acceptor_variant	11:46342259-46342260	G	ENSG00000157613	ENST00000530244	Transcript	splice_region_variant,nc_transcript_variant,feature_elongation	1117-1118	-	-	-	-	-	
+splice_acceptor_variant	11:46342259-46342260	G	ENSG00000157613	ENST00000534616	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=409
+splice_acceptor_variant	11:46342259-46342260	G	ENSG00000157613	ENST00000529193	Transcript	frameshift_variant,splice_region_variant,feature_elongation	1974-1975	1523-1524	508	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000528851	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000534596	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=207
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000527254	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000529054	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000533023	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000530179	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000420732	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000531531	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1894
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000531914	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1334
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000323961	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000533409	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1972
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000526677	Transcript	non_coding_exon_variant,nc_transcript_variant	2220	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000529906	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000532169	Transcript	stop_retained_variant	940	426	142	*	taG/taA	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000530839	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000533660	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1725
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000525549	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000528925	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3483
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000412309	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000533989	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000426738	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	11:59947160	T	ENSG00000110077	ENST00000526697	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3118
+intergenic_variant	12:52215975	G	ENSG00000261308	ENST00000564840	Transcript	non_coding_exon_variant,nc_transcript_variant	225	-	-	-	-	-	
+intergenic_variant	12:52215975	G	ENSG00000260473	ENST00000567167	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1312
+intergenic_variant	12:52215975	G	ENSG00000261586	ENST00000562343	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+mature_miRNA_variant	12:54385584	A	ENSG00000180818	ENST00000513413	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2090
+mature_miRNA_variant	12:54385584	A	ENSG00000180818	ENST00000514415	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2125
+mature_miRNA_variant	12:54385584	A	ENSG00000180818	ENST00000303460	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1521
+mature_miRNA_variant	12:54385584	A	ENSG00000250133	ENST00000513533	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3408
+mature_miRNA_variant	12:54385584	A	ENSG00000180806	ENST00000508190	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3709
+mature_miRNA_variant	12:54385584	A	ENSG00000197757	ENST00000509328	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3144
+mature_miRNA_variant	12:54385584	A	ENSG00000180806	ENST00000504557	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3095
+mature_miRNA_variant	12:54385584	A	ENSG00000207924	ENST00000385189	Transcript	non_coding_exon_variant,nc_transcript_variant	63	-	-	-	-	-	
+mature_miRNA_variant	12:54385584	A	ENSG00000197757	ENST00000504315	Transcript	intron_variant	-	-	-	-	-	-	
+mature_miRNA_variant	12:54385584	A	ENSG00000172789	ENST00000513209	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+mature_miRNA_variant	12:54385584	A	ENSG00000180818	ENST00000511575	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1807
+intron_variant	14:36121088	-	ENSG00000174373	ENST00000389698	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+intron_variant	14:36121088	-	ENSG00000174373	ENST00000553892	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+intron_variant	14:36121088	-	ENSG00000174373	ENST00000258840	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+intron_variant	14:36121088	-	ENSG00000174373	ENST00000554259	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=6
+intron_variant	14:36121088	-	ENSG00000174373	ENST00000382366	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+intron_variant	14:36121088	-	ENSG00000174373	ENST00000307138	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000545170	Transcript	inframe_insertion	1011-1012	942-943	314-315	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556374	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	1010-1011	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556288	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	828-829	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000557311	Transcript	inframe_insertion	486-487	378-379	126-127	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000429774	Transcript	inframe_insertion	963-964	894-895	298-299	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556644	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	299-300	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556220	Transcript	inframe_insertion	619-620	597-598	199-200	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554994	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	849-850	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554592	Transcript	inframe_insertion	934-935	912-913	304-305	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553491	Transcript	inframe_insertion	784-785	762-763	254-255	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000557030	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	734-735	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000555381	Transcript	inframe_insertion	727-728	705-706	235-236	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556898	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	914-915	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553686	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	796-797	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000359366	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	867-868	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554040	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	519-520	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000526245	Transcript	intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000555816	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	684-685	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556082	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	587-588	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553570	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	684-685	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000340660	Transcript	inframe_insertion	808-809	750-751	250-251	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553488	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	992-993	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553309	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	949-950	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556274	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	840-841	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554672	Transcript	inframe_insertion	683-684	621-622	207-208	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000555958	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	784-785	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000393287	Transcript	inframe_insertion	973-974	915-916	305-306	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556671	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	848-849	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000503767	Transcript	inframe_insertion	918-919	870-871	290-291	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554214	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	698-699	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556315	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	848-849	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556339	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	452-453	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000532032	Transcript	inframe_insertion	925-926	915-916	305-306	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554491	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	991-992	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553498	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	838-839	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556958	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	696-697	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000502250	Transcript	inframe_insertion	649-650	378-379	126-127	-/QQQQ	-/CAGCAGCAGCAG	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553287	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	653-654	-	-	-	-	-	
+3_prime_UTR_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554350	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	870-871	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000545170	Transcript	inframe_insertion	1011-1012	942-943	314-315	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556374	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	1010-1011	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556288	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	828-829	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000557311	Transcript	inframe_insertion	486-487	378-379	126-127	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000429774	Transcript	inframe_insertion	963-964	894-895	298-299	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556644	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	299-300	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556220	Transcript	inframe_insertion	619-620	597-598	199-200	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554994	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	849-850	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554592	Transcript	inframe_insertion	934-935	912-913	304-305	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553491	Transcript	inframe_insertion	784-785	762-763	254-255	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000557030	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	734-735	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000555381	Transcript	inframe_insertion	727-728	705-706	235-236	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556898	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	914-915	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553686	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	796-797	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000359366	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	867-868	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554040	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	519-520	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000526245	Transcript	intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000555816	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	684-685	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556082	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	587-588	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553570	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	684-685	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000340660	Transcript	inframe_insertion	808-809	750-751	250-251	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553488	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	992-993	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553309	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	949-950	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556274	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	840-841	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554672	Transcript	inframe_insertion	683-684	621-622	207-208	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000555958	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	784-785	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000393287	Transcript	inframe_insertion	973-974	915-916	305-306	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556671	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	848-849	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000503767	Transcript	inframe_insertion	918-919	870-871	290-291	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554214	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	698-699	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556315	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	848-849	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556339	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	452-453	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000532032	Transcript	inframe_insertion	925-926	915-916	305-306	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554491	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	991-992	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553498	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	838-839	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000556958	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	696-697	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000502250	Transcript	inframe_insertion	649-650	378-379	126-127	-/QQQQ	-/CAGCAGCAGCAG	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000553287	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	653-654	-	-	-	-	-	
+NMD_transcript_variant	14:92537354-92537355	CTGCTGCTGCTG	ENSG00000066427	ENST00000554350	Transcript	3_prime_UTR_variant,NMD_transcript_variant,feature_elongation	870-871	-	-	-	-	-	
+500B_downstream_variant	14:96783679	T	ENSG00000066739	ENST00000488421	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=381
+500B_downstream_variant	14:96783679	T	ENSG00000066739	ENST00000473234	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+500B_downstream_variant	14:96783679	T	ENSG00000066739	ENST00000359933	Transcript	intron_variant	-	-	-	-	-	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000567892	Transcript	downstream_gene_variant,feature_elongation	878-879	-	-	-	-	-	DISTANCE=0
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000420010	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	2512-2513	-	-	-	-	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000567629	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1644
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000416219	Transcript	inframe_insertion,stop_retained_variant	3015-3016	2926-2927	976	*/*WK	tag/tAGTGGAag	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000566874	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2128
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000565631	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	3330-3331	-	-	-	-	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000262429	Transcript	inframe_insertion,stop_retained_variant	2928-2929	2839-2840	947	*/*WK	tag/tAGTGGAag	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000567222	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_elongation	1554-1555	-	-	-	-	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000261286	ENST00000565700	Transcript	intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+stop_retained_variant	16:84497336-84497337	AGTGGA	ENSG00000064270	ENST00000564691	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1952
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000527360	Transcript	splice_region_variant,intron_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000527298	Transcript	splice_region_variant,intron_variant,NMD_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000527200	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000525037	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000529602	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000530514	Transcript	splice_region_variant,intron_variant,NMD_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000525021	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000534814	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000530173	Transcript	splice_region_variant,intron_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000533538	Transcript	splice_region_variant,intron_variant,nc_transcript_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000322157	Transcript	splice_region_variant,intron_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000527964	Transcript	splice_region_variant,intron_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000544660	Transcript	splice_region_variant,intron_variant,feature_elongation	-	-	-	-	-	-	
+5KB_upstream_variant	17:45669428-45669429	A	ENSG00000141279	ENST00000534807	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=4004
+intergenic_variant	19:7944349	-	-	-	-	intergenic_variant	-	-	-	-	-	-	
+stop_lost	19:53740226-53740228	-	ENSG00000197928	ENST00000333952	Transcript	stop_lost,feature_truncation	1918-1920	1752-1754	584-585	T*/T	acCTAg/acg	-	
+splice_region_variant	19:58551812	A	ENSG00000152467	ENST00000282326	Transcript	splice_region_variant,intron_variant	-	-	-	-	-	-	
+splice_region_variant	19:58551812	A	ENSG00000152467	ENST00000391700	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2000
+5KB_upstream_variant	20:62591418	G	ENSG00000198276	ENST00000354216	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3650
+5KB_upstream_variant	20:62591418	G	ENSG00000198276	ENST00000358711	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3649
+5KB_upstream_variant	20:62591418	G	ENSG00000196700	ENST00000450537	Transcript	missense_variant	2563	2502	834	K/N	aaG/aaC	-	
+5KB_upstream_variant	20:62591418	G	ENSG00000198276	ENST00000369892	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3649
+5KB_upstream_variant	20:62591418	G	ENSG00000196700	ENST00000217130	Transcript	missense_variant	2547	2502	834	K/N	aaG/aaC	-	
+5KB_upstream_variant	20:62591418	G	ENSG00000196700	ENST00000369888	Transcript	missense_variant	2556	2502	834	K/N	aaG/aaC	-	
+5KB_upstream_variant	20:62591418	G	ENSG00000198276	ENST00000483710	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=3724
+non_synonymous_codon	20:62703274	A	ENSG00000171700	ENST00000395042	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1260
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000343484	Transcript	missense_variant	1040	871	291	E/K	Gag/Aag	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171700	ENST00000493165	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2546
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000475236	Transcript	non_coding_exon_variant,nc_transcript_variant	286	-	-	-	-	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000465433	Transcript	non_coding_exon_variant,nc_transcript_variant	448	-	-	-	-	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000470559	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2549
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000361317	Transcript	missense_variant	1232	790	264	E/K	Gag/Aag	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000487164	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1712
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000477783	Transcript	non_coding_exon_variant,nc_transcript_variant	423	-	-	-	-	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000440819	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1286
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000458442	Transcript	missense_variant	921	790	264	E/K	Gag/Aag	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000395053	Transcript	3_prime_UTR_variant	1538	-	-	-	-	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000339217	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1286
+non_synonymous_codon	20:62703274	A	ENSG00000171700	ENST00000332298	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1263
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000415602	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3787
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000461072	Transcript	non_coding_exon_variant,nc_transcript_variant	397	-	-	-	-	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000465111	Transcript	non_coding_exon_variant,nc_transcript_variant	2163	-	-	-	-	-	
+non_synonymous_codon	20:62703274	A	ENSG00000171700	ENST00000479996	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=4643
+non_synonymous_codon	20:62703274	A	ENSG00000171703	ENST00000495168	Transcript	non_coding_exon_variant,nc_transcript_variant	474	-	-	-	-	-	
+rs149201999	22:16050408	C	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs146752890	22:16050612	G	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs139377059	22:16050678	T	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs188945759	22:16050984	G	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs6518357	22:16051107	A	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs62224609	22:16051249	C	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs62224610	22:16051347	C	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs143503259	22:16051453	C	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs192339082	22:16051477	A	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs79725552	22:16051480	C	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs141578542	22:16051497	G	-	-	-	intergenic_variant	-	-	-	-	-	-	
+22_16051723_A/-	22:16051723	-	-	-	-	intergenic_variant	-	-	-	-	-	-	
+rs184287184	22:16051867	C	-	-	-	intergenic_variant	-	-	-	-	-	-	
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000302273	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-349	?-326	?-109	-	-	-	OverlapPC=61.85;OverlapBP=449
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211641	ENST00000390286	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=544
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000224465	ENST00000458366	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000169575	ENST00000403807	Transcript	initiator_codon_variant,coding_sequence_variant,5_prime_UTR_variant,intron_variant,feature_truncation	?-468	?-329	?-110	-	-	-	OverlapPC=65.87;OverlapBP=554
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253637	ENST00000520445	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=304
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211640	ENST00000390285	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=574
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000227710	ENST00000442890	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=346
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000254308	ENST00000520218	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=250
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000236323	ENST00000431230	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=679
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253126	ENST00000521342	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=452
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211639	ENST00000390284	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	344-?	344-?	115-?	-	-	-	OverlapPC=3.93;OverlapBP=19
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105173	22:22517056-22599640	deletion	ENSG00000211642	ENST00000390287	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=477
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000169575	ENST00000302273	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=70
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000169575	ENST00000403807	Transcript	5_prime_UTR_variant,feature_truncation	?-36	-	-	-	-	-	OverlapPC=4.28;OverlapBP=36
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000211642	ENST00000390287	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	365-?	352-?	118-?	-	-	-	OverlapPC=0.21;OverlapBP=1
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000169575	ENST00000302273	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=70
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000169575	ENST00000403807	Transcript	5_prime_UTR_variant,feature_truncation	?-36	-	-	-	-	-	OverlapPC=4.28;OverlapBP=36
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000211642	ENST00000390287	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	365-?	352-?	118-?	-	-	-	OverlapPC=0.21;OverlapBP=1
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000169575	ENST00000302273	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=70
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000234726	ENST00000432623	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1751
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000169575	ENST00000403807	Transcript	5_prime_UTR_variant,feature_truncation	?-36	-	-	-	-	-	OverlapPC=4.28;OverlapBP=36
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000253935	ENST00000520107	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=487
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000228050	ENST00000420768	Transcript	transcript_ablation	-	-	-	-	-	-	OverlapPC=100.00;OverlapBP=1380
+MERGED_DEL_2_105175	22:22569660-22599122	deletion	ENSG00000211642	ENST00000390287	Transcript	stop_lost,coding_sequence_variant,3_prime_UTR_variant,feature_truncation	365-?	352-?	118-?	-	-	-	OverlapPC=0.21;OverlapBP=1
+5KB_downstream_variant	X:299591	G	ENSG00000167393	ENST00000479438	Transcript	non_coding_exon_variant,nc_transcript_variant	622	-	-	-	-	-	
+5KB_downstream_variant	X:299591	G	ENSG00000167393	ENST00000390665	Transcript	synonymous_variant	1411	1392	464	A	gcT/gcC	-	
+5KB_downstream_variant	X:299591	G	ENSG00000167393	ENST00000477636	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=3055
+5KB_downstream_variant	X:299591	G	ENSG00000167393	ENST00000477110	Transcript	non_coding_exon_variant,nc_transcript_variant	1252	-	-	-	-	-	
+5KB_downstream_variant	X:299591	G	ENSG00000167393	ENST00000484364	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=1909
+5KB_downstream_variant	X:299591	G	ENSG00000167393	ENST00000468169	Transcript	non_coding_exon_variant,nc_transcript_variant	470	-	-	-	-	-	
+2KB_upstream_variant	X:322335	T	ENSG00000167393	ENST00000496630	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=84
+2KB_upstream_variant	X:322335	T	ENSG00000167393	ENST00000381625	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:322335	T	ENSG00000167393	ENST00000390665	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:322335	T	ENSG00000167393	ENST00000445792	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:1554649	C	ENSG00000169093	ENST00000534940	Transcript	splice_region_variant,synonymous_variant	328	102	34	T	acA/acG	-	
+2KB_upstream_variant	X:1554649	C	ENSG00000169093	ENST00000381333	Transcript	splice_region_variant,synonymous_variant	317	228	76	T	acA/acG	-	
+2KB_upstream_variant	X:1554649	C	ENSG00000169093	ENST00000462195	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=28
+2KB_upstream_variant	X:1554649	C	ENSG00000169093	ENST00000463763	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=365
+2KB_upstream_variant	X:1554649	C	ENSG00000169093	ENST00000416733	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:1554649	C	ENSG00000169093	ENST00000381317	Transcript	splice_region_variant,synonymous_variant	309	276	92	T	acA/acG	-	
+2KB_upstream_variant	X:1554655	C	ENSG00000169093	ENST00000534940	Transcript	splice_region_variant,intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:1554655	C	ENSG00000169093	ENST00000381333	Transcript	splice_region_variant,intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:1554655	C	ENSG00000169093	ENST00000462195	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=34
+2KB_upstream_variant	X:1554655	C	ENSG00000169093	ENST00000463763	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=371
+2KB_upstream_variant	X:1554655	C	ENSG00000169093	ENST00000416733	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:1554655	C	ENSG00000169093	ENST00000381317	Transcript	splice_region_variant,intron_variant	-	-	-	-	-	-	
+nc_transcript_variant	X:2832668	G	ENSG00000006756	ENST00000217890	Transcript	non_coding_exon_variant,nc_transcript_variant	1147	-	-	-	-	-	
+nc_transcript_variant	X:2832668	G	ENSG00000006756	ENST00000458014	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=4707
+nc_transcript_variant	X:2832668	G	ENSG00000006756	ENST00000495294	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+nc_transcript_variant	X:2832668	G	ENSG00000006756	ENST00000481340	Transcript	non_coding_exon_variant,nc_transcript_variant	222	-	-	-	-	-	
+nc_transcript_variant	X:2832668	G	ENSG00000006756	ENST00000381154	Transcript	intron_variant	-	-	-	-	-	-	
+mature_miRNA_variant	X:37883168-37883171	-	ENSG00000147041	ENST00000357972	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+mature_miRNA_variant	X:37883168-37883171	-	ENSG00000147041	ENST00000297875	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+mature_miRNA_variant	X:37883168-37883171	-	ENSG00000221466	ENST00000408539	Transcript	non_coding_exon_variant,nc_transcript_variant,feature_truncation	69-72	-	-	-	-	-	
+mature_miRNA_variant	X:37883168-37883171	-	ENSG00000250349	ENST00000465127	Transcript	intron_variant,feature_truncation	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000475699	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000439735	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000465540	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000369793	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000432135	Transcript	5_prime_UTR_variant	21	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000445994	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000309585	Transcript	5_prime_UTR_variant	44	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000369809	Transcript	5_prime_UTR_variant	22	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000433313	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000476679	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=646
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000351413	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000350743	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000426834	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000476307	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000470127	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1460
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000480812	Transcript	intron_variant,nc_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000483780	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=134
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000488225	Transcript	non_coding_exon_variant,nc_transcript_variant	12	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000424626	Transcript	5_prime_UTR_variant	23	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000426231	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=92
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000393638	Transcript	5_prime_UTR_variant	22	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000479875	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=652
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000369776	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000455296	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000369808	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=2792
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000369790	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000147403	ENST00000428169	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=2902
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000299328	Transcript	intron_variant	-	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000451865	Transcript	5_prime_UTR_variant	15	-	-	-	-	-	
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000483674	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=896
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000476800	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=1022
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000014935	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=2031
+5_prime_UTR_variant	X:153640406	T	ENSG00000013563	ENST00000369807	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=2794
+5_prime_UTR_variant	X:153640406	T	ENSG00000102125	ENST00000454722	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000483543	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=785
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000369423	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000244174	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000540897	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000489233	Transcript	downstream_gene_variant	-	-	-	-	-	-	DISTANCE=463
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000424344	Transcript	intron_variant	-	-	-	-	-	-	
+2KB_upstream_variant	X:155233098	C	ENSG00000124334	ENST00000494962	Transcript	upstream_gene_variant	-	-	-	-	-	-	DISTANCE=2681

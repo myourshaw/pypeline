@@ -1,0 +1,10 @@
+{
+	show = "1";
+	placement = "GAMES";
+	viewer = "C:/Program Files/Ghostgum/gsview/gsview32.exe";
+	mapfile = "";
+	pdf = "0";
+	config = "./configs/humanChromosomesFineHg18.cfg";
+	labelfile = "";
+	output = "./chromosomes.ps";
+}

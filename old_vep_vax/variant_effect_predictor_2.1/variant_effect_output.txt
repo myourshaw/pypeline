@@ -1,0 +1,61 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v2.1
+## Output produced at 2011-08-23 16:20:14
+## Connected to homo_sapiens_core_63_37 on myourshaw-dev.genome.ucla.edu
+## Using API version 63, DB version 63
+## Extra column keys:
+## HGNC         : HGNC gene identifier
+## ENSP         : Ensembl protein identifer
+## HGVSc        : HGVS coding sequence name
+## HGVSp        : HGVS protein sequence name
+## SIFT         : SIFT prediction
+## PolyPhen     : PolyPhen prediction
+## Condel       : Condel SIFT/PolyPhen consensus prediction
+## MATRIX       : The source and identifier of a transcription factor binding profile aligned at this position
+## HIGH_INF_POS : A flag indicating if the variant falls in a high information position of a transcription factor binding profile
+## Amino_Acids_In_Orthologues : The amino acids aligned with the reference amino acid in orthologous sequences
+## Orthologue_Species : The species from which sequences were obtained to generate the 'Amino_Acid_In_Orthologues', 'Alignment_Score_Change', 'C_blosum', and 'Context_Conservation' values
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	HGNC	ENSP	HGVSc	HGVSp	SIFT_prediction	SIFT_score	PolyPhen_prediction	PolyPhen_score	Condel_prediction	Condel_score	MATRIX	HIGH_INF_POS	Amino_Acids_In_Orthologues	Orthologue_Species
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	-	ENSR00000668495	RegulatoryFeature	regulatory_region_variant	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000223972	ENST00000456328	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000227232	ENST00000488147	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000227232	ENST00000541675	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000223972	ENST00000450305	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000223972	ENST00000515242	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000227232	ENST00000538476	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000223972	ENST00000518655	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000227232	ENST00000438504	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+D11D8F08-CAD9-48A4-BF85-1BF451379028	1:10291	T	ENSG00000227232	ENST00000423562	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	-	ENSR00000668495	RegulatoryFeature	regulatory_region_variant	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000223972	ENST00000456328	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000227232	ENST00000488147	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000227232	ENST00000541675	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000223972	ENST00000450305	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000223972	ENST00000515242	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000227232	ENST00000538476	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000223972	ENST00000518655	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000227232	ENST00000438504	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+2ECAF757-0154-4A38-B35C-67777E79E68D	1:10303	T	ENSG00000227232	ENST00000423562	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	-	ENSR00000668495	RegulatoryFeature	regulatory_region_variant	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000223972	ENST00000456328	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000227232	ENST00000488147	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000227232	ENST00000541675	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000223972	ENST00000450305	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000223972	ENST00000515242	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000227232	ENST00000538476	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000223972	ENST00000518655	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000227232	ENST00000438504	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+72F680DB-DB21-4E5F-90C3-8DDBDF7CAFC5	1:10309	T	ENSG00000227232	ENST00000423562	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	-	ENSR00000668495	RegulatoryFeature	regulatory_region_variant	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000223972	ENST00000456328	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000227232	ENST00000488147	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000227232	ENST00000541675	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000223972	ENST00000450305	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000223972	ENST00000515242	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000227232	ENST00000538476	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000223972	ENST00000518655	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000227232	ENST00000438504	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+4A609FC1-F325-4345-9167-77A6F0A87059	1:10315	T	ENSG00000227232	ENST00000423562	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+F8096FA1-D1BB-40CE-A477-AA292F97AF32	1:10327	C	-	ENSR00000668495	RegulatoryFeature	regulatory_region_variant	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+F8096FA1-D1BB-40CE-A477-AA292F97AF32	1:10327	C	ENSG00000223972	ENST00000456328	Transcript	2KB_upstream_variant	-	-	-	-	-	-	DDX11L1	-	-	-	-	-	-	-	-	-	-	-	-	-
+F8096FA1-D1BB-40CE-A477-AA292F97AF32	1:10327	C	ENSG00000227232	ENST00000488147	Transcript	5KB_downstream_variant	-	-	-	-	-	-	WASH7P	-	-	-	-	-	-	-	-	-	-	-	-	-
+F8096FA1-D1BB-40CE-A477-AA292F97AF32	1:10327	C	ENSG00000227232
