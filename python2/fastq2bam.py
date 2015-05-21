@@ -759,7 +759,7 @@ def main():
             
             #validate pileup.vcf
             job_name = my_name+'_ValidateVcfFile_'+os.path.basename(pileup_vcf)
-            cmd = '{} {} -i {} -o {}'.format(args.python, validate_vcf.__file__, pileup_vcf, pileup_vcf_validate)
+            cmd = '{} {} -i {} -o {} --max_errors 0'.format(args.python, validate_vcf.__file__, pileup_vcf, pileup_vcf_validate)
             job = my.run_job(cmd, job_name, job_dir, hold_jid=mpileup_jobid)
             validatesamplevcffile_jobid = job.jobId
             hold_mpileup_jids += [job.jobId]

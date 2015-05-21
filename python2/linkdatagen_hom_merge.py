@@ -27,6 +27,7 @@ def main():
     files = my.unglob(args.input)
     in_col_headings = 'FID  IID      PHE  CHR        SNP1        SNP2         POS1         POS2         KB     NSNP  DENSITY     PHOM     PHET'.split()
     out_col_headings = ['file', 'sample'] + in_col_headings
+    my.makedir(os.path.dirname(args.output))
     with open(args.output, 'w') as o:
         o.write('\t'.join(out_col_headings)+'\n')
         for file in files:

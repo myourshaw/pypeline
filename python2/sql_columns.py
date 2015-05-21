@@ -85,6 +85,12 @@ done""")
                     fields = line.split('\t')
                     ii = [i for i in range(len(fields))]
                     column_widths = {i: max(len(fields[i]),column_widths.setdefault(i,0)) for i in ii}
+                    if len(fields) != len(these_column_names):
+                        raise SqlColumnsError(
+                            ('Number of fields in line {} is not the same as the number of expected columns.\n' +
+                            'Columns:\t{}\n' +
+                            'Fields:\t{}').format(
+                                line_count, '\t'.join(these_column_names.values()), '\t'.join(fields)))
                     sql_data_dict = my.get_sql_data_dict(these_column_names, fields)
                     my.update_sql_column_spec(sql_column_spec, sql_data_dict)
 

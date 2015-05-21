@@ -85,18 +85,18 @@ def run(top_dir, input, out_dir=None, output_prefix=None, job_dir=None, referenc
         output_prefix = ''
         
     #get defaults from configuration file
-    reference = reference if reference else config.get('reference','default_decoy_reference')
+    reference = reference if reference else config.get('reference','default_reference')
     if not my.file_exists(reference):
         raise BamMetricsError('cannot find reference sequence fasta file {}'.format(reference))
     gatk_jar = gatk_jar if gatk_jar else config.get('gatk','GenomeAnalysisTK')
     if not my.file_exists(gatk_jar):
         raise BamMetricsError('cannot find GATK jar file {}'.format(gatk_jar))
     if not bait:
-        bait = config.get('interval','nimblegen_SeqCapEZ_Exome_v30')
+        bait = config.get('interval','nimblegen_SeqCapEZ_Exome_v30_decoy86SQ')
     if not my.file_exists(bait):
         raise BamMetricsError('cannot find bait file {}'.format(bait))
     if not targets:
-        targets = [bait, config.get('interval','ensembl_protein_coding_genes'), config.get('interval','refgene_interval_list'),]
+        targets = [bait, config.get('interval','ensembl_protein_coding_genes_decoy86SQ'), config.get('interval','refgene_interval_list_decoy86SQ'),]
     for i in targets:
         if not my.file_exists(i):
             raise BamMetricsError('cannot find target file {}'.format(i))

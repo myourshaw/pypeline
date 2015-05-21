@@ -456,7 +456,7 @@ def script() {
   val recalibratedSampleBams_scatter_count = scatter_count_max / recalibratedSampleBams.size
 
   // variant genotyping and annotation on recalibrated input bams + previously recalibrated extra bams
-  if (recalibratedSampleBams.nonEmpty){
+  if (!recalibratedSampleBams.isEmpty){
 
     //depth of coverage
     val doc_output_prefix =  qscript.vcf_prefix + ".coverage"
@@ -466,60 +466,57 @@ def script() {
     var new_existing_gvcfs: List[File] = List()
     val raw_gvcf_hc = qscript.vcf_prefix + ".hc.raw.gvcf.vcf"
     //raw
-    val raw_variants_hc = qscript.vcf_prefix + ".hc.raw.vcf"
+    val raw_vcf_hc = qscript.vcf_prefix + ".hc.raw.vcf"
     //eval raw
-    val raw_variants_eval_hc = swapExt(raw_variants_hc, ".vcf",".VariantEval")
+    val raw_vcf_eval_hc = swapExt(raw_vcf_hc, ".vcf",".VariantEval")
     //val hc_metrics = swapExt(raw_vcf_hc, ".vcf", ".metrics")
     //recalibrate snvs
-    //val raw_snvs_vcf_hc = vcf_prefix + ".hc.raw.snvs.vcf"
-    val vqsr_snvs_recal_hc = qscript.vcf_prefix + ".hc.recalibrate_SNV.recal"
-    val vqsr_snvs_tranches_hc = qscript.vcf_prefix + ".hc.recalibrate_SNV.tranches"
-    val vqsr_snvs_plots_hc = qscript.vcf_prefix + ".hc.recalibrate_SNV_plots.R"
-    val recalibrated_snvs_raw_indels_hc = qscript.vcf_prefix + ".hc.recalibrated_snvs_raw_indels.vcf"
-    //TODO: update RNASeq from best practices
+    val raw_snvs_vcf_hc = vcf_prefix + ".hc.raw.snvs.vcf"
+    val vqsr_snvs_recal_hc = raw_snvs_vcf_hc + ".recal"
+    val vqsr_snvs_tranches_hc = raw_snvs_vcf_hc + ".tranches"
+    val vqsr_snvs_plots_hc = raw_snvs_vcf_hc + "plots.R"
+    val recalibrated_snvs_vcf_hc = qscript.vcf_prefix + ".hc.recalibrated.snvs.vcf"
     val filtered_snvs_vcf_hc = qscript.vcf_prefix + ".hc.filtered.snvs.vcf" //RNASeq
     //recalibrate indels
-    //val raw_indels_vcf_hc = qscript.vcf_prefix  + ".hc.raw.indels.vcf"
-    val vqsr_indels_recal_hc = qscript.vcf_prefix + ".hc.recalibrate_INDEL.recal"
-    val vqsr_indels_tranches_hc = qscript.vcf_prefix + ".hc.recalibrate_INDEL.tranches"
-    val vqsr_indels_plots_hc = qscript.vcf_prefix + ".hc.recalibrate_INDEL.plots.R"
-    //val recalibrated_indels_vcf_hc = qscript.vcf_prefix + ".hc.recalibrated.indels.vcf"
-    //TODO: update RNASeq from best practices
+    val raw_indels_vcf_hc = qscript.vcf_prefix  + ".hc.raw.indels.vcf"
+    val vqsr_indels_recal_hc = raw_indels_vcf_hc + ".recal"
+    val vqsr_indels_tranches_hc = raw_indels_vcf_hc + ".tranches"
+    val vqsr_indels_plots_hc = raw_indels_vcf_hc + "plots.R"
+    val recalibrated_indels_vcf_hc = qscript.vcf_prefix + ".hc.recalibrated.indels.vcf"
     val filtered_indels_vcf_hc = qscript.vcf_prefix + ".hc.filtered.indels.vcf" //RNASeq
-    //analysis ready recalibrated snvs & indels
-    val recalibrated_variants_hc = qscript.vcf_prefix + ".hc.recalibrated_variants.vcf"
+    //combine snvs & indels
+    val analysis_ready_vcf_hc = qscript.vcf_prefix + ".hc.analysis_ready.vcf"
     //eval
-    val recalibrated_variants_eval_hc = swapExt(recalibrated_variants_hc, ".vcf",".VariantEval")
-    //reannotate if there is a reason
-    val reannotated_recalibrated_variants_hc = swapExt(recalibrated_variants_hc, ".vcf",".reannotated.vcf")
+    val analysis_ready_vcf_eval_hc = swapExt(analysis_ready_vcf_hc, ".vcf",".VariantEval")
+    //annotate
+    val annotated_vcf_hc = swapExt(analysis_ready_vcf_hc, ".vcf",".annotated.vcf")
 
     //file names for UnifiedGenotyper
     //raw
-    val raw_variants_ug =  qscript.vcf_prefix + ".ug.raw.vcf"
+    val raw_vcf_ug =  qscript.vcf_prefix + ".ug.raw.vcf"
     //eval raw
-    val raw_vvariants_eval_ug = swapExt(raw_variants_ug, ".vcf",".VariantEval")
+    val raw_vcf_eval_ug = swapExt(raw_vcf_ug, ".vcf",".VariantEval")
     //val ug_metrics = swapExt(raw_vcf_ug, ".vcf", ".metrics")
     //recalibrate snvs
-    //val raw_snvs_vcf_ug = vcf_prefix + ".ug.raw.snvs.vcf"
-    val vqsr_snvs_recal_ug = qscript.vcf_prefix + ".ug.recalibrate_SNV.recal"
-    val vqsr_snvs_tranches_ug = qscript.vcf_prefix + ".ug.recalibrate_SNV.tranches"
-    val vqsr_snvs_plots_ug = qscript.vcf_prefix + ".ug.recalibrate_SNVplots.R"
-    val recalibrated_snvs_raw_indels_ug = qscript.vcf_prefix + ".ug.recalibrated_snvs_raw_indels.vcf"
+    val raw_snvs_vcf_ug = vcf_prefix + ".ug.raw.snvs.vcf"
+    val vqsr_snvs_recal_ug = raw_snvs_vcf_ug + ".recal"
+    val vqsr_snvs_tranches_ug = raw_snvs_vcf_ug + ".tranches"
+    val vqsr_snvs_plots_ug = raw_snvs_vcf_ug + "plots.R"
+    val recalibrated_snvs_vcf_ug = qscript.vcf_prefix + ".ug.recalibrated.snvs.vcf"
     //recalibrate indels
-    //val raw_indels_vcf_ug = qscript.vcf_prefix  + ".ug.raw.indels.vcf"
-    val vqsr_indels_recal_ug = qscript.vcf_prefix + ".ug.recalibrate_INDEL.recal"
-    val vqsr_indels_tranches_ug = qscript.vcf_prefix + ".ug.recalibrate_INDEL.tranches"
-    val vqsr_indels_plots_ug = qscript.vcf_prefix + ".ug.recalibrate_INDEL.plots.R"
-    //val recalibrated_indels_vcf_ug = qscript.vcf_prefix + ".ug.recalibrated.indels.vcf"
-    //recalibrated snvs & indels
-    val recalibrated_variants_ug = qscript.vcf_prefix + ".ug.recalibrated_variants.vcf"
+    val raw_indels_vcf_ug = qscript.vcf_prefix  + ".ug.raw.indels.vcf"
+    val vqsr_indels_recal_ug = raw_indels_vcf_ug + ".recal"
+    val vqsr_indels_tranches_ug = raw_indels_vcf_ug + ".tranches"
+    val vqsr_indels_plots_ug = raw_indels_vcf_ug + "plots.R"
+    val recalibrated_indels_vcf_ug = qscript.vcf_prefix + ".ug.recalibrated.indels.vcf"
+    //combine snvs & indels
+    val analysis_ready_vcf_ug = qscript.vcf_prefix + ".ug.analysis_ready.vcf"
     //eval
-    val recalibrated_variants_eval_ug = swapExt(recalibrated_variants_ug, ".vcf",".VariantEval")
-    //annotate if there is a reason
-    val reannotated_recalibrated_variants_ug = swapExt(recalibrated_variants_ug, ".vcf",".reannotated.vcf")
+    val analysis_ready_vcf_eval_ug = swapExt(analysis_ready_vcf_ug, ".vcf",".VariantEval")
+    //annotate
+    val annotated_vcf_ug = swapExt(analysis_ready_vcf_ug, ".vcf",".annotated.vcf")
 
     //val indel_filter_expression = if (sampleCount >= 10) List("QD < 2.0 || ReadPosRankSum < -20.0 || InbreedingCoeff < -0.8 || FS > 200.0") else List("QD < 2.0 || ReadPosRankSum < -20.0 || FS > 200.0")
-    //TODO: update RNASeq from best practices
     val rnaseq_filter_names = List("RNASeq_QDFS")
     val rnaseq_filter_expressions = List("QD < 2.0 || FS > 30.0")
 
@@ -538,55 +535,54 @@ def script() {
       add(combineGVCFs(new_existing_gvcfs, raw_gvcf_hc, scatter_count_max))
 
       //joint genotyping to produce raw SNP and indel VCFs for input to VQSR
-      add(genotypeGVCFs(List(raw_gvcf_hc), raw_variants_hc, scatter_count_max))
+      add(genotypeGVCFs(List(raw_gvcf_hc), raw_vcf_hc, scatter_count_max))
 
-        //split snvs and indels into two files, may still needed for RNASeq?
-//        add(selectVariants(raw_variants_hc, raw_snvs_vcf_hc, List(VariantContext.Type.SNP))
-//          ,selectVariants(raw_variants_hc, raw_indels_vcf_hc, List(VariantContext.Type.INDEL)))
+        //split snvs and indels into two files
+        add(selectVariants(raw_vcf_hc, raw_snvs_vcf_hc, List(VariantContext.Type.SNP))
+          ,selectVariants(raw_vcf_hc, raw_indels_vcf_hc, List(VariantContext.Type.INDEL)))
 
-        //VQSR for DNASeq, hard filters for RNASeq
+        //VQSR for DNASeq, hard filters fro RNASeq
         if (!rnaseq) {
           //VQSR
-          add(variantRecalibrator(raw_variants_hc, vqsr_snvs_recal_hc, vqsr_snvs_tranches_hc, vqsr_snvs_plots_hc, VariantRecalibratorArgumentCollection.Mode.SNP, false)
-            ,applyRecalibration(raw_variants_hc, vqsr_snvs_recal_hc, vqsr_snvs_tranches_hc, recalibrated_snvs_raw_indels_hc, VariantRecalibratorArgumentCollection.Mode.SNP))
-          add(variantRecalibrator(recalibrated_snvs_raw_indels_hc, vqsr_indels_recal_hc, vqsr_indels_tranches_hc, vqsr_indels_plots_hc, VariantRecalibratorArgumentCollection.Mode.INDEL, false)
-            ,applyRecalibration(recalibrated_snvs_raw_indels_hc, vqsr_indels_recal_hc, vqsr_indels_tranches_hc, recalibrated_variants_hc, VariantRecalibratorArgumentCollection.Mode.INDEL))
+          add(variantRecalibrator(raw_snvs_vcf_hc, vqsr_snvs_recal_hc, vqsr_snvs_tranches_hc, vqsr_snvs_plots_hc, VariantRecalibratorArgumentCollection.Mode.SNP, false)
+            ,applyRecalibration(raw_snvs_vcf_hc, vqsr_snvs_recal_hc, vqsr_snvs_tranches_hc, recalibrated_snvs_vcf_hc, VariantRecalibratorArgumentCollection.Mode.SNP))
+          add(variantRecalibrator(raw_indels_vcf_hc, vqsr_indels_recal_hc, vqsr_indels_tranches_hc, vqsr_indels_plots_hc, VariantRecalibratorArgumentCollection.Mode.INDEL, false)
+            ,applyRecalibration(raw_indels_vcf_hc, vqsr_indels_recal_hc, vqsr_indels_tranches_hc, recalibrated_indels_vcf_hc, VariantRecalibratorArgumentCollection.Mode.INDEL))
 
-          //combine snvs and indels, may still needed for RNASeq?
-//          add(combineVariants(List(recalibrated_snvs_raw_indels_hc, recalibrated_indels_vcf_hc), recalibrated_variants_hc))
+          //combine snvs and indels
+          add(combineVariants(List(recalibrated_snvs_vcf_hc, recalibrated_indels_vcf_hc), analysis_ready_vcf_hc))
 
-        //TODO: update RNASeq from best practices
         } else {
           //hard filters
-//          add(variantFiltration(raw_snvs_vcf_hc, filtered_snvs_vcf_hc, rnaseq_filter_names, rnaseq_filter_expressions))
-//          add(variantFiltration(raw_indels_vcf_hc, filtered_indels_vcf_hc, rnaseq_filter_names, rnaseq_filter_expressions))
-//          add(combineVariants(List(filtered_snvs_vcf_hc, filtered_indels_vcf_hc), recalibrated_variants_hc))
+          add(variantFiltration(raw_snvs_vcf_hc, filtered_snvs_vcf_hc, rnaseq_filter_names, rnaseq_filter_expressions))
+          add(variantFiltration(raw_indels_vcf_hc, filtered_indels_vcf_hc, rnaseq_filter_names, rnaseq_filter_expressions))
+          add(combineVariants(List(filtered_snvs_vcf_hc, filtered_indels_vcf_hc), analysis_ready_vcf_hc))
       }
 
       //VariantEval
-      add(variantEval(raw_variants_hc, raw_variants_eval_hc)
-        ,variantEval(recalibrated_variants_hc, recalibrated_variants_eval_hc))
+      add(variantEval(raw_vcf_hc, raw_vcf_eval_hc)
+        ,variantEval(analysis_ready_vcf_hc, analysis_ready_vcf_eval_hc))
 
       //VariantAnnotator
       //may zero out the FS annotation
-      //no need for post-recalibration annotation at present
+      //maybe it will fix AD values messed up by CombineVariants?
       //add(variantAnnotator(analysis_ready_vcf_hc, annotated_vcf_hc))
     }
 
     //UnifiedGenotyper (DEPRECATED)
     if (unified_genotyper){
       //add(unifiedGenotyper(recalibratedSampleBams, raw_vcf_ug, ug_metrics))
-      add(unifiedGenotyper(recalibratedSampleBams, raw_variants_ug, scatter_count_max))
+      add(unifiedGenotyper(recalibratedSampleBams, raw_vcf_ug, scatter_count_max))
 
       //split snvs and indels into two files
-//      add(selectVariants(raw_variants_ug, raw_snvs_vcf_ug, List(VariantContext.Type.SNP))
-//        ,selectVariants(raw_variants_ug, raw_indels_vcf_ug, List(VariantContext.Type.INDEL)))
+      add(selectVariants(raw_vcf_ug, raw_snvs_vcf_ug, List(VariantContext.Type.SNP))
+        ,selectVariants(raw_vcf_ug, raw_indels_vcf_ug, List(VariantContext.Type.INDEL)))
 
       //VQSR
-      add(variantRecalibrator(raw_variants_ug, vqsr_snvs_recal_ug, vqsr_snvs_tranches_ug, vqsr_snvs_plots_ug, VariantRecalibratorArgumentCollection.Mode.SNP, true)
-        ,applyRecalibration(raw_variants_ug, vqsr_snvs_recal_ug, vqsr_snvs_tranches_ug, recalibrated_snvs_raw_indels_ug, VariantRecalibratorArgumentCollection.Mode.SNP))
-      add(variantRecalibrator(recalibrated_snvs_raw_indels_ug, vqsr_indels_recal_ug, vqsr_indels_tranches_ug, vqsr_indels_plots_ug, VariantRecalibratorArgumentCollection.Mode.INDEL, true)
-        ,applyRecalibration(recalibrated_snvs_raw_indels_ug, vqsr_indels_recal_ug, vqsr_indels_tranches_ug, recalibrated_variants_ug, VariantRecalibratorArgumentCollection.Mode.INDEL))
+      add(variantRecalibrator(raw_snvs_vcf_ug, vqsr_snvs_recal_ug, vqsr_snvs_tranches_ug, vqsr_snvs_plots_ug, VariantRecalibratorArgumentCollection.Mode.SNP, true)
+        ,applyRecalibration(raw_snvs_vcf_ug, vqsr_snvs_recal_ug, vqsr_snvs_tranches_ug, recalibrated_snvs_vcf_ug, VariantRecalibratorArgumentCollection.Mode.SNP))
+      add(variantRecalibrator(raw_indels_vcf_ug, vqsr_indels_recal_ug, vqsr_indels_tranches_ug, vqsr_indels_plots_ug, VariantRecalibratorArgumentCollection.Mode.INDEL, true)
+        ,applyRecalibration(raw_indels_vcf_ug, vqsr_indels_recal_ug, vqsr_indels_tranches_ug, recalibrated_indels_vcf_ug, VariantRecalibratorArgumentCollection.Mode.INDEL))
       /*
       if (!is_whole_genome){
         add(variantFiltration(raw_indels_vcf_ug, filtered_indels_vcf_ug, indel_filter_expression, List("GATKStandard")))
@@ -600,15 +596,15 @@ def script() {
       */
 
       //combine snvs and indels although AD values may me wrong
-//      add(combineVariants(List(recalibrated_snvs_raw_indels_ug, recalibrated_indels_vcf_ug), recalibrated_variants_ug))
+      add(combineVariants(List(recalibrated_snvs_vcf_ug, recalibrated_indels_vcf_ug), analysis_ready_vcf_ug))
 
       //VariantEval
-      add(variantEval(raw_variants_ug, raw_vvariants_eval_ug)
-        ,variantEval(recalibrated_variants_ug, recalibrated_variants_eval_ug))
+      add(variantEval(raw_vcf_ug, raw_vcf_eval_ug)
+        ,variantEval(analysis_ready_vcf_ug, analysis_ready_vcf_eval_ug))
 
       //VariantAnnotator
       //may zero out the FS annotation
-      //no need for post-recalibration annotation at present
+      //maybe it will fix AD values messed up by CombineVariants?
       //add(variantAnnotator(analysis_ready_vcf_ug, annotated_vcf_ug))
     }
 
@@ -897,10 +893,9 @@ def script() {
     //VariantRecalibrator now determines the number of variants to use for modeling "bad" variants internally based on the data
     //this.minNumBadVariants = 1000
     //annotations always used
-    //as of 3.3-0 full annotation names fail
-    this.use_annotation ++= List("FS", "MQRankSum", "QD", "ReadPosRankSum", "SOR")
+    this.use_annotation ++= List("FisherStrand", "MappingQualityRankSumTest", "QualByDepth", "ReadPosRankSum", "StrandOddsRatio")
     if (is_whole_genome) {
-      this.use_annotation ++= List("DP")
+      this.use_annotation ++= List("Coverage")
     }
     if (sampleCount >= 10){
       this.use_annotation ++= List("InbreedingCoeff")
@@ -910,7 +905,7 @@ def script() {
       this.use_annotation ++= List("HaplotypeScore")
     }
     if (mode == VariantRecalibratorArgumentCollection.Mode.SNP) {
-      this.use_annotation ++= List("MQ")
+      this.use_annotation ++= List("RMSMappingQuality")
       // http://www.broadinstitute.org/gsa/wiki/index.php/Managing_user_input#Example_usage_in_Queue_scripts
       this.resource :+= new TaggedFile(qscript.hapmap,"hapmap,VCF,known=false,training=true,truth=true,prior=15.0")
       this.resource :+= new TaggedFile(qscript.omni,"omni,VCF,known=false,training=true,truth=true,prior=12.0")
@@ -925,7 +920,6 @@ def script() {
       this.resource :+= new TaggedFile(qscript.dbsnp,"dbsnp,VCF,known=true,training=false,truth=false,prior=2.0")
       this.maxGaussians = 4
     }
-    this.tranche = List("100.0", "99.9", "99.0", "90.0")
     this.num_threads = 8
     this.isIntermediate = false
     this.analysisName = queueLogDir + outRecal + ".vqsr"
@@ -939,10 +933,10 @@ def script() {
     this.out = outVcf
     this.mode = recalmode
     if (mode == VariantRecalibratorArgumentCollection.Mode.SNP){
-      this.ts_filter_level = 99.9
+      this.ts_filter_level = 99.5
     }
     else{
-      this.ts_filter_level = 99.9
+      this.ts_filter_level = 99.0
     }
     this.num_threads = 8
     this.isIntermediate = false

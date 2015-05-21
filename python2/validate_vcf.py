@@ -14,7 +14,7 @@ class ValidateVcfError(Exception): pass
 
 def write_error(err_count, max_errors, err_msg, output_file):
     err_count+=1
-    if err_count > max_errors:
+    if max_errors > 0 and err_count > max_errors:
         raise ValidateVcfError('VCF file has > {} errors; see {}'.format(max_errors, output_file.name))
     else:
         output_file.write(err_msg+'\n')
@@ -216,7 +216,7 @@ def main():
     parser.add_argument('--output', '-o',
         help='output file(default: <input vcf>.validate; if input is valid file output contains "OK")')
     parser.add_argument('--max_errors', type=int, default=1,
-        help='maximum number of errors to report (default: 1)')
+        help='maximum number of errors to report, 0 = report all errors (default: 1)')
     args = parser.parse_args()
     
     status = run(args.input, args.output, args.max_errors)
